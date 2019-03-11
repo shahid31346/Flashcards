@@ -1,0 +1,11 @@
+package com.saishaddai.bwq.model
+
+enum class StatusMessages {
+    WRONG_PARAMETERS,
+    CONNECTION_TO_DATABASE_INTERRUPTED,
+    CONNECTION_TO_API_INTERRUPTED,
+    WRONG_SERVER,
+    OK,
+    DEFAULT_VALUES_USED,
+    NO_RESULTS_FOUND
+}

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BwF</string>
+    <string name="app_title">Bullying with Flashcards</string>
+    <string name="title_home">Home</string> <!-- Remove me -->
+    <string name="title_stats">Stats</string>
+    <string name="title_decks">Decks</string>
+    <string name="title_notifications">Notifications</string> <!-- Remove me -->
+    <string name="title_settings">Settings</string>
+</resources>

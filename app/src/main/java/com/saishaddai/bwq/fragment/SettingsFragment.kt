@@ -4,15 +4,13 @@ import android.content.Context
 import android.os.Bundle
 import android.support.annotation.Nullable
 import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.CompoundButton
 import android.widget.Switch
-import android.widget.Toast
 import com.saishaddai.bwq.MainActivity
 import com.saishaddai.bwq.R
+
 //import android.R
 
 
@@ -20,17 +18,17 @@ import com.saishaddai.bwq.R
 //import android.app.Activity
 
 
-
-
 class SettingsFragment : Fragment() {
 //    lateinit var context : Context
 
     @Nullable
     override fun onCreateView(inflater: LayoutInflater, @Nullable container: ViewGroup?, @Nullable savedInstanceState: Bundle?): View? {
-        val convertView : View = inflater.inflate(R.layout.fragment_settings, container, false)
-        convertView.findViewById<Switch>(R.id.themeSwitch).setOnCheckedChangeListener{buttonView, isChecked ->
-        println("checked: " + isChecked)
-    }
+        val convertView: View = inflater.inflate(R.layout.fragment_settings, container, false)
+
+
+        convertView.findViewById<Switch>(R.id.reload_button).setOnCheckedChangeListener { buttonView, isChecked ->
+            println("checked: " + isChecked)
+        }
         return convertView
     }
 
@@ -49,9 +47,6 @@ class SettingsFragment : Fragment() {
 //            }
 //        }
 //    }
-
-
-
 
 
     override fun onAttach(context: Context?) {

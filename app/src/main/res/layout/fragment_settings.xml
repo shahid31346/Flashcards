@@ -8,32 +8,78 @@
               android:layout_marginBottom="20dp"
               android:layout_marginEnd="20dp">
 
-    <!--<LinearLayout android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:orientation="horizontal"-->
-    <!--android:layout_marginBottom="35dp">-->
 
-    <!--<ImageView android:layout_width="40dp"-->
-    <!--android:layout_height="40dp"-->
-    <!--android:layout_marginEnd="20dp"-->
-    <!--android:tint="@color/colorPrimary"-->
-    <!--android:src="@drawable/ic_settings"/>-->
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginBottom="20dp"
+                  android:weightSum="6">
+        <TextView android:layout_width="0dp" android:textColor="#000000" android:layout_gravity="center_vertical" android:layout_height="wrap_content"
+                  android:layout_weight="5" android:text="Reload Database" android:textSize="20sp"/>
 
-    <!--<TextView android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:text="Settings"-->
-    <!--android:textSize="30sp"-->
+        <android.support.design.widget.FloatingActionButton android:layout_width="0dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_weight="2"
+                                                            android:tint="#AAAAAA"
+                                                            android:id="@+id/reload_button"
+                                                            android:src="@drawable/ic_sync"/>
 
-    <!--/>-->
 
-    <!--</LinearLayout>-->
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginBottom="20dp"
+                  android:weightSum="6">
+        <TextView android:layout_width="0dp" android:layout_gravity="center_vertical" android:textColor="#000000" android:layout_height="wrap_content"
+                  android:layout_weight="5" android:text="Reset Progress" android:textSize="20sp"/>
+
+        <android.support.design.widget.FloatingActionButton android:layout_width="0dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_weight="2"
+                                                            android:tint="#AAAAAA"
+                                                            android:id="@+id/reset_progress_button"
+                                                            android:src="@drawable/ic_new"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginBottom="30dp"
+                  android:weightSum="6">
+        <TextView android:layout_width="0dp" android:layout_gravity="center_vertical" android:textColor="#000000" android:layout_height="wrap_content"
+                  android:layout_weight="5" android:text="Report Error" android:textSize="20sp"/>
+
+        <android.support.design.widget.FloatingActionButton android:layout_width="0dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_weight="2"
+                                                            android:tint="#AAAAAA"
+                                                            android:id="@+id/syncButton"
+                                                            android:src="@drawable/ic_warning"/>
+
+
+    </LinearLayout>
 
 
     <Switch android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/themeSwitch"
-            android:text="Dar Mode"
-            android:checked="true"
-            android:textSize="30sp"/>
+            android:id="@+id/silent_mode_switch"
+            android:layout_marginBottom="30dp"
+            android:text="Silent Mode"
+            android:textSize="20sp"/>
+
+
+    <Switch android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dark_mode_switch"
+            android:text="Dark Mode"
+            android:textSize="20sp"/>
+
+
 </LinearLayout>
 

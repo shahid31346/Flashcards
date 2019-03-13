@@ -2,8 +2,10 @@ package com.saishaddai.bwq.fragment
 
 import android.content.Context
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.text.Html
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -64,7 +66,11 @@ class CardFragment : Fragment() {
             cardContainer.visibility = View.VISIBLE
             finalCardContainer.visibility = View.GONE
             titleTV.text = cardItem.title
-            contentTV.text = cardItem.content
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                contentTV.text = Html.fromHtml(cardItem.content, Html.FROM_HTML_MODE_COMPACT)
+            } else {
+                contentTV.text = Html.fromHtml(cardItem.content)
+            }
         } else {
             cardContainer.visibility = View.GONE
             finalCardContainer.visibility = View.VISIBLE

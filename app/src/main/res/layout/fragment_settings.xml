@@ -6,25 +6,25 @@
               android:layout_marginTop="70dp"
               android:layout_marginStart="20dp"
               android:layout_marginBottom="20dp"
-android:layout_marginEnd="20dp">
+              android:layout_marginEnd="20dp">
 
     <!--<LinearLayout android:layout_width="match_parent"-->
-                  <!--android:layout_height="wrap_content"-->
-                  <!--android:orientation="horizontal"-->
-                  <!--android:layout_marginBottom="35dp">-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginBottom="35dp">-->
 
-        <!--<ImageView android:layout_width="40dp"-->
-                   <!--android:layout_height="40dp"-->
-                   <!--android:layout_marginEnd="20dp"-->
-                   <!--android:tint="@color/colorPrimary"-->
-                   <!--android:src="@drawable/ic_settings"/>-->
+    <!--<ImageView android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_marginEnd="20dp"-->
+    <!--android:tint="@color/colorPrimary"-->
+    <!--android:src="@drawable/ic_settings"/>-->
 
-        <!--<TextView android:layout_width="wrap_content"-->
-                  <!--android:layout_height="wrap_content"-->
-                  <!--android:text="Settings"-->
-                  <!--android:textSize="30sp"-->
+    <!--<TextView android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Settings"-->
+    <!--android:textSize="30sp"-->
 
-        <!--/>-->
+    <!--/>-->
 
     <!--</LinearLayout>-->
 
@@ -32,12 +32,8 @@ android:layout_marginEnd="20dp">
     <Switch android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/themeSwitch"
-            android:text="Mode"
-            android:textOff="Dark"
-            android:textOn="Light"
-            android:showText="true"
-            android:scaleY="1.5"
+            android:text="Dar Mode"
             android:checked="true"
-            android:textSize="20sp"/>
+            android:textSize="30sp"/>
 </LinearLayout>
 

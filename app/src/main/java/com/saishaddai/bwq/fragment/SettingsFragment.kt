@@ -27,7 +27,6 @@ class SettingsFragment : Fragment() {
 
     @Nullable
     override fun onCreateView(inflater: LayoutInflater, @Nullable container: ViewGroup?, @Nullable savedInstanceState: Bundle?): View? {
-        //activity?.actionBar?.title = "sofijdoifj"
         val convertView : View = inflater.inflate(R.layout.fragment_settings, container, false)
         convertView.findViewById<Switch>(R.id.themeSwitch).setOnCheckedChangeListener{buttonView, isChecked ->
         println("checked: " + isChecked)

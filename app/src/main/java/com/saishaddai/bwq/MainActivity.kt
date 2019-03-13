@@ -15,8 +15,11 @@ class MainActivity : AppCompatActivity() {
     private val tag = MainActivity::class.java.simpleName as String
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        setTheme(android.R.style.ThemeOverlay_Material_Dark)
-//        setTheme(android.R.style.ThemeOverlay_Material)
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP){
+//            setTheme(android.R.style.ThemeOverlay_Material_Dark)
+        setTheme(android.R.style.ThemeOverlay_Material)
+        }
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
@@ -34,13 +37,13 @@ class MainActivity : AppCompatActivity() {
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
-            R.id.navigation_stats -> {
-                val fragment = StatsFragment()
-                supportFragmentManager.beginTransaction().replace(R.id.frameContainer, fragment).commit()
-                mainToolbar.setTitle(R.string.title_stats)
-                mainToolbar.setLogo(R.drawable.ic_stats)
-                return@OnNavigationItemSelectedListener true
-            }
+//            R.id.navigation_stats -> {
+//                val fragment = StatsFragment()
+//                supportFragmentManager.beginTransaction().replace(R.id.frameContainer, fragment).commit()
+//                mainToolbar.setTitle(R.string.title_stats)
+//                mainToolbar.setLogo(R.drawable.ic_stats)
+//                return@OnNavigationItemSelectedListener true
+//            }
             R.id.navigation_decks -> {
                 val fragment = DecksFragment()
                 supportFragmentManager.beginTransaction().replace(R.id.frameContainer, fragment).commit()
@@ -48,13 +51,13 @@ class MainActivity : AppCompatActivity() {
                 mainToolbar.setLogo(R.drawable.ic_dashboard_black_24dp)
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_settings -> {
-                val fragment = SettingsFragment()
-                supportFragmentManager.beginTransaction().replace(R.id.frameContainer, fragment).commit()
-                mainToolbar.setTitle(R.string.title_settings)
-                mainToolbar.setLogo(R.drawable.ic_settings)
-                return@OnNavigationItemSelectedListener true
-            }
+//            R.id.navigation_settings -> {
+//                val fragment = SettingsFragment()
+//                supportFragmentManager.beginTransaction().replace(R.id.frameContainer, fragment).commit()
+//                mainToolbar.setTitle(R.string.title_settings)
+//                mainToolbar.setLogo(R.drawable.ic_settings)
+//                return@OnNavigationItemSelectedListener true
+//            }
         }
         false
     }

@@ -12,13 +12,18 @@
             android:roundIcon="@drawable/ic_bwq_logo_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".CardsActivity"
+        android:screenOrientation="portrait">
+        </activity>
         <activity
                 android:name=".MainActivity"
-                android:label="@string/app_title"
-                android:configChanges="keyboardHidden">
+                android:configChanges="keyboardHidden"
+                android:screenOrientation="portrait"
+                android:label="@string/app_title">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.VIEW"/>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>

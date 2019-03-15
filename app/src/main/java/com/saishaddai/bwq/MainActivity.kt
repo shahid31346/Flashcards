@@ -4,11 +4,18 @@ import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import android.view.Menu
+import android.view.View
 import com.saishaddai.bwq.asynctask.PopulateDatabase
 import com.saishaddai.bwq.fragment.DecksFragment
 import com.saishaddai.bwq.fragment.SettingsFragment
 import com.saishaddai.bwq.fragment.StatsFragment
 import kotlinx.android.synthetic.main.activity_main.*
+import org.jetbrains.anko.design.longSnackbar
+import org.jetbrains.anko.startActivity
+import android.support.v4.app.NavUtils
+import android.view.MenuItem
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,6 +33,8 @@ class MainActivity : AppCompatActivity() {
         navigation.selectedItemId = R.id.navigation_decks
         Log.d(tag, "Navigation settled")
 
+        //.setOnClickListener(openCardsButtonListener)
+
         setSupportActionBar(mainToolbar)
         supportActionBar?.setTitle(R.string.title_decks)
         supportActionBar?.setLogo(R.drawable.ic_dashboard_black_24dp)
@@ -34,6 +43,30 @@ class MainActivity : AppCompatActivity() {
 
         PopulateDatabase(this@MainActivity).execute()
     }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater?.inflate(R.menu.menu_android, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.java_cards -> {
+                startActivity<CardsActivity>("type" to "Java")
+                return true
+            }
+            R.id.kotlin_cards -> {
+                startActivity<CardsActivity>("type" to "Kotlin")
+                return true
+            }
+
+        }
+        return true
+    }
+
+//    private val openCardsButtonListener = View.OnClickListener {
+//        startActivity<CardsActivity>()
+//    }
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {

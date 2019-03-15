@@ -17,19 +17,8 @@ import com.saishaddai.bwq.R
 import com.saishaddai.bwq.model.ViewModel
 
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_CARD = "card"
 
-/**
- * A simple [Fragment] subclass.
- * Activities that contain this fragment must implement the
- * [CardFragment.OnFragmentInteractionListener] interface
- * to handle interaction events.
- * Use the [CardFragment.newInstance] factory method to
- * create an instance of this fragment.
- *
- */
 class CardFragment : Fragment() {
     private var cardItem: ViewModel.Card? = null
     private lateinit var cardContainer: LinearLayout

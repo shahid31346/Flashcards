@@ -6,6 +6,8 @@
     <string name="title_decks">Decks</string>
     <string name="title_notifications">Notifications</string> <!-- Remove me -->
     <string name="title_settings">Settings</string>
+    <string name="title_java">Java</string>
+    <string name="title_kotlin">Kotlin</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

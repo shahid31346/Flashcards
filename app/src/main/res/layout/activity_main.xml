@@ -14,7 +14,6 @@
                                        android:background="@color/colorPrimary"
                                        android:minHeight="?attr/actionBarSize"/>
 
-
     <FrameLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/frameContainer"
@@ -25,7 +24,6 @@
             android:id="@+id/navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="0dp"
             android:layout_marginStart="0dp"
             android:background="#000000"
             android:layout_alignParentBottom="true"

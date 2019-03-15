@@ -1,19 +1,42 @@
 package com.saishaddai.bwq
 
 import android.support.v7.app.AppCompatActivity
+
+
 import android.os.Bundle
 import com.saishaddai.bwq.adapter.CardsAdapter
 import com.saishaddai.bwq.model.ViewModel
 import kotlinx.android.synthetic.main.activity_cards.*
 
+const val CARD_TYPE_ARG = "type"
 
 class CardsActivity : AppCompatActivity() {
+
+    private var type = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cards)
-        val listOfCards = getCards()
-        cardsPager.adapter = CardsAdapter(supportFragmentManager, listOfCards)
+        intent?.let {
+            type = it.getStringExtra(CARD_TYPE_ARG)
+        }
+
+
+
+        if(type == "Java") {
+            val listOfCards = getCards()
+            cardsPager.adapter = CardsAdapter(supportFragmentManager, listOfCards)
+        } else {
+            val listOfCards = getEmptyListOfCards()
+            cardsPager.adapter = CardsAdapter(supportFragmentManager, listOfCards)
+        }
+    }
+
+    private fun getEmptyListOfCards(): ArrayList<ViewModel.Card> {
+        val listOfCards = arrayListOf<ViewModel.Card>()
+        val finalCard = ViewModel.Card("B", "", "")
+        listOfCards.add(finalCard)
+        return listOfCards
     }
 
     private fun getCards(): ArrayList<ViewModel.Card> {
@@ -21,7 +44,7 @@ class CardsActivity : AppCompatActivity() {
         val card1 = ViewModel.Card(
             "A",
             "Fragments onAttach method",
-            "<p>Since API 23, on <i>attach(Activity)</i> is <b>deprecated</b>. It should be used <i>onAttach(Context)</i></p>"
+            "<p>Since API 23, on <i><font color=\"red\">attach(Activity)</font></i> is <b>deprecated</b>. It should be used <i><font color=\"red\">onAttach(Context)</font></i></p>"
         )
         val card2 = ViewModel.Card(
             "A",
@@ -117,6 +140,10 @@ class CardsActivity : AppCompatActivity() {
                     "To create static method in our class we use the companion object."
         )
 
+        val card19 = ViewModel.Card(
+            "A", "Extension Functions", "<p>Kotlin, similar to C# and Gosu, provides the ability to extend a class with new functionality without having to inherit from the class or use any type of design pattern such as Decorator. This is done via special declarations called extensions. Kotlin supports <I><font color=\"red\">extension functions</font></I> and <I><font color=\"red\">extension properties</font></I> Ex.</p><p>class Dog(val name: String, val breed: String)</p><p>fun Dog.bark() {println(“woof”)</p>"
+        )
+
         val finalCard = ViewModel.Card("B", "", "")
 
         listOfCards.add(card1)
@@ -137,6 +164,7 @@ class CardsActivity : AppCompatActivity() {
         listOfCards.add(card16)
         listOfCards.add(card17)
         listOfCards.add(card18)
+        listOfCards.add(card19)
 
 
         listOfCards.add(finalCard)

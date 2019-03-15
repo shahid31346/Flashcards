@@ -22,10 +22,11 @@ class DecksFragment : Fragment() {
         val javaImageView = convertView.findViewById<ImageView>(R.id.javaImageView)
         val javaCard = convertView.findViewById<CardView>(R.id.javaCard)
 
-
-
         javaCard.setOnClickListener {
-            activity?.let { callingActivity -> startActivity(Intent(callingActivity, CardsActivity::class.java)) }
+            activity?.let { callingActivity ->
+                val intent = Intent(callingActivity, CardsActivity::class.java)
+                intent.putExtra("type", "Java")
+                startActivity(intent) }
         }
 
         activity?.let {

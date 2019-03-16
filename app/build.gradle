@@ -7,17 +7,39 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.saishaddai.bwq"
+        applicationId "com.saishaddai.flashcards"
         minSdkVersion 19
         targetSdkVersion 27
         versionCode 1
         versionName "0.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                appIcon: "@drawable/ic_bwq_logo_round"
+        ]
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    flavorDimensions "version"
+    productFlavors {
+        androidtraining {
+            dimension "version"
+            applicationIdSuffix ".android"
+            versionNameSuffix "-android"
+
+        }
+        javatraining {
+            dimension "version"
+            applicationIdSuffix ".java"
+            versionNameSuffix "-java"
+        }
+        uxtraining {
+            dimension "version"
+            applicationIdSuffix ".ux"
+            versionNameSuffix "-ux"
         }
     }
 }
@@ -38,6 +60,8 @@ dependencies {
     implementation "com.android.support:support-fragment:27.1.1"
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.tomer:fadingtextview:2.5'
+    implementation 'com.rom4ek:arcnavigationview:1.0.3'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
     annotationProcessor 'android.arch.persistence.room:compiler:1.1.1'
     testImplementation 'junit:junit:4.12'

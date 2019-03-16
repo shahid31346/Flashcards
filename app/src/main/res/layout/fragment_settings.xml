@@ -14,8 +14,13 @@
                   android:orientation="horizontal"
                   android:layout_marginBottom="20dp"
                   android:weightSum="6">
-        <TextView android:layout_width="0dp" android:textColor="#000000" android:layout_gravity="center_vertical" android:layout_height="wrap_content"
-                  android:layout_weight="5" android:text="Reload Database" android:textSize="20sp"/>
+        <TextView android:layout_width="0dp"
+                  android:textColor="#000000"
+                  android:layout_gravity="center_vertical"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="5"
+                  android:text="@string/settings_reload_database"
+                  android:textSize="20sp"/>
 
         <android.support.design.widget.FloatingActionButton android:layout_width="0dp"
                                                             android:layout_height="wrap_content"
@@ -33,14 +38,19 @@
                   android:orientation="horizontal"
                   android:layout_marginBottom="20dp"
                   android:weightSum="6">
-        <TextView android:layout_width="0dp" android:layout_gravity="center_vertical" android:textColor="#000000" android:layout_height="wrap_content"
-                  android:layout_weight="5" android:text="Reset Progress" android:textSize="20sp"/>
+        <TextView android:layout_width="0dp"
+                  android:layout_gravity="center_vertical"
+                  android:textColor="#000000"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="5"
+                  android:text="@string/settings_reset_stats"
+                  android:textSize="20sp"/>
 
         <android.support.design.widget.FloatingActionButton android:layout_width="0dp"
                                                             android:layout_height="wrap_content"
                                                             android:layout_weight="2"
                                                             android:tint="#AAAAAA"
-                                                            android:id="@+id/reset_progress_button"
+                                                            android:id="@+id/reset_stats_button"
                                                             android:src="@drawable/ic_new"/>
 
 
@@ -52,8 +62,13 @@
                   android:orientation="horizontal"
                   android:layout_marginBottom="30dp"
                   android:weightSum="6">
-        <TextView android:layout_width="0dp" android:layout_gravity="center_vertical" android:textColor="#000000" android:layout_height="wrap_content"
-                  android:layout_weight="5" android:text="Report Error" android:textSize="20sp"/>
+        <TextView android:layout_width="0dp"
+                  android:layout_gravity="center_vertical"
+                  android:textColor="#000000"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="5"
+                  android:text="@string/settings_report_error"
+                  android:textSize="20sp"/>
 
         <android.support.design.widget.FloatingActionButton android:layout_width="0dp"
                                                             android:layout_height="wrap_content"
@@ -70,8 +85,14 @@
                   android:orientation="horizontal"
                   android:layout_marginBottom="30dp"
                   android:weightSum="6">
-        <TextView android:layout_width="0dp" android:layout_gravity="center_vertical" android:textColor="#000000" android:layout_height="wrap_content"
-                  android:layout_weight="5" android:text="Clean Logs" android:textSize="20sp"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_gravity="center_vertical"
+                  android:textColor="#000000"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="5"
+                  android:text="@string/settings_clean_logs"
+                  android:textSize="20sp"/>
 
         <android.support.design.widget.FloatingActionButton android:layout_width="0dp"
                                                             android:layout_height="wrap_content"
@@ -88,14 +109,14 @@
             android:layout_height="wrap_content"
             android:id="@+id/silent_mode_switch"
             android:layout_marginBottom="30dp"
-            android:text="Silent Mode"
+            android:text="@string/settings_silent_mode"
             android:textSize="20sp"/>
 
 
     <Switch android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/dark_mode_switch"
-            android:text="Dark Mode"
+            android:text="@string/settings_dark_mode"
             android:textSize="20sp"/>
 
 

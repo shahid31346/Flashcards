@@ -9,6 +9,23 @@
     <string name="title_java">Java</string>
     <string name="title_kotlin">Kotlin</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings_reload_database">Reload Database</string>
+    <string name="settings_reset_stats">Reset Stats</string>
+    <string name="settings_report_error">Report Error</string>
+    <string name="settings_clean_logs">Clean Logs</string>
+    <string name="settings_silent_mode">Silent Mode</string>
+    <string name="settings_dark_mode">Dark Mode</string>
+    <string name="flashcard_title">flashcard_title</string>
+    <string name="flashcard_content">flashcard_content</string>
+
+    <string-array name="tutorial">
+        <item>This is Flashcards</item>
+        <item>Choose a deck from the screen and start studying</item>
+        <item>We chose the top topics that you should know for this area</item>
+        <item>Every time you pick a topic (deck)</item>
+        <item>We will show you 30 random (maybe less) cards</item>
+        <item>So every time you open a topic you will learn 30 new facts</item>
+        <item>You can contact us from the Settings Screen to report an error</item>
+        <item>Or to ask for more facts to add to this app</item>
+    </string-array>
 </resources>

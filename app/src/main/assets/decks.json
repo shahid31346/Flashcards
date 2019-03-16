@@ -1,0 +1,24 @@
+{
+  decks: [
+    {
+      id: 1,
+      name: "Java",
+      description: "Java 7 facts and fun"
+    },
+    {
+      id: 2,
+      name: "Kotlin",
+      description: "Kotlin facts and fun"
+    },
+    {
+      id: 3,
+      name: "Algorithms",
+      description: "Algorithm Analysis with all the most common problems ans responses"
+    },
+    {
+      id: 4,
+      name: "Data Structures",
+      description: "Not attached to an actual programming languages but there are already the most common data structures"
+    }
+  ]
+}

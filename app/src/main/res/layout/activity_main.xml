@@ -13,26 +13,26 @@
 
     <android.support.v7.widget.Toolbar android:layout_width="match_parent"
                                        android:layout_height="wrap_content"
-                                       android:id="@+id/mainToolbar"
+                                       android:id="@+id/mainToolbarX"
                                        android:background="@color/colorPrimary"
                                        android:minHeight="?attr/actionBarSize"/>
 
     <FrameLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/frameContainer"
-    android:layout_above="@id/navigation" />
+    android:layout_below="@id/mainToolbar" />
 
 
-    <android.support.design.widget.BottomNavigationView
-            android:id="@+id/navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="0dp"
-            android:background="#000000"
-            android:layout_alignParentBottom="true"
-            app:itemBackground="?android:attr/windowBackground"
-            app:itemIconTint="@color/bnv_tab_item_foreground"
-            app:itemTextColor="@color/bnv_tab_item_foreground"
-            app:menu="@menu/navigation"/>
+    <!--<android.support.design.widget.BottomNavigationView-->
+            <!--android:id="@+id/navigation"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="0dp"-->
+            <!--android:background="#000000"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--app:itemBackground="?android:attr/windowBackground"-->
+            <!--app:itemIconTint="@color/bnv_tab_item_foreground"-->
+            <!--app:itemTextColor="@color/bnv_tab_item_foreground"-->
+            <!--app:menu="@menu/navigation"/>-->
 
 </RelativeLayout>

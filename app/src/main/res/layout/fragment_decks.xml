@@ -2,384 +2,248 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
-              android:orientation="vertical"
               android:layout_height="match_parent"
-              android:layout_marginTop="70dp"
-              android:layout_marginStart="20dp"
-              android:layout_marginBottom="20dp"
-              android:layout_marginEnd="20dp">
+              android:orientation="vertical">
+
+
+    <!--<include layout="@layout/drawer_layout"  />-->
+
+    <android.support.v7.widget.Toolbar android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:id="@+id/mainToolbar"
+                                       android:background="@color/colorPrimary"
+                                       android:minHeight="?attr/actionBarSize"/>
 
     <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
 
-        <GridLayout android:layout_width="wrap_content"
-                    android:layout_height="600dp"
+        <GridLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:columnCount="2"
                     android:rowCount="3">
 
             <android.support.v7.widget.CardView
-                    android:id="@+id/javaCard"
+                    android:id="@+id/android_card"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="16dp"
+                    android:tag="@string/decks_android_title"
                     app:cardElevation="8dp"
-                    app:cardCornerRadius="8dp">
+                    app:cardCornerRadius="18dp">
 
                 <LinearLayout android:layout_width="wrap_content"
                               android:layout_gravity="center_horizontal|center_vertical"
                               android:orientation="vertical"
                               android:layout_height="wrap_content">
 
-                    <ImageView android:layout_width="40dp" android:layout_height="40dp"
-                               android:id="@+id/javaImageView"
-                               android:background="@color/colorPrimary"
-                               android:src="@drawable/ic_java_logo" android:layout_gravity="center_horizontal"
-                               android:contentDescription="Java"/>
+                    <TextView android:layout_width="40dp"
+                              android:layout_height="40dp"
+                              android:background="@drawable/circle_shape"
+                              android:textSize="28sp"
+                              android:gravity="center"
+                              android:textColor="#FFFFFF"
+                              android:text="@string/decks_android_image_text"
+                              android:layout_gravity="center_horizontal"
+                              android:contentDescription="@string/decks_android_content_desc"/>
 
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                              android:textAlignment="center" android:textColor="@color/colorPrimary"
-                              android:textSize="18sp" android:textStyle="bold" android:text="Java
-(9999)"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textAlignment="center"
+                              android:textColor="@color/colorPrimary"
+                              android:layout_marginTop="5dp"
+                              android:textSize="16sp" android:textStyle="bold"
+                              android:text="@string/decks_android_title"/>
 
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
-
 
             <android.support.v7.widget.CardView
-                    android:id="@+id/KotlinCard"
+                    android:id="@+id/kotlin_card"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="16dp"
+                    android:tag="@string/decks_kotlin_title"
                     app:cardElevation="8dp"
-                    app:cardCornerRadius="8dp">
+                    app:cardCornerRadius="18dp">
 
                 <LinearLayout android:layout_width="wrap_content"
                               android:layout_gravity="center_horizontal|center_vertical"
                               android:orientation="vertical"
                               android:layout_height="wrap_content">
 
-                    <ImageView android:layout_width="40dp" android:layout_height="40dp"
-                               android:src="@drawable/ic_kotlin_logo" android:layout_gravity="center_horizontal"
-                               android:contentDescription="walla"/>
+                    <TextView android:layout_width="40dp"
+                              android:layout_height="40dp"
+                              android:background="@drawable/circle_shape"
+                              android:textSize="28sp"
+                              android:gravity="center"
+                              android:textColor="#FFFFFF"
+                              android:text="@string/decks_kotlin_image_text"
+                              android:layout_gravity="center_horizontal"
+                              android:contentDescription="@string/decks_android_content_desc"/>
 
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                              android:textAlignment="center" android:textColor="@color/colorPrimary"
-                              android:textSize="18sp" android:textStyle="bold" android:text="Kotlin
-(9999)"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textAlignment="center"
+                              android:textColor="@color/colorPrimary"
+                              android:layout_marginTop="5dp"
+                              android:textSize="16sp"
+                              android:textStyle="bold"
+                              android:text="@string/decks_kotlin_title"/>
 
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
-            <!--<android.support.v7.widget.CardView-->
-                    <!--android:layout_width="150dp"-->
-                    <!--android:layout_height="150dp"-->
-                    <!--android:layout_margin="16dp"-->
-                    <!--app:cardElevation="8dp"-->
-                    <!--app:cardCornerRadius="8dp">-->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/java_card"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="18dp">
 
-                <!--<LinearLayout android:layout_width="wrap_content"-->
-                              <!--android:layout_gravity="center_horizontal|center_vertical"-->
-                              <!--android:orientation="vertical"-->
-                              <!--android:layout_height="wrap_content">-->
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_gravity="center_horizontal|center_vertical"
+                              android:orientation="vertical"
+                              android:layout_height="wrap_content">
 
-                    <!--<ImageView android:layout_width="40dp" android:layout_height="40dp"-->
-                               <!--android:src="@drawable/ic_kotlin_logo" android:layout_gravity="center_horizontal"-->
-                               <!--android:contentDescription="walla"/>-->
+                    <TextView android:layout_width="40dp"
+                              android:layout_height="40dp"
+                              android:background="@drawable/circle_shape"
+                              android:textSize="28sp"
+                              android:gravity="center"
+                              android:textColor="#FFFFFF"
+                              android:text="@string/decks_java_image_text"
+                              android:layout_gravity="center_horizontal"
+                              android:contentDescription="@string/decks_java_content_desc"/>
 
-                    <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
-                              <!--android:textAlignment="center" android:textColor="@color/colorPrimary"-->
-                              <!--android:textSize="18sp" android:textStyle="bold" android:text="Kotlin-->
-<!--(9999)"/>-->
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textAlignment="center"
+                              android:textColor="@color/colorPrimary"
+                              android:layout_marginTop="5dp"
+                              android:textSize="16sp"
+                              android:textStyle="bold"
+                              android:text="@string/decks_java_title"/>
 
-                <!--</LinearLayout>-->
 
-            <!--</android.support.v7.widget.CardView>-->
+                </LinearLayout>
 
-            <!--<android.support.v7.widget.CardView-->
-                    <!--android:layout_width="150dp"-->
-                    <!--android:layout_height="150dp"-->
-                    <!--android:layout_margin="16dp"-->
-                    <!--app:cardElevation="8dp"-->
-                    <!--app:cardCornerRadius="8dp">-->
+            </android.support.v7.widget.CardView>
 
-                <!--<LinearLayout android:layout_width="wrap_content"-->
-                              <!--android:layout_gravity="center_horizontal|center_vertical"-->
-                              <!--android:orientation="vertical"-->
-                              <!--android:layout_height="wrap_content">-->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/data_structures_card"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="16dp"
+                    android:tag="@string/decks_data_structures_title"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="18dp">
 
-                    <!--<ImageView android:layout_width="40dp" android:layout_height="40dp"-->
-                               <!--android:src="@drawable/ic_kotlin_logo" android:layout_gravity="center_horizontal"-->
-                               <!--android:contentDescription="walla"/>-->
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_gravity="center_horizontal|center_vertical"
+                              android:orientation="vertical"
+                              android:layout_height="wrap_content">
 
-                    <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
-                              <!--android:textAlignment="center" android:textColor="@color/colorPrimary"-->
-                              <!--android:textSize="18sp" android:textStyle="bold" android:text="Kotlin-->
-<!--(9999)"/>-->
+                    <TextView android:layout_width="40dp"
+                              android:layout_height="40dp"
+                              android:background="@drawable/circle_shape"
+                              android:textSize="28sp"
+                              android:gravity="center"
+                              android:textColor="#FFFFFF"
+                              android:text="@string/decks_data_structure_image_text"
+                              android:src="@drawable/ic_java_logo"
+                              android:layout_gravity="center_horizontal"
+                              android:contentDescription="@string/decks_data_structures_content_desc"/>
 
-                <!--</LinearLayout>-->
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textAlignment="center"
+                              android:textColor="@color/colorPrimary"
+                              android:layout_marginTop="5dp"
+                              android:textSize="16sp"
+                              android:textStyle="bold"
+                              android:text="@string/decks_data_structures_title"/>
 
-            <!--</android.support.v7.widget.CardView>-->
+                </LinearLayout>
 
-            <!--<android.support.v7.widget.CardView-->
-                    <!--android:layout_width="150dp"-->
-                    <!--android:layout_height="150dp"-->
-                    <!--android:layout_margin="16dp"-->
-                    <!--app:cardElevation="8dp"-->
-                    <!--app:cardCornerRadius="8dp">-->
+            </android.support.v7.widget.CardView>
 
-                <!--<LinearLayout android:layout_width="wrap_content"-->
-                              <!--android:layout_gravity="center_horizontal|center_vertical"-->
-                              <!--android:orientation="vertical"-->
-                              <!--android:layout_height="wrap_content">-->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/algorithms_card"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="16dp"
+                    android:tag="@string/decks_algorithms_title"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="18dp">
 
-                    <!--<ImageView android:layout_width="40dp" android:layout_height="40dp"-->
-                               <!--android:src="@drawable/ic_kotlin_logo" android:layout_gravity="center_horizontal"-->
-                               <!--android:contentDescription="walla"/>-->
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_gravity="center_horizontal|center_vertical"
+                              android:orientation="vertical"
+                              android:layout_height="wrap_content">
 
-                    <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
-                              <!--android:textAlignment="center" android:textColor="@color/colorPrimary"-->
-                              <!--android:textSize="18sp" android:textStyle="bold" android:text="Kotlin-->
-<!--(9999)"/>-->
+                    <TextView android:layout_width="40dp"
+                              android:layout_height="40dp"
+                              android:background="@drawable/circle_shape"
+                              android:textSize="28sp"
+                              android:gravity="center"
+                              android:textColor="#FFFFFF"
+                              android:text="@string/decks_algorithms_image_text"
+                              android:layout_gravity="center_horizontal"
+                              android:contentDescription="@string/decks_algorithms_content_desc"/>
 
-                <!--</LinearLayout>-->
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textAlignment="center"
+                              android:textColor="@color/colorPrimary"
+                              android:layout_marginTop="5dp"
+                              android:textSize="16sp"
+                              android:textStyle="bold"
+                              android:text="@string/decks_algorithms_title"/>
 
-            <!--</android.support.v7.widget.CardView>-->
+                </LinearLayout>
 
-            <!--<android.support.v7.widget.CardView-->
-                    <!--android:layout_width="150dp"-->
-                    <!--android:layout_height="150dp"-->
-                    <!--android:layout_margin="16dp"-->
-                    <!--app:cardElevation="8dp"-->
-                    <!--app:cardCornerRadius="8dp">-->
+            </android.support.v7.widget.CardView>
 
-                <!--<LinearLayout android:layout_width="wrap_content"-->
-                              <!--android:layout_gravity="center_horizontal|center_vertical"-->
-                              <!--android:orientation="vertical"-->
-                              <!--android:layout_height="wrap_content">-->
+            <android.support.v7.widget.CardView
+                    android:id="@+id/kotlin_libraries_card"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="18dp">
 
-                    <!--<ImageView android:layout_width="40dp" android:layout_height="40dp"-->
-                               <!--android:src="@drawable/ic_kotlin_logo" android:layout_gravity="center_horizontal"-->
-                               <!--android:contentDescription="walla"/>-->
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_gravity="center_horizontal|center_vertical"
+                              android:orientation="vertical"
+                              android:layout_height="wrap_content">
 
-                    <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
-                              <!--android:textAlignment="center" android:textColor="@color/colorPrimary"-->
-                              <!--android:textSize="18sp" android:textStyle="bold" android:text="Kotlin-->
-<!--(9999)"/>-->
+                    <TextView android:layout_width="40dp"
+                              android:layout_height="40dp"
+                              android:background="@drawable/circle_shape"
+                              android:textSize="28sp"
+                              android:gravity="center"
+                              android:textColor="#FFFFFF"
+                              android:text="@string/decks_kotlin_libraries_image_text"
+                              android:layout_gravity="center_horizontal"
+                              android:contentDescription="@string/decks_kotlin_libraries_content_desc"/>
 
-                <!--</LinearLayout>-->
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textAlignment="center"
+                              android:textColor="@color/colorPrimary"
+                              android:layout_marginTop="5dp"
+                              android:textSize="16sp"
+                              android:textStyle="bold"
+                              android:text="@string/decks_kotlin_libraries_title"/>
 
-            <!--</android.support.v7.widget.CardView>-->
 
-            <!--<android.support.v7.widget.CardView-->
-                    <!--android:layout_width="150dp"-->
-                    <!--android:layout_height="150dp"-->
-                    <!--android:layout_margin="16dp"-->
-                    <!--app:cardElevation="8dp"-->
-                    <!--app:cardCornerRadius="8dp">-->
+                </LinearLayout>
 
-                <!--<LinearLayout android:layout_width="wrap_content"-->
-                              <!--android:layout_gravity="center_horizontal|center_vertical"-->
-                              <!--android:orientation="vertical"-->
-                              <!--android:layout_height="wrap_content">-->
-
-                    <!--<ImageView android:layout_width="40dp" android:layout_height="40dp"-->
-                               <!--android:src="@drawable/ic_kotlin_logo" android:layout_gravity="center_horizontal"-->
-                               <!--android:contentDescription="walla"/>-->
-
-                    <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
-                              <!--android:textAlignment="center" android:textColor="@color/colorPrimary"-->
-                              <!--android:textSize="18sp" android:textStyle="bold" android:text="Kotlin-->
-<!--(9999)"/>-->
-
-                <!--</LinearLayout>-->
-
-            <!--</android.support.v7.widget.CardView>-->
+            </android.support.v7.widget.CardView>
 
 
         </GridLayout>
     </ScrollView>
 </LinearLayout>
-
-
-        <!--<?xml version="1.0" encoding="utf-8"?>-->
-        <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_marginTop="70dp">-->
-
-        <!--&lt;!&ndash;<TextView android:layout_width="wrap_content"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:text="Decks"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:textSize="30sp"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
-
-        <!--&lt;!&ndash;/>&ndash;&gt;-->
-
-
-        <!--<GridLayout android:layout_width="380dp"-->
-        <!--android:layout_height="600dp"-->
-        <!--android:columnCount="2"-->
-        <!--android:rowCount="3"-->
-        <!--android:layout_marginStart="10dp"-->
-        <!--android:layout_marginEnd="10dp">-->
-
-        <!--<android.support.v7.widget.CardView-->
-        <!--android:layout_width="0dp"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_columnWeight="1"-->
-        <!--android:layout_rowWeight="1"-->
-        <!--android:layout_margin="16dp"-->
-        <!--app:cardElevation="8dp"-->
-        <!--app:cardCornerRadius="8dp">-->
-
-        <!--<LinearLayout android:layout_width="wrap_content"-->
-        <!--android:layout_gravity="center_horizontal|center_vertical" android:orientation="vertical"-->
-        <!--android:layout_height="wrap_content">-->
-
-        <!--<ImageView android:layout_width="40dp" android:layout_height="40dp"-->
-        <!--android:src="@drawable/ic_bwq_logo" android:layout_gravity="center_horizontal"-->
-        <!--android:contentDescription="walla"/>-->
-
-        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
-        <!--android:textAlignment="center" android:textColor="@color/colorPrimary"-->
-        <!--android:textSize="18sp" android:textStyle="bold" android:text="I see you walla walla"/>-->
-
-        <!--</LinearLayout>-->
-
-        <!--</android.support.v7.widget.CardView>-->
-
-
-        <!--<android.support.v7.widget.CardView-->
-        <!--android:layout_width="0dp"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_columnWeight="1"-->
-        <!--android:layout_rowWeight="1"-->
-        <!--android:layout_margin="16dp"-->
-        <!--app:cardElevation="8dp"-->
-        <!--app:cardCornerRadius="8dp">-->
-
-        <!--<LinearLayout android:layout_width="wrap_content"-->
-        <!--android:layout_gravity="center_horizontal|center_vertical" android:orientation="vertical"-->
-        <!--android:layout_height="wrap_content">-->
-
-        <!--<ImageView android:layout_width="40dp" android:layout_height="40dp"-->
-        <!--android:src="@drawable/ic_bwq_logo" android:layout_gravity="center_horizontal"-->
-        <!--android:contentDescription="walla"/>-->
-
-        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
-        <!--android:textAlignment="center" android:textColor="@color/colorPrimary"-->
-        <!--android:textSize="18sp" android:textStyle="bold" android:text="I see you walla walla"/>-->
-
-        <!--</LinearLayout>-->
-
-        <!--</android.support.v7.widget.CardView>-->
-
-        <!--<android.support.v7.widget.CardView-->
-        <!--android:layout_width="0dp"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_columnWeight="1"-->
-        <!--android:layout_rowWeight="1"-->
-        <!--android:layout_margin="16dp"-->
-        <!--app:cardElevation="8dp"-->
-        <!--app:cardCornerRadius="8dp">-->
-
-        <!--<LinearLayout android:layout_width="wrap_content"-->
-        <!--android:layout_gravity="center_horizontal|center_vertical" android:orientation="vertical"-->
-        <!--android:layout_height="wrap_content">-->
-
-        <!--<ImageView android:layout_width="40dp" android:layout_height="40dp"-->
-        <!--android:src="@drawable/ic_bwq_logo" android:layout_gravity="center_horizontal"-->
-        <!--android:contentDescription="walla"/>-->
-
-        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
-        <!--android:textAlignment="center" android:textColor="@color/colorPrimary"-->
-        <!--android:textSize="18sp" android:textStyle="bold" android:text="I see you walla walla"/>-->
-
-        <!--</LinearLayout>-->
-
-        <!--</android.support.v7.widget.CardView>-->
-
-
-        <!--<android.support.v7.widget.CardView-->
-        <!--android:layout_width="0dp"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_columnWeight="1"-->
-        <!--android:layout_rowWeight="1"-->
-        <!--android:layout_margin="16dp"-->
-        <!--app:cardElevation="8dp"-->
-        <!--app:cardCornerRadius="8dp">-->
-
-        <!--<LinearLayout android:layout_width="wrap_content"-->
-        <!--android:layout_gravity="center_horizontal|center_vertical" android:orientation="vertical"-->
-        <!--android:layout_height="wrap_content">-->
-
-        <!--<ImageView android:layout_width="40dp" android:layout_height="40dp"-->
-        <!--android:src="@drawable/ic_bwq_logo" android:layout_gravity="center_horizontal"-->
-        <!--android:contentDescription="walla"/>-->
-
-        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
-        <!--android:textAlignment="center" android:textColor="@color/colorPrimary"-->
-        <!--android:textSize="18sp" android:textStyle="bold" android:text="I see you walla walla"/>-->
-
-        <!--</LinearLayout>-->
-
-        <!--</android.support.v7.widget.CardView>-->
-
-
-        <!--<android.support.v7.widget.CardView-->
-        <!--android:layout_width="0dp"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_columnWeight="1"-->
-        <!--android:layout_rowWeight="1"-->
-        <!--android:layout_margin="16dp"-->
-        <!--app:cardElevation="8dp"-->
-        <!--app:cardCornerRadius="8dp">-->
-
-        <!--<LinearLayout android:layout_width="wrap_content"-->
-        <!--android:layout_gravity="center_horizontal|center_vertical" android:orientation="vertical"-->
-        <!--android:layout_height="wrap_content">-->
-
-        <!--<ImageView android:layout_width="40dp" android:layout_height="40dp"-->
-        <!--android:src="@drawable/ic_bwq_logo" android:layout_gravity="center_horizontal"-->
-        <!--android:contentDescription="walla"/>-->
-
-        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
-        <!--android:textAlignment="center" android:textColor="@color/colorPrimary"-->
-        <!--android:textSize="18sp" android:textStyle="bold" android:text="I see you walla walla"/>-->
-
-        <!--</LinearLayout>-->
-
-        <!--</android.support.v7.widget.CardView>-->
-
-
-        <!--<android.support.v7.widget.CardView-->
-        <!--android:layout_width="0dp"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_columnWeight="1"-->
-        <!--android:layout_rowWeight="1"-->
-        <!--android:layout_margin="16dp"-->
-        <!--app:cardElevation="8dp"-->
-        <!--app:cardCornerRadius="8dp">-->
-
-        <!--<LinearLayout android:layout_width="wrap_content"-->
-        <!--android:layout_gravity="center_horizontal|center_vertical" android:orientation="vertical"-->
-        <!--android:layout_height="wrap_content">-->
-
-        <!--<ImageView android:layout_width="40dp" android:layout_height="40dp"-->
-        <!--android:src="@drawable/ic_bwq_logo" android:layout_gravity="center_horizontal"-->
-        <!--android:contentDescription="walla"/>-->
-
-        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
-        <!--android:textAlignment="center" android:textColor="@color/colorPrimary"-->
-        <!--android:textSize="18sp" android:textStyle="bold" android:text="I see you walla walla"/>-->
-
-        <!--</LinearLayout>-->
-
-        <!--</android.support.v7.widget.CardView>-->
-
-
-        <!--</GridLayout>-->
-
-        <!--</LinearLayout>-->

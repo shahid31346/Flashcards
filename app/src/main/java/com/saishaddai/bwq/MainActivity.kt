@@ -15,6 +15,7 @@ import org.jetbrains.anko.design.longSnackbar
 import org.jetbrains.anko.startActivity
 import android.support.v4.app.NavUtils
 import android.view.MenuItem
+import kotlinx.android.synthetic.main.fragment_decks.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -22,45 +23,56 @@ class MainActivity : AppCompatActivity() {
     private val tag = MainActivity::class.java.simpleName as String
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP){
-//            setTheme(android.R.style.ThemeOverlay_Material_Dark)
-        setTheme(android.R.style.ThemeOverlay_Material)
-        }
+//        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP){
+////            setTheme(android.R.style.ThemeOverlay_Material_Dark)
+//        setTheme(android.R.style.ThemeOverlay_Material)
+//        }
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-        navigation.selectedItemId = R.id.navigation_decks
+//        setContentView(R.layout.activity_main)
+        setContentView(R.layout.fragment_decks)
+
+
+//        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+//        navigation.selectedItemId = R.id.navigation_decks
         Log.d(tag, "Navigation settled")
 
         //.setOnClickListener(openCardsButtonListener)
 
         setSupportActionBar(mainToolbar)
-        supportActionBar?.setTitle(R.string.title_decks)
-        supportActionBar?.setLogo(R.drawable.ic_dashboard_black_24dp)
-        Log.d(tag, "Toolbar settled")
+        supportActionBar?.setTitle(R.string.app_title)
+        //supportActionBar?.setLogo(R.drawable.ic_dashboard_black_24dp)
+
+        android_card.setOnClickListener{ startActivity<CardsActivity>("type" to "Android") }
+        java_card.setOnClickListener { startActivity<CardsActivity>("type" to "Java") }
+        kotlin_card.setOnClickListener{ startActivity<CardsActivity>("type" to "Kotlin") }
+
+        data_structures_card.setOnClickListener{ startActivity<CardsActivity>("type" to "Data Structures") }
+        algorithms_card.setOnClickListener { startActivity<CardsActivity>("type" to "Algorithms") }
+        kotlin_libraries_card.setOnClickListener{ startActivity<CardsActivity>("type" to "Kotlin Libraries") }
 
 
         PopulateDatabase(this@MainActivity).execute()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater?.inflate(R.menu.menu_android, menu)
+        super.onCreateOptionsMenu(menu)
+        //menuInflater?.inflate(R.menu.navigation, menu)
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.java_cards -> {
-                startActivity<CardsActivity>("type" to "Java")
-                return true
-            }
-            R.id.kotlin_cards -> {
-                startActivity<CardsActivity>("type" to "Kotlin")
-                return true
-            }
-
-        }
+//        when (item.itemId) {
+//            R.id.java_cards -> {
+//                startActivity<CardsActivity>("type" to "Java")
+//                return true
+//            }
+//            R.id.kotlin_cards -> {
+//                startActivity<CardsActivity>("type" to "Kotlin")
+//                return true
+//            }
+//
+//        }
         return true
     }
 

@@ -7,11 +7,11 @@
         android:layout_height="match_parent">
 
 
-    <com.rom4ek.arcnavigationview.ArcNavigationView android:layout_width="wrap_content"
-                                                  android:layout_height="match_parent"
-                                                  app:menu="@menu/menu_android">
+    <android.support.v7.widget.SearchView android:layout_width="wrap_content"
+                                                  android:layout_height="wrap_content"
+                                                  app:menu="@menu/navigation">
 
 
-    </com.rom4ek.arcnavigationview.ArcNavigationView>
+    </android.support.v7.widget.SearchView>
 
 </android.support.v4.widget.DrawerLayout>

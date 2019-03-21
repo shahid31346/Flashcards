@@ -8,7 +8,9 @@
               tools:context=".fragment.CardFragment">
 
     <LinearLayout android:layout_width="match_parent"
-                  android:id="@+id/cardContainer" android:visibility="visible" android:orientation="vertical"
+                  android:id="@+id/cardContainer"
+                  android:visibility="visible"
+                  android:orientation="vertical"
                   android:layout_height="match_parent">
         <TextView
                 android:id="@+id/titleTV"
@@ -21,34 +23,18 @@
                 android:ellipsize="end"
                 android:text="@string/flashcard_title"/>
 
-        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ScrollView android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-            <LinearLayout android:layout_width="match_parent"
-                          android:layout_height="wrap_content"
-                          android:orientation="vertical">
-
-                <TextView
-                        android:id="@+id/contentTV"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_marginTop="10dp"
-                        android:minLines="1"
-                        android:text="@string/flashcard_content"/>
-
-
-                <ImageView
-                        android:id="@+id/contentImageIV"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:src="@drawable/no_image"
-                        android:textSize="20sp"
-                        android:layout_marginTop="10dp"
-                        android:minLines="1"
-                        android:text="@string/flashcard_content"/>
-
-            </LinearLayout>
+            <TextView
+                    android:id="@+id/contentTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:minLines="1"
+                    android:text="@string/flashcard_content"
+                    android:drawableBottom="@drawable/no_image" />
 
         </ScrollView>
 
@@ -64,7 +50,7 @@
         <Button android:layout_width="250dp"
                 android:id="@+id/finishButton"
                 android:layout_height="100dp"
-                android:text="FINISH"
+                android:text="@string/card_finish_button"
                 android:textSize="30sp"
                 android:layout_centerInParent="true"
 

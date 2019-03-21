@@ -12,6 +12,11 @@
             android:roundIcon="${appIcon}"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity
+                android:name="com.saishaddai.flashcards.android.Main2Activity"
+                android:label="@string/title_activity_main2"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <activity android:name=".Tutorial">
         </activity>
         <activity

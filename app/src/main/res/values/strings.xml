@@ -31,6 +31,7 @@
     <string name="decks_data_structures_title">Data Structures</string>
     <string name="decks_algorithms_title">Algorithms</string>
     <string name="decks_kotlin_libraries_title">Kotlin Libraries</string>
+    <string name="warning_no_content">No Content to show for this deck</string>
 
     <string-array name="tutorial">
         <item>This is Flashcards</item>
@@ -42,4 +43,13 @@
         <item>You can contact us from the Settings Screen to report an error</item>
         <item>Or to ask for more facts to add to this app</item>
     </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="loading_text">Loading...</string>
+    <string name="card_finish_button">FINISH</string>
 </resources>

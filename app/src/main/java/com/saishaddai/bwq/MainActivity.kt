@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(main_toolbar)
-
         navigationDrawerSetup()
 
 
@@ -63,15 +62,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         }
 
-        actionBarSetup()
         decksSetup()
 
     }
 
-    private fun actionBarSetup() {
-        //setSupportActionBar(main_toolbar)
-        supportActionBar?.setTitle(R.string.app_title)
-    }
 
     private fun decksSetup() {
         android_card.setOnClickListener {

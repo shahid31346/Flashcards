@@ -1,32 +1,92 @@
-{
-  cards: [
+[
     {
-      id: 1,
-      title: "<p>Super Title<p>",
-      content: "<p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p><p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>",
-      image_url: "image1.jpg",
-      deck: "Java"
+      "title": "<p>Fragment<p>",
+      "content": "<p>A Fragment represents a behavior or a portion of user interface in a FragmentActivity. Its life cycle is <i>onAttach(), onCreate(), onCreateView(), onActivityCreated(), onStart, onResume(), onPause(), onStop(), onDestroyView(), onDestroy(), onDetach()</p>",
+      "image_url": "",
+      "deck": "Android"
     },
     {
-      id: 2,
-      title: "<p>Super Title 2<p>",
-      content: "<p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p><p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>",
-      image_url: "image2.jpg",
-      deck: "Java"
+      "title": "<p>Activity<p>",
+      "content": "<p></p>",
+      "image_url": "",
+      "deck": "Android"
     },
     {
-      id: 3,
-      title: "<p>Super Title 3<p>",
-      content: "<p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p><p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>",
-      image_url: "image3.jpg",
-      deck: "Java"
+      "title": "<p>Manifest.xml file<p>",
+      "content": "<p></p>",
+      "image_url": "",
+      "deck": "Android"
     },
     {
-      id: 4,
-      title: "<p>Super Title 4<p>",
-      content: "<p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p><p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>",
-      image_url: "image4.jpg",
-      deck: "Java"
+      "title": "<p>Dalvik<p>",
+      "content": "<p></p>",
+      "image_url": "",
+      "deck": "Android"
+    },
+    {
+      "title": "<p>ADB<p>",
+      "content": "<p>Android Device Bridge</p>",
+      "image_url": "",
+      "deck": "Android"
+    },
+    {
+      "title": "<p>ADB<p>",
+      "content": "<p>Android Device Bridge</p>",
+      "image_url": "",
+      "deck": "Android"
+    },
+    {
+      "title": "<p>Service<p>",
+      "content": "<p></p>",
+      "image_url": "",
+      "deck": "Android"
+    },
+    {
+      "title": "<p>Broadcast Receiver<p>",
+      "content": "<p></p>",
+      "image_url": "",
+      "deck": "Android"
+    },
+    {
+      "title": "<p>Content Providers<p>",
+      "content": "<p></p>",
+      "image_url": "",
+      "deck": "Android"
+    },
+    {
+      "title": "<p>Sticky Intent<p>",
+      "content": "<p></p>",
+      "image_url": "",
+      "deck": "Android"
+    },
+    {
+      "title": "<p>Pending Intent<p>",
+      "content": "<p></p>",
+      "image_url": "",
+      "deck": "Android"
+    },
+    {
+      "title": "<p>Storing Info<p>",
+      "content": "<p><li>SharedPreferences</li><li>SQLite Database</li><li>* Bundle</li></p>",
+      "image_url": "",
+      "deck": "Android"
+    },
+    {
+      "title": "<p>Limited number of methods &amp; Multidex<p>",
+      "content": "<p>The Dalvik Executable specification limits the total number of methods that can be referenced within a single DEX file to 65,536—including Android framework methods, library methods, and methods in your own code.</p><p>If the number of methods in your app is bugger than that you should apply multidex in the build.gradle file",
+      "image_url": "",
+      "deck": "Android"
+    },
+    {
+      "title": "<p>When to use:<p>",
+      "content": "<p><li><b>Use Service</b> for tasks with no UI, but shouldn't be too long. Use threads within service for long tasks.</li><li><b>Use thread</b> for long tasks in general<li>For tasks in parallel use Multiple threads (traditional mechanisms)</li><li><b>Use AsyncTasks</b> for small task having to communicate with main thread.</li><li>For tasks in parallel use multiple instances of async tasks OR Executor </li></p>",
+      "image_url": "",
+      "deck": "Android"
+    },
+    {
+      "title": "<p>Difference between FutureTask &amp; AsyncTask<p>",
+      "content": "<p><i>FutureTask<i> provides no callbacks, is not attached to the UI Thread and it is cancellable</p>",
+      "image_url": "",
+      "deck": "Android"
     }
   ]
-}

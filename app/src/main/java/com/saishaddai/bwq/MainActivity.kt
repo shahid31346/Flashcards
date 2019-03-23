@@ -20,7 +20,13 @@ import org.jetbrains.anko.uiThread
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private val tag = MainActivity::class.java.simpleName as String
-    private val showContent = false
+    private val androidDecks = listOf("Android" to "android_cards.json",
+        "Kotlin" to "kotlin_cards.json", "Java" to "java_cards.json",
+        "Data Structures" to "data_structures_cards.json",
+        "Algorithms" to "algorithms_cards.json",
+        "Kotlin Libraries" to "kotlin_libraries_cards.json")
+
+    private var decksAvailable = mutableListOf("something" to "something")
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -31,26 +37,41 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
         doAsync {
+
             loader_container.visibility = View.VISIBLE
+            progress_bar.progress = 0
+            val listOfAvailableDecks = assets.list("")
+            for(file in listOfAvailableDecks)
+                Log.e("walla", file)
+
             progress_bar.progress = 20
-            Log.d(tag, "progress bar set" + progress_bar.progress)
-            Thread.sleep(2000)
+            for(deck in androidDecks) {
+                if(listOfAvailableDecks.contains(deck.second))
+                    decksAvailable.add(deck.first to "true")
+                else
+                    decksAvailable.add(deck.first to "false")
+            }
 
-            progress_bar.progress = 40
-            Log.d(tag, "progress bar set" + progress_bar.progress)
-            Thread.sleep(2000)
 
-            progress_bar.progress = 60
-            Log.d(tag, "progress bar set" + progress_bar.progress)
-            Thread.sleep(2000)
 
-            progress_bar.progress = 80
-            Log.d(tag, "progress bar set" + progress_bar.progress)
-            Thread.sleep(2000)
-
+//            Log.d(tag, "progress bar set" + progress_bar.progress)
+//            Thread.sleep(2000)
+//
+//            progress_bar.progress = 40
+//            Log.d(tag, "progress bar set" + progress_bar.progress)
+//            Thread.sleep(2000)
+//
+//            progress_bar.progress = 60
+//            Log.d(tag, "progress bar set" + progress_bar.progress)
+//            Thread.sleep(2000)
+//
+//            progress_bar.progress = 80
+//            Log.d(tag, "progress bar set" + progress_bar.progress)
+//            Thread.sleep(2000)
+//
             progress_bar.progress = 100
-            Log.d(tag, "progress bar set" + progress_bar.progress)
-            Thread.sleep(2000)
+//            Log.d(tag, "progress bar set" + progress_bar.progress)
+//            Thread.sleep(2000)
 
             uiThread {
                 if (progress_bar.progress == 100) {
@@ -69,18 +90,79 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     private fun decksSetup() {
         android_card.setOnClickListener {
+            var showContent = false
+            for(deck in decksAvailable) {
+                if(deck.first == "Android" && deck.second == "true")
+                    showContent = true
+            }
+
             if (showContent)
                 startActivity<CardsActivity>("type" to "Android")
             else
                 snackbar(it, R.string.warning_no_content)
         }
         //        android_card.setOnClickListener { startActivity<Main2Activity>("type" to "Android") }
-        java_card.setOnClickListener { startActivity<CardsActivity>("type" to "Java") }
-        kotlin_card.setOnClickListener { startActivity<CardsActivity>("type" to "Kotlin") }
+        java_card.setOnClickListener {
+            var showContent = false
+            for(deck in decksAvailable) {
+                if(deck.first == "Java" && deck.second == "true")
+                    showContent = true
+            }
 
-        data_structures_card.setOnClickListener { startActivity<CardsActivity>("type" to "Data Structures") }
-        algorithms_card.setOnClickListener { startActivity<CardsActivity>("type" to "Algorithms") }
-        kotlin_libraries_card.setOnClickListener { startActivity<CardsActivity>("type" to "Kotlin Libraries") }
+            if (showContent)
+                startActivity<CardsActivity>("type" to "Java")
+            else
+                snackbar(it, R.string.warning_no_content)
+        }
+        kotlin_card.setOnClickListener {
+            var showContent = false
+            for(deck in decksAvailable) {
+                if(deck.first == "Kotlin" && deck.second == "true")
+                    showContent = true
+            }
+
+            if (showContent)
+                startActivity<CardsActivity>("type" to "Kotlin")
+            else
+                snackbar(it, R.string.warning_no_content)
+        }
+
+        data_structures_card.setOnClickListener {
+            var showContent = false
+            for(deck in decksAvailable) {
+                if(deck.first == "Data Structures" && deck.second == "true")
+                    showContent = true
+            }
+
+            if (showContent)
+                startActivity<CardsActivity>("type" to "Data Structures")
+            else
+                snackbar(it, R.string.warning_no_content)
+        }
+        algorithms_card.setOnClickListener {
+            var showContent = false
+            for(deck in decksAvailable) {
+                if(deck.first == "Algorithms" && deck.second == "true")
+                    showContent = true
+            }
+
+            if (showContent)
+                startActivity<CardsActivity>("type" to "Algorithms")
+            else
+                snackbar(it, R.string.warning_no_content)
+        }
+        kotlin_libraries_card.setOnClickListener {
+            var showContent = false
+            for(deck in decksAvailable) {
+                if(deck.first == "Kotlin Libraries" && deck.second == "true")
+                    showContent = true
+            }
+
+            if (showContent)
+                startActivity<CardsActivity>("type" to "Kotlin Libraries")
+            else
+                snackbar(it, R.string.warning_no_content)
+        }
     }
 
     private fun navigationDrawerSetup() {

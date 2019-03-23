@@ -1,6 +1,5 @@
 package com.saishaddai.bwq.fragment
 
-import android.content.Context
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -14,13 +13,14 @@ import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
 import com.saishaddai.bwq.R
+import com.saishaddai.bwq.model.Card
 import com.saishaddai.bwq.model.ViewModel
 
 
 private const val ARG_CARD = "card"
 
 class CardFragment : Fragment() {
-    private var cardItem: ViewModel.Card? = null
+    private var cardItem: Card? = null
     private lateinit var cardContainer: LinearLayout
     private lateinit var finalCardContainer: RelativeLayout
     private lateinit var titleTV: TextView
@@ -38,8 +38,7 @@ class CardFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+        savedInstanceState: Bundle? ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_card, container, false)
         titleTV = view.findViewById(R.id.titleTV)
@@ -50,21 +49,26 @@ class CardFragment : Fragment() {
         finalCardContainer = view.findViewById(R.id.finalCardContainer)
 
 
-        val cardItem = arguments?.get(ARG_CARD) as ViewModel.Card
-        if(cardItem.type == "A") {
+        val cardItem = arguments?.get(ARG_CARD) as Card
+        if(cardItem.content != "") {
             cardContainer.visibility = View.VISIBLE
             finalCardContainer.visibility = View.GONE
-            titleTV.text = cardItem.title
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N)
+                titleTV.text = Html.fromHtml(cardItem.title, Html.FROM_HTML_MODE_COMPACT)
+            else
+                titleTV.text = Html.fromHtml(cardItem.title)
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N)
                 contentTV.text = Html.fromHtml(cardItem.content, Html.FROM_HTML_MODE_COMPACT)
-            } else {
+            else
                 contentTV.text = Html.fromHtml(cardItem.content)
-            }
+
         } else {
             cardContainer.visibility = View.GONE
             finalCardContainer.visibility = View.VISIBLE
             finishButton.setOnClickListener {
-                activity?.let { callingActivity -> callingActivity.finish() }
+                activity?.finish()
             }
         }
 
@@ -78,19 +82,19 @@ class CardFragment : Fragment() {
         //listener?.onFragmentInteraction(uri)
     }
 
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
+//    override fun onAttach(context: Context) {
+//        super.onAttach(context)
 //        if (context is OnFragmentInteractionListener) {
 //            listener = context
 //        } else {
 //            throw RuntimeException(context.toString() + " must implement OnFragmentInteractionListener")
 //        }
-    }
+//    }
 
-    override fun onDetach() {
-        super.onDetach()
-        //listener = null
-    }
+//    override fun onDetach() {
+//        super.onDetach()
+//        //listener = null
+//    }
 
     /**
      * This interface must be implemented by activities that contain this

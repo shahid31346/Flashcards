@@ -5,10 +5,10 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
 import com.saishaddai.bwq.fragment.CardFragment
-import com.saishaddai.bwq.model.ViewModel
+import com.saishaddai.bwq.model.Card
 
 
-class CardsAdapter(fragmentManager: FragmentManager, private val cards: ArrayList<ViewModel.Card>) :
+class CardsAdapter(fragmentManager: FragmentManager, private val cards: ArrayList<Card>) :
         FragmentStatePagerAdapter(fragmentManager) {
 
 
@@ -18,7 +18,7 @@ class CardsAdapter(fragmentManager: FragmentManager, private val cards: ArrayLis
 
     override fun getItem(position: Int): Fragment {
         val cardFragment = CardFragment()
-        var bundle = Bundle()
+        val bundle = Bundle()
 //            bundle.putString("key", "" + position)
         val cardItem = cards[position]
         bundle.putParcelable("card", cardItem)

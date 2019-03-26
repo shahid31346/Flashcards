@@ -2,7 +2,7 @@
     {
       "title": "<p>Fragment<p>",
       "content": "<p>A Fragment represents a behavior or a portion of user interface in a FragmentActivity. Its life cycle is <i>onAttach(), onCreate(), onCreateView(), onActivityCreated(), onStart, onResume(), onPause(), onStop(), onDestroyView(), onDestroy(), onDetach()</p>",
-      "image_url": "",
+      "image_url": "images/ds_list2.png",
       "deck": "Android"
     },
     {

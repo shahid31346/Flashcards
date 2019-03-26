@@ -63,6 +63,13 @@ class CardsActivity : AppCompatActivity() {
         }
 
 
+        //if(result.size > 0) {
+            val finalCard = Card("", "", "", "")
+            result.add(finalCard)
+
+        //}
+
+
 //        val contents  = File("file:///android_asset/" + fileName).readText(Charsets.UTF_8)
 //        println("***" + contents)
 //        assets

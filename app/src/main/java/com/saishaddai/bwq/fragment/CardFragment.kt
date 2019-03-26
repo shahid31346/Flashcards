@@ -1,10 +1,12 @@
 package com.saishaddai.bwq.fragment
 
+import android.graphics.drawable.Drawable
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.text.Html
+import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,6 +17,7 @@ import android.widget.TextView
 import com.saishaddai.bwq.R
 import com.saishaddai.bwq.model.Card
 import com.saishaddai.bwq.model.ViewModel
+//import kotlinx.android.synthetic.main.fragment_card.*
 
 
 private const val ARG_CARD = "card"
@@ -64,6 +67,17 @@ class CardFragment : Fragment() {
             else
                 contentTV.text = Html.fromHtml(cardItem.content)
 
+            if(cardItem.imageUrl == "")
+                contentTV.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0)
+            else {
+//                val drawable: Drawable = Drawable.createFromStream(activity?.assets?.open(cardItem.imageUrl), null)
+                val drawable: Drawable = Drawable.createFromResourceStream(activity?.resources, TypedValue(),  activity?.assets?.open(cardItem.imageUrl), null)
+                contentTV.setCompoundDrawablesWithIntrinsicBounds( null, null, null, drawable)
+            }
+
+
+//                contentTV.compoundDrawables = null//drawableBottomsetCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0)
+
         } else {
             cardContainer.visibility = View.GONE
             finalCardContainer.visibility = View.VISIBLE
@@ -76,6 +90,8 @@ class CardFragment : Fragment() {
 
         return view
     }
+
+
 
     // TODO: Rename method, update argument and hook method into UI event
     fun onButtonPressed(uri: Uri) {

@@ -25,7 +25,9 @@ class CardsActivity : AppCompatActivity() {
         }
 
 
-        val listOfCards = getAllCards(type)
+        val listOfCards: ArrayList<Card> = getAllCards(type)
+        //TODO Do something to reduce the size to a constant, otherwise show all the elements found in the json file
+        //val newListOfCards : ArrayList<Card> = listOfCards.take(30)
         cardsPager.adapter = CardsAdapter(supportFragmentManager, listOfCards)
 
 //        if(type == "Java") {
@@ -103,7 +105,7 @@ class CardsActivity : AppCompatActivity() {
             "Kotlin" -> return "kotlin_cards.json"
             "Data Structures" -> return "data_structures_cards.json"
             "Algorithms" -> return "algorithms_cards.json"
-            "Kotlin Libraries" -> return "kotlin_libraries_cards.json"
+            "Android Libraries" -> return "android_libraries_cards.json"
         }
         return ""
     }

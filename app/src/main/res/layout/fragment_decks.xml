@@ -235,9 +235,9 @@
                               android:textSize="28sp"
                               android:gravity="center"
                               android:textColor="#FFFFFF"
-                              android:text="@string/decks_kotlin_libraries_image_text"
+                              android:text="@string/decks_android_libraries_image_text"
                               android:layout_gravity="center_horizontal"
-                              android:contentDescription="@string/decks_kotlin_libraries_content_desc"/>
+                              android:contentDescription="@string/decks_android_libraries_content_desc"/>
 
                     <TextView android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
@@ -246,7 +246,7 @@
                               android:layout_marginTop="5dp"
                               android:textSize="16sp"
                               android:textStyle="bold"
-                              android:text="@string/decks_kotlin_libraries_title"/>
+                              android:text="@string/decks_android_libraries_title"/>
 
 
                 </LinearLayout>

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "<p>Local and instance variables</p>",
+    "content": "<p><b>Local variables</b> are defined in the method and scope of the variables that have existed inside the method itself.</p><p>An <b>instance variable</b> is defined inside the class and outside the method and scope of the variables exist throughout the class</p>",
+    "image_url": "",
+    "deck": "Java"
+  },
+  {
+    "title": "<p>Overriding<p>",
+    "content": "<p>Method overriding happens if the sub class method satisfies the below conditions with the Super class method:</p><li>Method name should be same</li><li>Argument should be same</li><li>Return type also should be same</li>",
+    "image_url": "",
+    "deck": "Java"
+  },
+  {
+    "title": "<p>Overloading<p>",
+    "content": "<p>For method overloading, subclass method should satisfy the below conditions with the Super class method (or) methods in the same class itself:</p><li>Same method name</li><li>Different argument type</li><li>May have different return types</li>",
+    "image_url": "",
+    "deck": "Java"
+  },
+  {
+    "title": "<p>Inheritance (implements)<p>",
+    "content": "<p>Multiple inheritance cannot be achieved in java. To overcome this problem Interface concept is introduced. An interface is a template which has only method declarations and not the method implementation.</p>",
+    "image_url": "",
+    "deck": "Java"
+  }
+]

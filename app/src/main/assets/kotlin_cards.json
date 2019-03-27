@@ -1,0 +1,26 @@
+[
+  {
+    "title": "<p>JMV Overloads (Interoperability)</p>",
+    "content": "<p>@JVMOverloads before a fun definition is used for interoperability between Kotlin classes with default values and java classes. It generate overloaded methods with all possible combinations of this method with its arguments</p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "<p>JVM Name (Interoperability)<p>",
+    "content": "<p>Improves interoperability. Use @file:JvmName(\"MyApp\") to overwrite the name of the Kotlin file and to be treated as MyApp in Java code</li>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "<p>Throws Exception (Interoperability)<p>",
+    "content": "<p>Use @Throws(IOException ) before a method declaration so it can be caught in a try/catch block in a Java class</p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "<p>lateinit and lazy<p>",
+    "content": "<p><b>lateinit</b> is a modifier used with var and is used to set the value to the var at a later point.</p><p><b>lazy</b> is a method or rather say lambda expression. It’s set on a val only. The val would be created at runtime when it’s required.</p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  }
+]

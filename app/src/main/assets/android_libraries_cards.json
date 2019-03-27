@@ -1,0 +1,112 @@
+[
+  {
+    "title": "<p>Kodein</p>",
+    "content": "<p>Inversion of control pattern for Kotlin</p>",
+    "image_url": "",
+    "deck": "Android Libraries"
+  },
+  {
+    "title": "<p>Anko<p>",
+    "content": "<p>Extension to kotlin to remove boilerplate code for calling a new activity, start an async task, etc</li>",
+    "image_url": "",
+    "deck": "Android Libraries"
+  },
+  {
+    "title": "<p>Otto<p>",
+    "content": "<p>Library to write and read from the data bus of an application. Currently deprecated for RxJava/ RxAndroid</p>",
+    "image_url": "",
+    "deck": "Android Libraries"
+  },
+  {
+    "title": "<p>DataBinding<p>",
+    "content": "<p>Part of the architecture components</p>",
+    "image_url": "",
+    "deck": "Android Libraries"
+  },
+  {
+    "title": "<p>LifeCycle Aware<p>",
+    "content": "<p>Part of the architecture components</p>",
+    "image_url": "",
+    "deck": "Android Libraries"
+  },
+  {
+    "title": "<p>Live Data<p>",
+    "content": "<p>Part of the architecture components</p>",
+    "image_url": "",
+    "deck": "Android Libraries"
+  },
+  {
+    "title": "<p>Navigation<p>",
+    "content": "<p>Part of the architecture components</p>",
+    "image_url": "",
+    "deck": "Android Libraries"
+  },
+  {
+    "title": "<p>Paging<p>",
+    "content": "<p>Part of the architecture components</p>",
+    "image_url": "",
+    "deck": "Android Libraries"
+  },
+  {
+    "title": "<p>Room (persistence)<p>",
+    "content": "<p>Part of the architecture components</p>",
+    "image_url": "",
+    "deck": "Android Libraries"
+  },
+  {
+    "title": "<p>ViewModel<p>",
+    "content": "<p>Part of the architecture components</p>",
+    "image_url": "",
+    "deck": "Android Libraries"
+  },
+  {
+    "title": "<p>Work Manager<p>",
+    "content": "<p>Part of the architecture components</p>",
+    "image_url": "",
+    "deck": "Android Libraries"
+  },
+  {
+    "title": "<p>Realm<p>",
+    "content": "<p>Database alternative to SQLite and Core data based on persistence of objects</p>",
+    "image_url": "",
+    "deck": "Android Libraries"
+  },
+  {
+    "title": "<p>Butter Knife<p>",
+    "content": "<p>Annotate fields with @BindView and a view ID for Butter Knife to find and automatically cast the corresponding view in your layout.</p>",
+    "image_url": "",
+    "deck": "Android Libraries"
+  },
+  {
+    "title": "<p>Dagger 2<p>",
+    "content": "<p>Dagger is a fully static, compile-time dependency injection framework for both Java and Android</p>",
+    "image_url": "",
+    "deck": "Android Libraries"
+  },
+  {
+    "title": "<p>Retrofit<p>",
+    "content": "<p>REST client for Android that allows to make GET, POST, PUT, PATCH, DELETE and HEAD calls. It uses java POJO's to make the conversion between the API response and it uses a callback class to handle the response</p>",
+    "image_url": "",
+    "deck": "Android Libraries"
+  },
+  {
+    "title": "<p>OkHttp<p>",
+    "content": "<p>REST client for Android that allows to make GET, POST calls. There's no direct support for POJO's as in Retrofit. The user has to implement all the conversion from the raw response</p>",
+    "image_url": "",
+    "deck": "Android Libraries"
+  },
+  {
+    "title": "<p>Glide<p>",
+    "content": "<p>Library to set images (via URL, Drawable objects or assets directory) into Image View elements. It also includes some image modifiers to show round, cropped, squared, round shapes, etc</p>",
+    "image_url": "",
+    "deck": "Android Libraries"
+  },
+  {
+    "title": "<p>Universal Image Loader<p>",
+    "content": "<p>Library to set images (via URL, Drawable objects or assets directory) into Image View elements. It also includes some image modifiers to show round, cropped, squared, round shapes, etc</p>",
+    "image_url": "",
+    "deck": "Android Libraries"
+  }
+
+
+]

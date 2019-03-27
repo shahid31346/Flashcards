@@ -1,0 +1,268 @@
+[
+  {
+    "id": 1,
+    "title": "<p>Selection Sort</p>",
+    "content": "<p>The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning.</p><p>Time Complexity: O(n^2) as there are two nested loops.</p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 2,
+    "title": "<p>Bubble Sort</p>",
+    "content": "<p>It works by multiple iterations repeatedly swapping the adjacent elements if they are in wrong order. In each iteration, part of the array is sorted at the left. This algorithm also runs an extra time after the array is sorted to check if it is done</p><p>Time Complexity at best case scenario: O(n)</p><p>Time Complexity at worst case scenario: O(n^2)</p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 3,
+    "title": "<p>Recursive Bubble Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 4,
+    "title": "<p>Insertion Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 5,
+    "title": "<p>Recursive Insertion Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 6,
+    "title": "<p>Merge Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 7,
+    "title": "<p>Iterative Merge Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 8,
+    "title": "<p>Quick Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 9,
+    "title": "<p>Iterative Quick sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 10,
+    "title": "<p>Heap Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 11,
+    "title": "<p>Counting Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 12,
+    "title": "<p>Radix Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 13,
+    "title": "<p>Bucket Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 14,
+    "title": "<p>Shell Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 15,
+    "title": "<p>TimSort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 16,
+    "title": "<p>Comb Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 17,
+    "title": "<p>Pigeonhole Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 18,
+    "title": "<p>Cycle Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 19,
+    "title": "<p>Cocktail Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 20,
+    "title": "<p>Strand Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 21,
+    "title": "<p>Bitonic Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 22,
+    "title": "<p>Pancake Sorting<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 23,
+    "title": "<p>Binary Insertion Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 24,
+    "title": "<p>BogoSort or Permutation Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 25,
+    "title": "<p>Gnome Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 26,
+    "title": "<p>Sleep Sort/King of Laziness/ Sorting While Sleeping<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 27,
+    "title": "<p>Structure Sorting (C++)<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 28,
+    "title": "<p>Stooge Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 29,
+    "title": "<p>Tag Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 30,
+    "title": "<p>Tree Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 31,
+    "title": "<p>Cartesian Tree Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 32,
+    "title": "<p>Odd-Even Sort / Brick Sort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 33,
+    "title": "<p>QuickSort on singly Linked List<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 34,
+    "title": "<p>QuickSort on doubly Linked List<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 35,
+    "title": "<p>3-Way QuickSort<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 36,
+    "title": "<p>Merge Sort for Linked Lists<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 37,
+    "title": "<p>Merge Sort for Double Linked Lists<p>",
+    "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "id": 35,
+    "title": "<p>3-Way MergeSort<p>",
+    "content": "<p>Merge sort involves recursively splitting the array into 2 parts, sorting and finally merging them. A variant of merge sort is called 3-way merge sort where instead of splitting the array into 2 parts we split it into 3 parts.Merge sort recursively breaks down the arrays to subarrays of size half. Similarly, 3-way Merge sort breaks down the arrays to subarrays of size one third.</p><li>Time complexity: O(n log3 n)</li> ",
+    "image_url": "",
+    "deck": "Algorithms"
+  }
+]

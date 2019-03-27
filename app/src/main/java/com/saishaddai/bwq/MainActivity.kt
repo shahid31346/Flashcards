@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         "Kotlin" to "kotlin_cards.json", "Java" to "java_cards.json",
         "Data Structures" to "data_structures_cards.json",
         "Algorithms" to "algorithms_cards.json",
-        "Kotlin Libraries" to "kotlin_libraries_cards.json")
+        "Android Libraries" to "android_libraries_cards.json")
 
     private var decksAvailable = mutableListOf("something" to "something")
 
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             progress_bar.progress = 0
             val listOfAvailableDecks = assets.list("")
             for(file in listOfAvailableDecks)
-                Log.e("walla", file)
+                Log.e(tag, file)
 
             progress_bar.progress = 20
             for(deck in androidDecks) {
@@ -154,12 +154,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         kotlin_libraries_card.setOnClickListener {
             var showContent = false
             for(deck in decksAvailable) {
-                if(deck.first == "Kotlin Libraries" && deck.second == "true")
+                if(deck.first == "Android Libraries" && deck.second == "true")
                     showContent = true
             }
 
             if (showContent)
-                startActivity<CardsActivity>("type" to "Kotlin Libraries")
+                startActivity<CardsActivity>("type" to "Android Libraries")
             else
                 snackbar(it, R.string.warning_no_content)
         }

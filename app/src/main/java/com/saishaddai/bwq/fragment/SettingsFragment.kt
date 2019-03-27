@@ -26,7 +26,7 @@ class SettingsFragment : Fragment() {
         val convertView: View = inflater.inflate(R.layout.fragment_settings, container, false)
 
 
-        convertView.findViewById<Switch>(R.id.reload_button).setOnCheckedChangeListener { buttonView, isChecked ->
+        convertView.findViewById<Switch>(R.id.reload_button).setOnCheckedChangeListener { _, isChecked ->
             println("checked: " + isChecked)
         }
         return convertView

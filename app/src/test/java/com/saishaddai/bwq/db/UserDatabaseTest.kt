@@ -1,6 +1,5 @@
 package com.saishaddai.bwq.db
 
-import com.saishaddai.bwq.model.DataBaseModel
 import com.saishaddai.bwq.model.StatusMessages
 import org.junit.After
 import org.junit.Assert

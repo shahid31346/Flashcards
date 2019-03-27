@@ -16,7 +16,7 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import com.saishaddai.bwq.R
 import com.saishaddai.bwq.model.Card
-import com.saishaddai.bwq.model.ViewModel
+
 //import kotlinx.android.synthetic.main.fragment_card.*
 
 
@@ -94,9 +94,9 @@ class CardFragment : Fragment() {
 
 
     // TODO: Rename method, update argument and hook method into UI event
-    fun onButtonPressed(uri: Uri) {
-        //listener?.onFragmentInteraction(uri)
-    }
+//    fun onButtonPressed(uri: Uri) {
+//        //listener?.onFragmentInteraction(uri)
+//    }
 
 //    override fun onAttach(context: Context) {
 //        super.onAttach(context)
@@ -139,7 +139,7 @@ class CardFragment : Fragment() {
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
-        fun newInstance(cardParam : ViewModel.Card) =
+        fun newInstance(cardParam : Card) =
             CardFragment().apply {
                 arguments = Bundle().apply {
                     putParcelable(ARG_CARD, cardParam)

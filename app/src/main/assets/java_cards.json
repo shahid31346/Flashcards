@@ -7,19 +7,31 @@
   },
   {
     "title": "<p>Overriding<p>",
-    "content": "<p>Method overriding happens if the sub class method satisfies the below conditions with the Super class method:</p><li>Method name should be same</li><li>Argument should be same</li><li>Return type also should be same</li>",
+    "content": "<p>A type of polymorphism. Method overriding happens if the sub class method satisfies the below conditions with the Super class method:</p><p>Method name should be same</p><p>Argument should be same</p><p>Return type also should be same</p>",
     "image_url": "",
     "deck": "Java"
   },
   {
     "title": "<p>Overloading<p>",
-    "content": "<p>For method overloading, subclass method should satisfy the below conditions with the Super class method (or) methods in the same class itself:</p><li>Same method name</li><li>Different argument type</li><li>May have different return types</li>",
+    "content": "<p>For method overloading, subclass method should satisfy the below conditions with the Super class method (or) methods in the same class itself:</p><p>Same method name</p><p>Different argument type</p><p>May have different return types</p>",
     "image_url": "",
     "deck": "Java"
   },
   {
     "title": "<p>Inheritance (implements)<p>",
     "content": "<p>Multiple inheritance cannot be achieved in java. To overcome this problem Interface concept is introduced. An interface is a template which has only method declarations and not the method implementation.</p>",
+    "image_url": "",
+    "deck": "Java"
+  },
+  {
+    "title": "<p>S.O.L.I.D principles<p>",
+    "content": "<p>Single responsibility principle</p><p>Open Close principle: Software entities should be open for extension but closed for modification</p><p>Liskov substitution principle: Objects should be replaceable of their subtypes with no further changes</p><p>Interface segregation principle: Many client-specific interfaces over one general purpose interface</p><p>Dependency Inversion Principle: Code shoold depend on abstraction over concretions</p>",
+    "image_url": "",
+    "deck": "Java"
+  },
+  {
+    "title": "<p>OO principles<p>",
+    "content": "<p>Encapsulation, Inheritance, Polymorphism, Abstraction</p>",
     "image_url": "",
     "deck": "Java"
   }

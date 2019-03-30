@@ -68,7 +68,7 @@ class CardFragment : Fragment() {
                 contentTV.text = Html.fromHtml(cardItem.content)
 
             if(cardItem.imageUrl == "")
-                imageCard.visibility = View.VISIBLE
+                imageCard.visibility = View.GONE
                // contentTV.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0)
             else {
 //                val drawable: Drawable = Drawable.createFromStream(activity?.assets?.open(cardItem.imageUrl), null)

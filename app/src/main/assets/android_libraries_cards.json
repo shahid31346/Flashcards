@@ -1,108 +1,114 @@
 [
   {
-    "title": "<p>Kodein</p>",
-    "content": "<p>Inversion of control pattern for Kotlin</p>",
-    "image_url": "images/room_diagram2.png",
+    "title": "Kodein",
+    "content": "<p>Kodein is a dependency retrieval container. It allows to lazily instantiate dependencies when needed. Easily bind classes or interfaces to their instance or provider and easily debug your dependency bindings and recursions</p>",
+    "image_url": "images/kodein.png",
     "deck": "Android Libraries"
   },
   {
-    "title": "<p>Anko<p>",
-    "content": "<p>Extension to kotlin to remove boilerplate code for calling a new activity, start an async task, etc</li>",
+    "title": "React Native",
+    "content": "<p>React Native lets you build mobile apps using only JavaScript. It uses the same design as React, letting you compose a rich mobile UI using declarative components.</p>",
+    "image_url": "images/react_native.png",
+    "deck": "Android Libraries"
+  },
+  {
+    "title": "Anko",
+    "content": "<p>Extension to Kotlin to make the code shorter and easy to read</p><p><b>Anko Commons</b>: a lightweight library full of helpers for intents, dialogs, logging and so on</p><p><b>Anko Layouts:</b> a fast and type-safe way to write dynamic Android layouts</p><p><b>Anko SQLite:</b> a query DSL and parser collection for Android SQLite</p><p><b>Anko Coroutines</b>: utilities based on the kotlinx.coroutines library<p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
-    "title": "<p>Otto<p>",
+    "title": "*Otto",
     "content": "<p>Library to write and read from the data bus of an application. Currently deprecated for RxJava/ RxAndroid</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
-    "title": "<p>DataBinding<p>",
+    "title": "*DataBinding",
     "content": "<p>Part of the architecture components. Declaratively bind observable data to UI elements</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
-    "title": "<p>LifeCycle Aware<p>",
+    "title": "*LifeCycle Aware",
     "content": "<p>Part of the architecture components. Manage your activity and fragment lifecycles</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
-    "title": "<p>Live Data<p>",
-    "content": "<p>Part of the architecture components. Notify views when underlying database changes</p>",
+    "title": "Live Data",
+    "content": "<p>Part of the architecture components. LiveData is an observable data holder class. Unlike a regular observable, LiveData is lifecycle-aware, meaning it respects the lifecycle of other app components, such as activities, fragments, or services. This awareness ensures LiveData only updates app component observers that are in an active lifecycle state.</p><p>LiveData considers an observer, which is represented by the Observer class, to be in an active state if its lifecycle is in the STARTED or RESUMED state. LiveData only notifies active observers about updates. Inactive observers registered to watch LiveData objects aren't notified about changes</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
-    "title": "<p>Navigation<p>",
+    "title": "*Navigation",
     "content": "<p>Part of the architecture components. Handle everything needed for in-app navigation</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
-    "title": "<p>Paging<p>",
+    "title": "*Paging",
     "content": "<p>Part of the architecture components. Gradually load information on demand from your data source</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
-    "title": "<p>Room (persistence)<p>",
-    "content": "<p>Part of the architecture components. Fluent SQLite database access</p><p>It avoids the boilerplate code to interact with SQLIte</p><p>Room requires Entities, Data Access Objects and Repositories</p>",
+    "title": "Room (persistence)",
+    "content": "<p>Part of the architecture components. Fluent SQLite database access</p><p>It avoids the boilerplate code to interact with SQLIte using just Entities (POJOs) and annotations to set the table's name, columns and queries</p>",
     "image_url": "images/room_diagram.png",
     "deck": "Android Libraries"
   },
   {
-    "title": "<p>ViewModel<p>",
+    "title": "*ViewModel",
     "content": "<p>Part of the architecture components. Manage UI-related data in a lifecycle-conscious way</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
-    "title": "<p>Work Manager<p>",
+    "title": "*Work Manager",
     "content": "<p>Part of the architecture components. Manage your Android background jobs</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
-    "title": "<p>Realm<p>",
+    "title": "*Realm",
     "content": "<p>Database alternative to SQLite and Core data based on persistence of objects</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
-    "title": "<p>Butter Knife<p>",
+    "title": "*Butter Knife",
     "content": "<p>Annotate fields with @BindView and a view ID for Butter Knife to find and automatically cast the corresponding view in your layout.</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
-    "title": "<p>Dagger 2<p>",
+    "title": "*Dagger 2",
     "content": "<p>Dagger is a fully static, compile-time dependency injection framework for both Java and Android</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
-    "title": "<p>Retrofit<p>",
+    "title": "Retrofit",
     "content": "<p>REST client for Android that allows to make GET, POST, PUT, PATCH, DELETE and HEAD calls. It uses java POJO's to make the conversion between the API response and it uses a callback class to handle the response</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
-    "title": "<p>OkHttp<p>",
+    "title": "OkHttp",
     "content": "<p>REST client for Android that allows to make GET, POST calls. There's no direct support for POJO's as in Retrofit. The user has to implement all the conversion from the raw response</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
-    "title": "<p>Glide<p>",
+    "title": "Glide",
     "content": "<p>Library to set images (via URL, Drawable objects or assets directory) into Image View elements. It also includes some image modifiers to show round, cropped, squared, round shapes, etc</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
-    "title": "<p>Universal Image Loader<p>",
+    "title": "Universal Image Loader",
     "content": "<p>Library to set images (via URL, Drawable objects or assets directory) into Image View elements. It also includes some image modifiers to show round, cropped, squared, round shapes, etc</p>",
     "image_url": "",
     "deck": "Android Libraries"

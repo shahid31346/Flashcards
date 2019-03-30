@@ -26,15 +26,25 @@
         <ScrollView android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-            <TextView
-                    android:id="@+id/contentTV"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:layout_marginTop="10dp"
-                    android:minLines="1"
-                    android:text="@string/flashcard_content"
-                    android:drawableBottom="@drawable/no_image" />
+            <LinearLayout android:layout_width="match_parent" android:orientation="vertical" android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/contentTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:minLines="1"
+                        android:text="@string/flashcard_content" />
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:id="@+id/imageCard"
+                               android:scaleType="centerInside"
+                               android:adjustViewBounds="true"
+                               android:src="@drawable/no_image" android:contentDescription="@string/warning_no_content"/>
+                </LinearLayout>
+            </LinearLayout>
 
         </ScrollView>
 

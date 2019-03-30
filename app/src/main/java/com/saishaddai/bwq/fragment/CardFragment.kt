@@ -10,12 +10,10 @@ import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.RelativeLayout
-import android.widget.TextView
+import android.widget.*
 import com.saishaddai.bwq.R
 import com.saishaddai.bwq.model.Card
+import kotlinx.android.synthetic.main.fragment_card.*
 
 //import kotlinx.android.synthetic.main.fragment_card.*
 
@@ -29,6 +27,7 @@ class CardFragment : Fragment() {
     private lateinit var titleTV: TextView
     private lateinit var contentTV: TextView
     private lateinit var finishButton: Button
+    private lateinit var imageCard: ImageView
 
     //private var listener: OnFragmentInteractionListener? = null
 
@@ -50,6 +49,7 @@ class CardFragment : Fragment() {
 
         cardContainer = view.findViewById(R.id.cardContainer)
         finalCardContainer = view.findViewById(R.id.finalCardContainer)
+        imageCard = view.findViewById(R.id.imageCard)
 
 
         val cardItem = arguments?.get(ARG_CARD) as Card
@@ -68,11 +68,14 @@ class CardFragment : Fragment() {
                 contentTV.text = Html.fromHtml(cardItem.content)
 
             if(cardItem.imageUrl == "")
-                contentTV.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0)
+                imageCard.visibility = View.VISIBLE
+               // contentTV.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0)
             else {
 //                val drawable: Drawable = Drawable.createFromStream(activity?.assets?.open(cardItem.imageUrl), null)
                 val drawable: Drawable = Drawable.createFromResourceStream(activity?.resources, TypedValue(),  activity?.assets?.open(cardItem.imageUrl), null)
-                contentTV.setCompoundDrawablesWithIntrinsicBounds( null, null, null, drawable)
+                //contentTV.setCompoundDrawablesWithIntrinsicBounds( null, null, null, drawable)
+                imageCard.setImageDrawable(drawable)
+
             }
 
 

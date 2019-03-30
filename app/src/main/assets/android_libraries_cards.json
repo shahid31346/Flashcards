@@ -2,7 +2,7 @@
   {
     "title": "<p>Kodein</p>",
     "content": "<p>Inversion of control pattern for Kotlin</p>",
-    "image_url": "",
+    "image_url": "images/room_diagram2.png",
     "deck": "Android Libraries"
   },
   {
@@ -19,49 +19,49 @@
   },
   {
     "title": "<p>DataBinding<p>",
-    "content": "<p>Part of the architecture components</p>",
+    "content": "<p>Part of the architecture components. Declaratively bind observable data to UI elements</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
     "title": "<p>LifeCycle Aware<p>",
-    "content": "<p>Part of the architecture components</p>",
+    "content": "<p>Part of the architecture components. Manage your activity and fragment lifecycles</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
     "title": "<p>Live Data<p>",
-    "content": "<p>Part of the architecture components</p>",
+    "content": "<p>Part of the architecture components. Notify views when underlying database changes</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
     "title": "<p>Navigation<p>",
-    "content": "<p>Part of the architecture components</p>",
+    "content": "<p>Part of the architecture components. Handle everything needed for in-app navigation</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
     "title": "<p>Paging<p>",
-    "content": "<p>Part of the architecture components</p>",
+    "content": "<p>Part of the architecture components. Gradually load information on demand from your data source</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
     "title": "<p>Room (persistence)<p>",
-    "content": "<p>Part of the architecture components</p>",
-    "image_url": "",
+    "content": "<p>Part of the architecture components. Fluent SQLite database access</p><p>It avoids the boilerplate code to interact with SQLIte</p><p>Room requires Entities, Data Access Objects and Repositories</p>",
+    "image_url": "images/room_diagram.png",
     "deck": "Android Libraries"
   },
   {
     "title": "<p>ViewModel<p>",
-    "content": "<p>Part of the architecture components</p>",
+    "content": "<p>Part of the architecture components. Manage UI-related data in a lifecycle-conscious way</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },
   {
     "title": "<p>Work Manager<p>",
-    "content": "<p>Part of the architecture components</p>",
+    "content": "<p>Part of the architecture components. Manage your Android background jobs</p>",
     "image_url": "",
     "deck": "Android Libraries"
   },

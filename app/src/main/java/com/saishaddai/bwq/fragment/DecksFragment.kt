@@ -18,12 +18,12 @@ class DecksFragment : Fragment() {
         val convertView = inflater.inflate(R.layout.fragment_decks, container, false)
 //        val javaImageView = convertView.findViewById<ImageView>(R.id.javaImageView)
 
-        java_card.setOnClickListener {
-            activity?.let { callingActivity ->
-                val intent = Intent(callingActivity, CardsActivity::class.java)
-                intent.putExtra("type", "Java")
-                startActivity(intent) }
-        }
+//        java_card.setOnClickListener {
+//            activity?.let { callingActivity ->
+//                val intent = Intent(callingActivity, CardsActivity::class.java)
+//                intent.putExtra("type", "Java")
+//                startActivity(intent) }
+//        }
 
 //        activity?.let {
 //            callingActivity -> Glide.with(callingActivity)

@@ -8,6 +8,7 @@ import com.google.gson.Gson
 import com.saishaddai.bwq.adapter.CardsAdapter
 import com.saishaddai.bwq.commons.FileUtils
 import com.saishaddai.bwq.model.Card
+import com.saishaddai.bwq.observer.CardActivityObserver
 import kotlinx.android.synthetic.main.activity_cards.*
 import org.jetbrains.anko.design.snackbar
 
@@ -29,6 +30,7 @@ class CardsActivity : AppCompatActivity() {
         //TODO Do something to reduce the size to a constant, otherwise show all the elements found in the json file
         //val newListOfCards : ArrayList<Card> = listOfCards.take(30)
         cardsPager.adapter = CardsAdapter(supportFragmentManager, listOfCards)
+        lifecycle.addObserver(CardActivityObserver())
 
 //        if(type == "Java") {
 //            val listOfCards = getAllCards(type)

@@ -7,3 +7,4 @@ private val androidDecks = listOf("Android" to "android_cards.json",
     "Kotlin Libraries" to "android_libraries_cards.json")
 
 const val DATABASE_NAME = "flashcards"
+const val DECK_SIZE = 5

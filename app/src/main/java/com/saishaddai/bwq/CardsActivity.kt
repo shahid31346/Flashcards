@@ -8,9 +8,11 @@ import com.google.gson.Gson
 import com.saishaddai.bwq.adapter.CardsAdapter
 import com.saishaddai.bwq.commons.FileUtils
 import com.saishaddai.bwq.model.Card
+import com.saishaddai.bwq.model.DECK_SIZE
 import com.saishaddai.bwq.observer.CardActivityObserver
 import kotlinx.android.synthetic.main.activity_cards.*
 import org.jetbrains.anko.design.snackbar
+import java.util.*
 
 const val CARD_TYPE_ARG = "type"
 
@@ -25,10 +27,8 @@ class CardsActivity : AppCompatActivity() {
             type = it.getStringExtra(CARD_TYPE_ARG)
         }
 
-
         val listOfCards: ArrayList<Card> = getAllCards(type)
-        //TODO Do something to reduce the size to a constant, otherwise show all the elements found in the json file
-        //val newListOfCards : ArrayList<Card> = listOfCards.take(30)
+
         cardsPager.adapter = CardsAdapter(supportFragmentManager, listOfCards)
         lifecycle.addObserver(CardActivityObserver())
 
@@ -58,7 +58,7 @@ class CardsActivity : AppCompatActivity() {
             snackbar(cardsPager, "Nothing to show")
         }
 
-        Log.e("walla", contents)
+//        Log.e("walla", contents)
 
 
         val cardsArray = Gson().fromJson(contents, Array<Card>::class.java)
@@ -66,10 +66,12 @@ class CardsActivity : AppCompatActivity() {
             result.add(cardItem)
         }
 
+        val cardsArrayReduced = reduceListSize(result)
+
 
         //if(result.size > 0) {
             val finalCard = Card("", "", "", "")
-            result.add(finalCard)
+            cardsArrayReduced.add(finalCard)
 
         //}
 
@@ -97,7 +99,29 @@ class CardsActivity : AppCompatActivity() {
 //            }
 //        }
 //        return result
+        return cardsArrayReduced
+    }
+
+    private fun reduceListSize(arrayList: ArrayList<Card>): ArrayList<Card> {
+        if(arrayList.size < DECK_SIZE)
+            return arrayList
+
+        val result = ArrayList<Card>()
+        val indexArray : MutableSet<Int> = getIndexesForReducedArray(arrayList.size)
+        for(i in indexArray) {
+            result.add(arrayList[i])
+        }
+
         return result
+    }
+
+    private fun getIndexesForReducedArray(size: Int): MutableSet<Int> {
+        val indexesArray = mutableSetOf<Int>()
+        val random = Random()
+        while(indexesArray.size !=  DECK_SIZE) {
+            indexesArray.add(random.nextInt(size))
+        }
+        return indexesArray
     }
 
     private fun getFileForCards(type: String): String {

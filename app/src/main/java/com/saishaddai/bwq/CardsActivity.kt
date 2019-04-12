@@ -8,7 +8,7 @@ import com.google.gson.Gson
 import com.saishaddai.bwq.adapter.CardsAdapter
 import com.saishaddai.bwq.commons.FileUtilities
 import com.saishaddai.bwq.model.Card
-import com.saishaddai.bwq.model.DECK_SIZE
+import com.saishaddai.bwq.model.Constants.Companion.DECK_SIZE
 import com.saishaddai.bwq.observer.CardActivityObserver
 import kotlinx.android.synthetic.main.activity_cards.*
 import org.jetbrains.anko.design.snackbar

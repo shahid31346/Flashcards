@@ -6,7 +6,7 @@ import android.arch.persistence.room.Room
 import android.arch.persistence.room.RoomDatabase
 import android.content.Context
 import com.saishaddai.bwq.model.CardEntity
-import com.saishaddai.bwq.model.DATABASE_NAME
+import com.saishaddai.bwq.model.Constants.Companion.DATABASE_NAME
 import com.saishaddai.bwq.model.DeckEntity
 import org.jetbrains.anko.doAsync
 import org.jetbrains.annotations.NotNull

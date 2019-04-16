@@ -1,5 +1,35 @@
 [
   {
+    "title": "Java to Kotlin",
+    "content": "<p>IF, TRY and other statements in Java, in Kotlin are expressions</p><p><font color=\"blue\">val i = try {<br/>&nbsp;&nbsp;Integer.parseInt(someString)<br/>} catch(ex : Exception) {<br/>&nbsp;&nbsp;42<br/>}</font></p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Java to Kotlin",
+    "content": "<p>Non-final variables are var. There's no need to specify the type<br><br>in Java:<br><font color=\"blue\">int i = 42<br/></font>in Kotlin:<br/><font color=\"blue\"><b>var</b> i =42</font></p><p>For final variables, use val<br/><br>in Java:<br/><font color=\"blue\">final int i = 42</font><br>in Kotlin:<br/><font color=\"blue\"><b>val</b> i =42</font></p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Java to Kotlin",
+    "content": "<p>>Kotlin does not need semicolon (';') at the end of statements as Java<br><br>>Kotlin is null-safe, Java is not<br><br>>Kotlin is 100% Java interoperable<br><br>>Kotlin has no primitives (but optimizes their object counterparts for the JVM, if possible)<br><br>>Kotlin classes have properties, not fields</p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Java to Kotlin",
+    "content": "<p>>Kotlin offers data classes with auto-generated equals/hashCode methods and field accessors<br><br>>Kotlin only has runtime Exceptions, no checked Exceptions<br><br><p>>Kotlin has no <b><i>new</i></b> keyword. Creating objects is done just by calling the constructor like any other method.<br><br>>Kotlin supports (limited) operator overloading. For example, accessing a value of a map can be written like:<br><font color=\"blue\">val a = someMap[\"key\"]</font></p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Java to Kotlin",
+    "content": "<p>>Kotlin can not only be compiled to byte code for the JVM, but also into Java Script, enabling you to write both backend and frontend code in Kotlin<br><br>>Kotlin is fully compatible with Java 6, which is especially interesting in regards for support of (not so) old Android devices<br><br>>Kotlin is an officially supported language for Android development<br><br>>Kotlin collections have built-in distinction between mutable and immutable collections.</p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
     "title": "<p>JMV Overloads (Interoperability)</p>",
     "content": "<p>@JVMOverloads before a fun definition is used for interoperability between Kotlin classes with default values and java classes. It generate overloaded methods with all possible combinations of this method with its arguments</p>",
     "image_url": "",

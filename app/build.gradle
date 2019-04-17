@@ -12,9 +12,11 @@ android {
         targetSdkVersion 27
         versionCode 1
         versionName "0.1"
+        buildConfigField 'String', 'DECKS_SOURCE', "\"decks.json\""
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         manifestPlaceholders = [
-                appIcon: "@drawable/ic_bwq_logo_round"
+                appName: "Android Cards",
+                appIcon: "@drawable/ic_logo"
         ]
     }
     buildTypes {
@@ -29,17 +31,30 @@ android {
             dimension "version"
             applicationIdSuffix ".android"
             versionNameSuffix "-android"
-
+            manifestPlaceholders = [
+                    appName: "Android Cards",
+                    appIcon: "@drawable/ic_logo_android"
+            ]
         }
         javatraining {
             dimension "version"
             applicationIdSuffix ".java"
             versionNameSuffix "-java"
+            buildConfigField 'String', 'DECKS_SOURCE', "\"decks_java.json\""
+            manifestPlaceholders = [
+                    appName: "Java Cards",
+                    appIcon: "@drawable/ic_logo_java"
+            ]
         }
         uxtraining {
             dimension "version"
             applicationIdSuffix ".ux"
             versionNameSuffix "-ux"
+            buildConfigField 'String', 'DECKS_SOURCE', "\"decks_ux.json\""
+            manifestPlaceholders = [
+                    appName: "UX Cards",
+                    appIcon: "@drawable/ic_logo_ux"
+            ]
         }
     }
 }

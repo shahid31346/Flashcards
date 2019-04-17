@@ -8,6 +8,11 @@ import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.MenuItem
 import android.view.View
+import com.google.gson.Gson
+import com.saishaddai.bwq.BuildConfig.*
+import com.saishaddai.bwq.commons.FileUtilities
+import com.saishaddai.bwq.model.Card
+import com.saishaddai.bwq.model.Deck
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_decks.*
 import kotlinx.android.synthetic.main.layout_loader.*
@@ -19,7 +24,6 @@ import org.jetbrains.anko.uiThread
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
-    private val tag = MainActivity::class.java.simpleName as String
     private val androidDecks = listOf("Android" to "android_cards.json",
         "Kotlin" to "kotlin_cards.json", "Java" to "java_cards.json",
         "Data Structures" to "data_structures_cards.json",
@@ -35,14 +39,22 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setSupportActionBar(main_toolbar)
         navigationDrawerSetup()
 
-
         doAsync {
 
             loader_container.visibility = View.VISIBLE
             progress_bar.progress = 0
+
+            val contents = FileUtilities.getFileContents(assets, DECKS_SOURCE)
+            val unsortedDecksArray = Gson().fromJson(contents, Array<Deck>::class.java)
+            val decksSorted = unsortedDecksArray.sortedBy { it.priority }
+
+
+
+
+
             val listOfAvailableDecks = assets.list("")
             for(file in listOfAvailableDecks)
-                Log.e(tag, file)
+                Log.d(TAG, file)
 
             progress_bar.progress = 20
             for(deck in androidDecks) {
@@ -52,26 +64,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     decksAvailable.add(deck.first to "false")
             }
 
-
-
-//            Log.d(tag, "progress bar set" + progress_bar.progress)
-//            Thread.sleep(2000)
-//
-//            progress_bar.progress = 40
-//            Log.d(tag, "progress bar set" + progress_bar.progress)
-//            Thread.sleep(2000)
-//
-//            progress_bar.progress = 60
-//            Log.d(tag, "progress bar set" + progress_bar.progress)
-//            Thread.sleep(2000)
-//
-//            progress_bar.progress = 80
-//            Log.d(tag, "progress bar set" + progress_bar.progress)
-//            Thread.sleep(2000)
-//
             progress_bar.progress = 100
-//            Log.d(tag, "progress bar set" + progress_bar.progress)
-//            Thread.sleep(2000)
 
             uiThread {
                 if (progress_bar.progress == 100) {
@@ -79,8 +72,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     progress_bar.progress = 0
                 }
             }
-
-
         }
 
         decksSetup()
@@ -263,5 +254,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 //        false
 //    }
 
+    companion object {
+        private val TAG = MainActivity::class.java.simpleName
+    }
 
 }

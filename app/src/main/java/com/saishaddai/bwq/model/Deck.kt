@@ -5,15 +5,22 @@ import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 
 data class Deck(
-    @SerializedName("name") var name: String, @SerializedName("description") var description: String) : Parcelable {
+    @SerializedName("name") var name: String,
+    @SerializedName("source") var source: String,
+    @SerializedName("short") var short: String,
+    @SerializedName("priority") var priority: Int) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
-        parcel.readString()
+        parcel.readString(),
+        parcel.readString(),
+        parcel.readInt()
     )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(name)
-        parcel.writeString(description)
+        parcel.writeString(source)
+        parcel.writeString(short)
+        parcel.writeInt(priority)
     }
 
     override fun describeContents(): Int {

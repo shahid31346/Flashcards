@@ -1,32 +1,44 @@
 [
   {
     "name": "Android",
-    "fileName": "",
-    "description": "Android architecture "
+    "source": "android_cards.json",
+    "short": "A",
+    "priority": 2
   },
   {
     "name": "Kotlin",
-    "fileName": "",
-    "description": "Kotlin facts and fun"
+    "source": "kotlin_cards.json",
+    "short": "K",
+    "priority": 3
   },
   {
-   "name": "Java",
-   "fileName" : "",
-   "description": "Java facts and fun"
+    "name": "Java",
+    "source": "java_cards.json",
+    "short": "J",
+    "priority": 4
   },
   {
     "name": "Data Structures",
-    "fileName" : "",
-    "description": "Data Structures explanations"
+    "source": "data_structures_cards.json",
+    "short": "Ds",
+    "priority": 5
   },
   {
     "name": "Algorithms",
-    "fileName" : "",
-    "description": "Famous Algorithms and its complexity"
+    "source": "algorithms_cards.json",
+    "short": "Al",
+    "priority": 6
   },
   {
-    "name": "Android Libraries",
-    "fileName" : "",
-    "description": "Beyond Kotlin Language there are libraries that are commonly used as expansions to the language"
+    "name": "Design Patterns",
+    "source": "patterns_cards.json",
+    "short": "P",
+    "priority": 7
+  },
+  {
+    "name": "OO Programming",
+    "source": "object_oriented_cards.json",
+    "short": "Oo",
+    "priority": 1
   }
 ]

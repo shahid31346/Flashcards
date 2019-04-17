@@ -10,23 +10,84 @@
         app:cardElevation="8dp"
         app:cardCornerRadius="18dp">
 
-    <LinearLayout android:layout_width="wrap_content"
-                  android:layout_gravity="center_horizontal|center_vertical"
-                  android:orientation="vertical"
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_gravity="center_vertical"
                   android:background="#FFFFFF"
                   android:layout_height="wrap_content">
 
-        <TextView android:layout_width="60dp"
+        <TextView android:id="@+id/shortTextView"
+                  android:layout_width="60dp"
                   android:layout_height="60dp"
                   android:background="@drawable/circle_shape"
-                  android:textSize="14sp"
+                  android:textSize="28sp"
                   android:gravity="center"
                   android:textColor="#FFFFFF"
-                  android:text="Android Cards"
-                  android:lines="2"
+                  android:text="C"
                   android:layout_gravity="center_horizontal"
                   android:contentDescription="@string/decks_android_content_desc"/>
 
+
+        <TextView android:id="@+id/nameTextView"
+                  android:layout_width="0dp"
+                  android:layout_weight="2"
+                  android:maxLines="3"
+                  android:layout_height="match_parent"
+                  android:layout_marginStart="10dp"
+                  android:gravity="center_vertical"
+                  android:textSize="14sp"
+                  android:paddingStart="5dp"
+                  android:ellipsize="end"
+                  android:textStyle="bold"
+                  android:text="Android Cards"
+                  android:layout_gravity="center_horizontal"
+                  android:contentDescription="@string/decks_android_content_desc"/>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="4"
+                      android:layout_marginEnd="15dp"
+                      android:orientation="vertical">
+
+            <TextView android:id="@+id/cardsCountTextView"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="10dp"
+                      android:gravity="center_vertical"
+                      android:textSize="14sp"
+                      android:text="9999 cards"
+                      android:layout_gravity="center_horizontal"
+                      android:contentDescription="@string/decks_android_content_desc"/>
+
+            <TextView android:id="@+id/lastTimeTextView"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="10dp"
+                      android:gravity="start"
+                      android:textSize="14sp"
+                      android:maxLines="2"
+                      android:text="Last attempt: Apr 16, 2019 22:52"
+                      android:layout_gravity="center_horizontal"
+                      android:contentDescription="@string/decks_android_content_desc"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="50dp"
+                      android:layout_height="50dp"
+                      android:layout_marginEnd="0dp"
+                      android:layout_gravity="center_vertical|center_horizontal"
+                      android:orientation="vertical">
+
+            <ImageView android:id="@+id/infoImageView"
+                       android:tag="none"
+                       android:layout_width="40dp"
+                      android:layout_height="40dp"
+                      android:layout_marginStart="5dp"
+                      android:gravity="center_vertical"
+                       android:src="@drawable/ic_info_grey"
+                      android:layout_gravity="center_horizontal"
+                      android:contentDescription="@string/decks_android_content_desc"/>
+
+        </LinearLayout>
 
 
     </LinearLayout>

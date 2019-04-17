@@ -1,0 +1,107 @@
+[
+
+  {
+    "title": "",
+    "content": "<p>In object-oriented programming, in languages such as C++, and Object Pascal, a <b>virtual function</b> or <b>virtual method</b> is an inheritable and overridable function or method for which dynamic dispatch is facilitated. This concept is an important part of the (runtime) polymorphism portion of object-oriented programming (OOP). In short, a virtual function defines a target function to be executed, but the target might not be known at compile time.</p>",
+    "image_url": "",
+    "deck": "Object Oriented"
+  },
+  {
+    "title": "",
+    "content": "<p><In object-oriented programming, a virtual class is a nested inner class whose functions and member variables can be overridden and redefined by subclasses of an outer class.[1] Virtual classes are analogous to virtual functions.</p>",
+    "image_url": "",
+    "deck": "Object Oriented"
+  },
+
+
+  {
+    "title": "Virtual Function / Method",
+    "content": "<p>In object-oriented programming, in languages such as C++, and Object Pascal, a <b>virtual function</b> or <b>virtual method</b> is an inheritable and overridable function or method for which dynamic dispatch is facilitated. This concept is an important part of the (runtime) polymorphism portion of object-oriented programming (OOP). In short, a virtual function defines a target function to be executed, but the target might not be known at compile time.</p>",
+    "image_url": "",
+    "deck": "Object Oriented"
+  },
+  {
+    "title": "Virtual Class",
+    "content": "<p><In object-oriented programming, a virtual class is a nested inner class whose functions and member variables can be overridden and redefined by subclasses of an outer class.[1] Virtual classes are analogous to virtual functions.</p>",
+    "image_url": "",
+    "deck": "Object Oriented"
+  },
+  {
+    "title": "Virtual Method Table",
+    "content": "<p>A <b>Virtual Method Table (VMT)</b>, virtual function table, virtual call table, dispatch table, vtable, or vftable is a mechanism used in a programming language to support dynamic dispatch (or run-time method binding).</p>",
+    "image_url": "",
+    "deck": "Object Oriented"
+  },
+  {
+    "title": "Virtual Inheritance",
+    "content": "<p><b>Virtual inheritance</b> is a C++ technique that ensures only one copy of a base class's member variables are inherited by grandchild derived classes. Without virtual inheritance, if class A is inherits from both classes B and C, and classes B and C both inherit from class D, then class A will contain two copies of D's member variables: one via B, and one via C. These will be accessible independently, using scope resolution.</p>",
+    "image_url": "",
+    "deck": "Object Oriented"
+  },
+  {
+    "title": "Dynamic Dispatch",
+    "content": "<p>In computer science, <b>dynamic dispatch</b> is the process of selecting which implementation of a polymorphic operation (method or function) to call at run time</p>",
+    "image_url": "",
+    "deck": "Object Oriented"
+  },
+  {
+    "title": "Yo-yo Problem",
+    "content": "<p>In software development, the <b>yo-yo problem</b> is an anti-pattern that occurs when a programmer has to read and understand a program whose inheritance graph is so long and complicated that the programmer has to keep flipping between many different class definitions in order to follow the control flow of the program.</p>",
+    "image_url": "",
+    "deck": "Object Oriented"
+  },
+  {
+    "title": "Weak Reference",
+    "content": "<p>In computer programming, a <b>weak reference</b> is a reference that does not protect the referenced object from collection by a garbage collector, unlike a strong reference.</p>",
+    "image_url": "",
+    "deck": "Object Oriented"
+  },
+  {
+    "title": "Void type",
+    "content": "<p>The <b>Void type</b>, in several programming languages derived from C and Algol68, is the type for the result of a function that returns normally, but does not provide a result value to its caller.</p>",
+    "image_url": "",
+    "deck": "Object Oriented"
+  },
+  {
+    "title": "Viscosity",
+    "content": "<p>In object oriented programming, viscosity[1] refers to the ease at which a developer can add design-preserving code to a system. If it is easier to add a hack than it is to add code that fits into the program's design, then the system has high viscosity. If it is easy to add new code to the program while maintaining the design, then the program has low viscosity.</p>",
+    "image_url": "",
+    "deck": "Object Oriented"
+  },
+  {
+    "title": "Local and instance variables",
+    "content": "<p><b>Local variables</b> are defined in the method and scope of the variables that have existed inside the method itself.</p><p>An <b>instance variable</b> is defined inside the class and outside the method and scope of the variables exist throughout the class</p>",
+    "image_url": "",
+    "deck": "Object Oriented"
+  },
+  {
+    "title": "Overriding",
+    "content": "<p>A type of polymorphism. Method overriding happens if the sub class method satisfies the below conditions with the Super class method:</p><p>Method name should be same</p><p>Argument should be same</p><p>Return type also should be same</p>",
+    "image_url": "",
+    "deck": "Object Oriented"
+  },
+  {
+    "title": "Overloading",
+    "content": "<p>For method overloading, subclass method should satisfy the below conditions with the Super class method (or) methods in the same class itself:</p><p>Same method name</p><p>Different argument type</p><p>May have different return types</p>",
+    "image_url": "",
+    "deck": "Object Oriented"
+  },
+  {
+    "title": "Inheritance (implements)",
+    "content": "<p>Multiple inheritance cannot be achieved in java. To overcome this problem Interface concept is introduced. An interface is a template which has only method declarations and not the method implementation.</p>",
+    "image_url": "",
+    "deck": "Object Oriented"
+  },
+  {
+    "title": "S.O.L.I.D principles",
+    "content": "<p>Single responsibility principle</p><p>Open Close principle: Software entities should be open for extension but closed for modification</p><p>Liskov substitution principle: Objects should be replaceable of their subtypes with no further changes</p><p>Interface segregation principle: Many client-specific interfaces over one general purpose interface</p><p>Dependency Inversion Principle: Code shoold depend on abstraction over concretions</p>",
+    "image_url": "",
+    "deck": "Object Oriented"
+  },
+  {
+    "title": "OO principles",
+    "content": "<p>Encapsulation, Inheritance, Polymorphism, Abstraction</p>",
+    "image_url": "",
+    "deck": "Object Oriented"
+  }
+]

@@ -18,13 +18,19 @@ class UserDatabaseTest {
         print("tearDown database")
     }
 
+//    @Test
+//    fun testGetUserList() {
+//        val userDatabase = UserDatabase()
+//        val userListResponse = userDatabase.getUserList()
+//        Assert.assertNotNull(userListResponse)
+//        Assert.assertEquals(StatusMessages.OK, userListResponse.first)
+//        Assert.assertEquals(ArrayList<DataBaseModel.User>(), userListResponse.second)
+//    }
+
+
     @Test
-    fun testGetUserList() {
-        val userDatabase = UserDatabase()
-        val userListResponse = userDatabase.getUserList()
-        Assert.assertNotNull(userListResponse)
-        Assert.assertEquals(StatusMessages.OK, userListResponse.first)
-        Assert.assertEquals(ArrayList<DataBaseModel.User>(), userListResponse.second)
+    fun testSomething() {
+
     }
 
 }

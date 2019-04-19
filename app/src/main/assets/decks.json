@@ -11,7 +11,7 @@
     "source": "kotlin_cards.json",
     "short": "K",
     "priority": 3,
-    "cards": 9
+    "cards": 30
   },
   {
     "name": "Java",

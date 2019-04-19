@@ -31,27 +31,158 @@
   },
 
   {
-    "title": "<p>JMV Overloads (Interoperability)</p>",
+    "title": "JMV Overloads (Interoperability)",
     "content": "<p>@JVMOverloads before a fun definition is used for interoperability between Kotlin classes with default values and java classes. It generate overloaded methods with all possible combinations of this method with its arguments</p>",
     "image_url": "",
     "deck": "Kotlin"
   },
   {
-    "title": "<p>JVM Name (Interoperability)<p>",
+    "title": "JVM Name (Interoperability)",
     "content": "<p>Improves interoperability. Use @file:JvmName(\"MyApp\") to overwrite the name of the Kotlin file and to be treated as MyApp in Java code</li>",
     "image_url": "",
     "deck": "Kotlin"
   },
   {
-    "title": "<p>Throws Exception (Interoperability)<p>",
+    "title": "Throws Exception (Interoperability)",
     "content": "<p>Use @Throws(IOException ) before a method declaration so it can be caught in a try/catch block in a Java class</p>",
     "image_url": "",
     "deck": "Kotlin"
   },
   {
-    "title": "<p>lateinit and lazy<p>",
+    "title": "lateinit and lazy",
     "content": "<p><b>lateinit</b> is a modifier used with var and is used to set the value to the var at a later point.</p><p><b>lazy</b> is a method or rather say lambda expression. It’s set on a val only. The val would be created at runtime when it’s required.</p>",
     "image_url": "",
     "deck": "Kotlin"
+  },
+  {
+    "title": "The !! Operator",
+    "content": "<p>The not-null assertion operator (!!) converts any value to a non-null type and throws an exception if the value is null. We can write b!!, and this will return a non-null value of b (e.g., a String in our example) or throw an Null Pointer Exception if b is null:<br><font color=\"blue\">val l = b!!.length</font><p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+
+  {
+    "title": "Collections of Nullable Type",
+    "content": "<p>If you have a collection of elements of a nullable type and want to filter non-null elements, you can do so by using filterNotNull:<br><font color=\"blue\">val nullableList: List&lt;Int?> = listOf(1, 2, null, 4)<br>val intList: List&lt;Int> = nullableList.filterNotNull()</font><p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Safe Casts",
+    "content": "<p>Regular casts may result into a ClassCastException if the object is not of the target type. Another option is to use safe casts that return null if the attempt was not successful:<br><font color=\"blue\">val aInt: Int? = a as? Int</font><p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Elvis Operator",
+    "content": "<p>When we have a nullable reference r, we can say \"if r is not null, use it, otherwise use some non-null value x\". Along with the complete if-expression, this can be expressed with the Elvis operator, written <b>?:</b><br><font color=\"blue\">val l = b?.length ?: -1</font></p><p>If the expression to the left of ?: is not null, the elvis operator returns it, otherwise it returns the expression to the right. Note that, since throw and return are expressions in Kotlin, they can also be used on the right hand side of the elvis operator<br><font color=\"blue\">val parent = node.getParent() ?: return null<br>val name = node.getName() ?: throw IllegalArgumentException(\"name expected\")</font><p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Safe Calls",
+    "content": "<p>Null validation using the <b>?.</b><br><br><font color=\"blue\">val b: String? = null<br>println(b?.length)</font><p><p>This returns b.length if b is not null, and null otherwise. The type of this expression is Int?.Safe calls are useful in chains<br><font color=\"blue\">person?.department?.head?.name</font></p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Structural equality",
+    "content": "<p>Structural equality is checked by the == operation (and its negated counterpart !=). By convention, an expression like <b>a == b</b> is translated to:<br><font color=\"blue\">a?.equals(b) ?: (b === null)</font><p><p>I.e. if a is not null, it calls the equals(Any?) function, otherwise (i.e. a is null) it checks that b is referentially equal to null.</p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+
+  {
+    "title": "Floating point numbers equality",
+    "content": "<p>When an equality check operands are statically known to be Float or Double (nullable or not), the check follows the IEEE 754 Standard for Floating-Point Arithmetic.</p><p>Otherwise, the structural equality is used, which disagrees with the standard so that NaN is equal to itself, and -0.0 is not equal to 0.0.</p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Referential equality",
+    "content": "<p>Referential equality is checked by the === operation (and its negated counterpart !==). a === b evaluates to true if and only if a and b point to the same object. For values which are represented as primitive types at runtime (for example, Int), the === equality check is equivalent to the == check.</p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Data Classes",
+    "content": "<p>We frequently create classes whose main purpose is to hold data. In such a class some standard functionality and utility functions are often mechanically derivable from the data. In Kotlin, this is called a data class and is marked as data:<br><br><font color=\"blue\">data class User(val name: String, val age: Int)</p><p>Already implemented examples: <i>Pair, Triple</i></p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Default Members of Data Classes",
+    "content": "<p>Data classes has internally implemented by default the following members:<br><br>> <i>equals() / hashCode()</i> using Pair class<br>> <i>toString()</i> of the form \"User(name=John, age=42)\"<br>> <i>componentN()</i> functions corresponding to the properties in their order of declaration (cannot be overriden)<br>> <i>copy()</i> (cannot be overriden)</p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Requirements for Data Classes",
+    "content": "<p>> The primary constructor needs to have at least one parameter<br>>All primary constructor parameters need to be marked as val or var<br>>Data classes cannot be abstract, open, sealed or inner<br>>(before 1.1) Data classes may only implement interfaces.</p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+
+  {
+    "title": "Properties of members in Data Classes",
+    "content": "<p>> If there are explicit implementations of equals(), hashCode() or toString() in the data class body or final implementations in a superclass, then these functions are not generated, and the existing implementations are used<br>> If a supertype has the componentN() functions that are open and return compatible types, the corresponding functions are generated for the data class and override those of the supertype. If the functions of the supertype cannot be overridden due to incompatible signatures or being final, an error is reported<br>> Deriving a data class from a type that already has a copy(...) function with a matching signature is deprecated in Kotlin 1.2 and is prohibited in Kotlin 1.3.<br>> Providing explicit implementations for the componentN() and copy() functions is not allowed.</p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Repeat an action x times",
+    "content": "<p>use the <i>repeat</i> clause and the number of times to repeat the action</p><p><font color=\"blue\">repeat(10) { i -><br>&nbsp;&nbsp;println(\"This line will be printed 10 times\")<br>&nbsp;&nbsp;println(\"We are on the ${i + 1}. loop iteration\")<br>}</font></p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "How to Data Class ignores a property",
+    "content": "<p>To make Kotlin to ignore a property it should be excluded from the primary constructor<br><br><font color=\"blue\">data class Person(val name: String) {<br>&nbsp;&nbsp;var age: Int = 0<br>}</font></p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Copying in Data Classes",
+    "content": "<p>copy() function is internally generated with a Data Class. It allows to update certain properties in an object<br><br><font color=\"blue\">val jack = User(name = \"Jack\", age = 1)<br>val olderJack = jack.copy(age = 2)</font></p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Data Classes and Destructuring Declaration",
+    "content": "<p>Component functions generated for data classes enable their use in destructuring declarations:<br><br><font color=\"blue\">val jane = User(\"Jane\", 35)<br>val (name, age) = jane<br>println(\"$name, $age years of age\") // prints \"Jane, 35 years of age\"</font></p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+
+  {
+    "title": "Destructuring Declarations",
+    "content": "<p>Is the action to declare multiple variables using a Data Class properties<br><br><font color=\"blue\">val (name, age) = person</font></p><p>Use underscore symbol to exclude a property to be retrieved<br><br><font color=\"blue\">val (_, status) = getResult()</font></p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Destructuring Lambdas",
+    "content": "<p>The following code stores the map result from lambda in single parameters or Pair class combinations<br><br><font color=\"blue\">{ a -> ... } // one parameter<br>{ a, b -> ... } // two parameters<br>{ (a, b) -> ... } // a destructured pair<br>{ (a, b), c -> ... } // a destructured pair and another parameter</font></p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Sealed Classes",
+    "content": "<p>Defines a hierarchy of classes<br><br><font color=\"blue\">sealed class Expr<br>&nbsp;&nbsp;<br>data class Const(val number: Double) : Expr()&nbsp;&nbsp;<br>data class Sum(val e1: Expr, val e2: Expr) : Expr()&nbsp;&nbsp;<br>object NotANumber : Expr()</font></p><p>With the definition above you can ask directly which implementation it is<br><br><font color=\"blue\">fun eval(expr: Expr): Double = when(expr) {<br>&nbsp;&nbsp;is Const -> expr.number<br>&nbsp;&nbsp;is Sum -> eval(expr.e1) + eval(expr.e2)<br>&nbsp;&nbsp;NotANumber -> Double.NaN<br>&nbsp;&nbsp;// the `else` clause is not required because we've covered all the cases<br>}</font></p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Coroutines",
+    "content": "<p>Coroutines are “lightweight threads”. They are sort of tasks that the actual threads can execute.  A thread can stop executing a coroutine at some specific “suspension points”, and go do some other work. It can resume executing the coroutine later on, or another thread could even take over.</p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "Shorthand Functions",
+    "content": "<p>If a function contains just one expression, we can omit the brace brackets and use an equals instead, like a variable assignment. The result of the expression is returned automatically.<br><br><font color=\"blue\">fun sayMyName(name: String): String = \"Your name is $name\"</font></p>",
+    "image_url": "",
+    "deck": "Kotlin"
   }
+
 ]

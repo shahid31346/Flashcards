@@ -183,13 +183,6 @@
     "content": "<p>a class/method/interface that has been made obsolete by later versions of the library or of the language itself; it should not be used as there is no guarantee that it will exist in future versions",
     "image_url": "",
     "deck": "Java"
-  },
-
-  {
-    "title": "keep on working",
-    "content": "<p>https://stackify.com/java-glossary/</p>",
-    "image_url": "",
-    "deck": "Java"
   }
 
 ]

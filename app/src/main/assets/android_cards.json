@@ -29,6 +29,7 @@
       "image_url": "",
       "deck": "Android"
     },
+
     {
       "title": "Service",
       "content": "<p>A Service is an application component that can perform long-running operations in the background, and it doesn't provide a user interface. IT always runs in background even if the user switches to another application.Its life cycle is the following:<br/><br/><i>onStartCommand()<br/>onBind()<br/>onCreate()<br/>onDestroy()</p>",
@@ -59,6 +60,7 @@
       "image_url": "",
       "deck": "Android"
     },
+
     {
       "title": "Ordered Broadcast",
       "content": "<p>These are synchronous broadcasts.</p><p>One broadcast is delivered to one receiver at a time.</p><p>Receivers can use the result. In fact as each receiver executes, result is passed to next receiver.</p><p>Receiver can abort the broadcast and hence no broadcast is received by other receivers.</p><p>The order of receivers is managed and controlled by the attribute android:priority in corresponding intent-filter.</p><p>If receivers will have same priority then they may run in any order.</p>",
@@ -78,7 +80,7 @@
       "deck": "Android"
     },
     {
-      "title": "<p>Services, Threads, AsyncTasks, Executor<p>",
+      "title": "Services, Threads, AsyncTasks, Executor",
       "content": "<p><b>Use Service</b> for tasks with no UI, but shouldn't be too long. Use threads within service for long tasks.</p><p><b>Use thread</b> for long tasks in general</p><p>For tasks in parallel use <b>Multiple threads</b> (traditional mechanisms)</p><p><b>Use AsyncTasks</b> for small task having to communicate with main thread.</p><p>For tasks in parallel use multiple instances of async tasks OR <b>Executor</b></p>",
       "image_url": "",
       "deck": "Android"

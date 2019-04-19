@@ -1,30 +1,30 @@
 [
   {
-    "name": "Android",
+    "name": "Android (15)",
     "source": "android_cards.json",
     "short": "A",
     "priority": 2
   },
   {
-    "name": "Kotlin",
+    "name": "Kotlin (9)",
     "source": "kotlin_cards.json",
     "short": "K",
     "priority": 3
   },
   {
-    "name": "Java",
+    "name": "Java (0)",
     "source": "java_cards.json",
     "short": "J",
     "priority": 4
   },
   {
-    "name": "Data Structures",
+    "name": "Data Structures (4)",
     "source": "data_structures_cards.json",
     "short": "Ds",
     "priority": 5
   },
   {
-    "name": "Algorithms",
+    "name": "Algorithms (4/37)",
     "source": "algorithms_cards.json",
     "short": "Al",
     "priority": 6

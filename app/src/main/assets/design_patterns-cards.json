@@ -1,0 +1,362 @@
+[
+  {
+    "title": "Design Patterns",
+    "content": "<p>In software engineering, a software design pattern is a general, reusable solution to a commonly occurring problem within a given context in software design</p><p>Design patterns classification: <i>Creational, Structural, Behavioral and Concurrency<i></p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Creational patterns",
+    "content": "<p>In software engineering, <b>creational design patterns</b> are design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. The basic form of object creation could result in design problems or in added complexity to the design.</p><p>Creational design patterns are composed of two dominant ideas. One is encapsulating knowledge about which concrete classes the system uses. Another is hiding how instances of these concrete classes are created and combined</p><p>Examples: <i>Abstract Factory, Singleton, Prototype</i></p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Structural patterns",
+    "content": "<p>In software engineering, <b>structural design patterns</b> are design patterns that ease the design by identifying a simple way to realize relationships among entities.</p><p>Examples: <i>Adapter, Façade, Framework</i></p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Behavioral patterns",
+    "content": "<p>In software engineering, <b>behavioral design patterns</b> are design patterns that identify common communication patterns among objects and realize these patterns. By doing so, these patterns increase flexibility in carrying out this communication</p><p>Examples: <i>Observer, Mediator, Interpreter</i></p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Concurrency patterns",
+    "content": "<p>In software engineering, <b>concurrency patterns</b> are those types of design patterns that deal with the multi-threaded programming paradigm.</p><p>Examples: <i>Thread Pool, Double Checked-Locking, Reactor</i></p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Template method pattern",
+    "content": "<p>Creational Pattern</p><p>In software engineering, the template method pattern is a behavioral design pattern that defines the program skeleton of an algorithm in an operation, deferring some steps to subclasses. It lets one redefine certain steps of an algorithm without changing the algorithm's structure</p><p>It is composed by a \"template method\" in a main class and a concrete implementation which fill in the empty or \"variant\" parts of the \"template\"</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Abstract factory",
+    "content": "<p>Creational Pattern</p><p>Provide an interface for creating families of related or dependent objects without specifying their concrete classes.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Builder",
+    "content": "<p>Creational Pattern</p><p>Separate the construction of a complex object from its representation, allowing the same construction process to create various representations.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Dependency Injection",
+    "content": "<p>Creational Pattern</p><p>A class accepts the objects it requires from an injector instead of creating the objects directly.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Factory method",
+    "content": "<p>Creational Pattern</p><p>Define an interface for creating a single object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+
+  {
+    "title": "Lazy initialization",
+    "content": "<p>Creational Pattern</p><p>Tactic of delaying the creation of an object, the calculation of a value, or some other expensive process until the first time it is needed. This pattern appears in the GoF catalog as \"virtual proxy\", an implementation strategy for the Proxy pattern.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Multiton",
+    "content": "<p>Creational Pattern</p><p>Ensure a class has only named instances, and provide a global point of access to them.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Object pool",
+    "content": "<p>Creational Pattern</p><p>Avoid expensive acquisition and release of resources by recycling objects that are no longer in use. Can be considered a generalisation of connection pool and thread pool patterns.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Prototype",
+    "content": "<p>Creational Pattern</p><p>Specify the kinds of objects to create using a prototypical instance, and create new objects from the 'skeleton' of an existing object, thus boosting performance and keeping memory footprints to a minimum.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Resource acquisition is initialization (RAII)",
+    "content": "<p>Creational Pattern</p><p>Ensure that resources are properly released by tying them to the lifespan of suitable objects.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Singleton",
+    "content": "<p>Creational Pattern</p><p>Ensure a class has only one instance, and provide a global point of access to it.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Adapter, Wrapper, or Translator",
+    "content": "<p>Structural pattern</p><p>Convert the interface of a class into another interface clients expect. An adapter lets classes work together that could not otherwise because of incompatible interfaces. The enterprise integration pattern equivalent is the translator.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Bridge",
+    "content": "<p>Structural pattern</p><p>Decouple an abstraction from its implementation allowing the two to vary independently.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Composite",
+    "content": "<p>Structural pattern</p><p>Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Decorator",
+    "content": "<p>Structural pattern</p><p>Attach additional responsibilities to an object dynamically keeping the same interface. Decorators provide a flexible alternative to subclassing for extending functionality.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+
+  {
+    "title": "Extension object",
+    "content": "<p>Structural pattern</p><p>Adding functionality to a hierarchy without changing the hierarchy.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Façade",
+    "content": "<p>Structural pattern</p><p>Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Flyweight",
+    "content": "<p>Structural pattern</p><p>Use sharing to support large numbers of similar objects efficiently.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Front controller",
+    "content": "<p>Structural pattern</p><p>The pattern relates to the design of Web applications. It provides a centralized entry point for handling requests.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Marker",
+    "content": "<p>Structural pattern</p><p>Empty interface to associate metadata with a class.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Module",
+    "content": "<p>Structural pattern</p><p>Structural pattern</p><p>Group several related elements, such as classes, singletons, methods, globally used, into a single conceptual entity.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Proxy",
+    "content": "<p>Structural pattern</p><p>Structural pattern</p><p>Provide a surrogate or placeholder for another object to control access to it.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Twin",
+    "content": "<p>Structural pattern</p><p>Structural pattern</p><p>Twin allows modeling of multiple inheritance in programming languages that do not support this feature.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Blackboard",
+    "content": "<p>Behavioral pattern</p><p>Artificial intelligence pattern for combining disparate sources of data in a called blackboard system</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Chain of responsibility",
+    "content": "<p>Behavioral pattern</p><p>Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+
+  {
+    "title": "Command",
+    "content": "<p>Behavioral pattern</p><p>Encapsulate a request as an object, thereby allowing for the parameterization of clients with different requests, and the queuing or logging of requests. It also allows for the support of undoable operations.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Interpreter",
+    "content": "<p>Behavioral pattern</p><p>Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.	</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Iterator",
+    "content": "<p>Behavioral pattern</p><p>Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Mediator",
+    "content": "<p>Behavioral pattern</p><p>Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it allows their interaction to vary independently.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Memento",
+    "content": "<p>Behavioral pattern</p><p>Without violating encapsulation, capture and externalize an object's internal state allowing the object to be restored to this state later.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Null object",
+    "content": "<p>Behavioral pattern</p><p>Avoid null references by providing a default object.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Observer or Publish/subscribe",
+    "content": "<p>Behavioral pattern</p><p>Define a one-to-many dependency between objects where a state change in one object results in all its dependents being notified and updated automatically.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Servant",
+    "content": "<p>Behavioral pattern</p><p>Define common functionality for a group of classes. The servant pattern is also frequently called helper class or utility class implementation for a given set of classes. The helper classes generally have no objects hence they have all static methods that act upon different kinds of class objects.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Specification",
+    "content": "<p>Behavioral pattern</p><p>Given a set of changeable boolean flags, it may change the whole behaviour of the business</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "State",
+    "content": "<p>Behavioral pattern</p><p>Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+
+  {
+    "title": "Strategy",
+    "content": "<p>Behavioral pattern</p><p>Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Template method",
+    "content": "<p>Behavioral pattern</p><p>	Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Visitor",
+    "content": "<p>Behavioral pattern</p><p>Represent an operation to be performed on the elements of an object structure. Visitor lets a new operation be defined without changing the classes of the elements on which it operates.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Active Object",
+    "content": "<p>Concurrency pattern</p><p>Decouples method execution from method invocation that reside in their own thread of control. The goal is to introduce concurrency, by using asynchronous method invocation and a scheduler for handling requests.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Balking",
+    "content": "<p>Concurrency pattern</p><p>Only execute an action on an object when the object is in a particular state.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+  "title": "Binding properties",
+  "content": "<p>Concurrency pattern</p><p>Combining multiple observers to force properties in different objects to be synchronized or coordinated in some way</p>",
+  "image_url": "",
+  "deck": "Design Patterns"
+},
+  {
+    "title": "Compute kernel",
+    "content": "<p>Concurrency pattern</p><p>The same calculation many times in parallel, differing by integer parameters used with non-branching pointer math into shared arrays, such as GPU-optimized Matrix multiplication or Convolutional neural network.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+  "title": "Double-checked locking",
+  "content": "<p>Concurrency pattern</p><p>Reduce the overhead of acquiring a lock by first testing the locking criterion (the 'lock hint') in an unsafe manner; only if that succeeds does the actual locking logic proceed.</p><p>Can be unsafe when implemented in some language/hardware combinations. It can therefore sometimes be considered an anti-pattern.</p>",
+  "image_url": "",
+  "deck": "Design Patterns"
+},
+  {
+    "title": "Event-based asynchronous",
+    "content": "<p>Concurrency pattern</p><p>Addresses problems with the asynchronous pattern that occur in multithreaded programs</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+    "title": "Guarded suspension",
+    "content": "<p>Concurrency pattern</p><p>Manages operations that require both a lock to be acquired and a precondition to be satisfied before the operation can be executed</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+
+  {
+  "title": "Join",
+  "content": "<p>Concurrency pattern</p><p>Join-pattern provides a way to write concurrent, parallel and distributed programs by message passing. Compared to the use of threads and locks, this is a high-level programming model.</p>",
+  "image_url": "",
+  "deck": "Design Patterns"
+},
+  {
+  "title": "Lock",
+  "content": "<p>Concurrency pattern</p><p>One thread puts a \"lock\" on a resource, preventing other threads from accessing or modifying it</p>",
+  "image_url": "",
+  "deck": "Design Patterns"
+},
+  {
+  "title": "Messaging design pattern (MDP)",
+  "content": "<p>Concurrency pattern</p><p>Allows the interchange of information (i.e. messages) between components and applications.</p>",
+  "image_url": "",
+  "deck": "Design Patterns"
+},
+  {
+    "title": "Monitor object",
+    "content": "<p>Concurrency pattern</p><p>An object whose methods are subject to mutual exclusion, thus preventing multiple objects from erroneously trying to use it at the same time.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },
+  {
+  "title": "Reactor",
+  "content": "<p>Concurrency pattern</p><p>A reactor object provides an asynchronous interface to resources that must be handled synchronously.</p>",
+  "image_url": "",
+  "deck": "Design Patterns"
+},
+  {
+  "title": "Read-write lock",
+  "content": "<p>Concurrency pattern</p><p>Allows concurrent read access to an object, but requires exclusive access for write operations.</p>",
+  "image_url": "",
+  "deck": "Design Patterns"
+},
+  {
+  "title": "Scheduler",
+  "content": "<p>Concurrency pattern</p><p>Explicitly control when threads may execute single-threaded code.</p>",
+  "image_url": "",
+  "deck": "Design Patterns"
+},
+  {
+    "title": "Thread pool",
+    "content": "<p>Concurrency pattern</p><p>A number of threads are created to perform a number of tasks, which are usually organized in a queue. Typically, there are many more tasks than threads. Can be considered a special case of the object pool pattern.</p>",
+    "image_url": "",
+    "deck": "Design Patterns"
+  },{
+  "title": "Thread-specific storage",
+  "content": "<p>Concurrency pattern</p><p>Static or \"global\" memory local to a thread.</p>",
+  "image_url": "",
+  "deck": "Design Patterns"
+}
+
+
+]

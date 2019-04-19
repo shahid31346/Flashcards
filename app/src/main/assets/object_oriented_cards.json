@@ -188,7 +188,7 @@
   },
   {
     "title": "OO principles",
-    "content": "<p>Encapsulation, Inheritance, Polymorphism, Abstraction</p>",
+    "content": "<p><b>Encapsulation:</b> is the idea that the attributes of an entity are enclosed in that entity. This gives context to attributes</p><p><b>Inheritance:</b> is the idea that an entity can inherit attributes from another entity<p><b>Polymorphism:</b>Overriding and overloading</p><p><b>Abstraction:</b> is the process of hiding all but the relevant information about a thing to make things less complex and more efficient for the user</p>",
     "image_url": "",
     "deck": "Object Oriented"
   }

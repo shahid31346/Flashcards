@@ -12,7 +12,6 @@
     "deck": "Algorithms"
   },
   {
-    "id": 35,
     "title": "3-Way MergeSort",
     "content": "<p>Merge sort involves recursively splitting the array into 2 parts, sorting and finally merging them. A variant of merge sort is called 3-way merge sort where instead of splitting the array into 2 parts we split it into 3 parts.Merge sort recursively breaks down the arrays to subarrays of size half. Similarly, 3-way Merge sort breaks down the arrays to subarrays of size one third.</p><li>Time complexity: O(n log3 n)</li> ",
     "image_url": "",
@@ -30,6 +29,7 @@
     "image_url": "",
     "deck": "Algorithms"
   },
+
   {
     "title": "<p>Recursive Insertion Sort<p>",
     "content": "<p></p>",
@@ -43,203 +43,180 @@
     "deck": "Algorithms"
   },
   {
-    "id": 7,
     "title": "<p>Iterative Merge Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 8,
     "title": "<p>Quick Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 9,
     "title": "<p>Iterative Quick sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
+
   {
-    "id": 10,
     "title": "<p>Heap Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 11,
     "title": "<p>Counting Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 12,
     "title": "<p>Radix Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 13,
     "title": "<p>Bucket Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 14,
     "title": "<p>Shell Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
+
   {
-    "id": 15,
     "title": "<p>TimSort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 16,
     "title": "<p>Comb Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 17,
     "title": "<p>Pigeonhole Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 18,
     "title": "<p>Cycle Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 19,
     "title": "<p>Cocktail Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
+
   {
-    "id": 20,
     "title": "<p>Strand Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 21,
     "title": "<p>Bitonic Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 22,
     "title": "<p>Pancake Sorting<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 23,
     "title": "<p>Binary Insertion Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 24,
     "title": "<p>BogoSort or Permutation Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
+
   {
-    "id": 25,
     "title": "<p>Gnome Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 26,
     "title": "Sleep Sort",
     "content": "<p>AKA King of Laziness or Sorting While Sleeping</p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 27,
     "title": "<p>Structure Sorting (C++)<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 28,
     "title": "<p>Stooge Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 29,
     "title": "<p>Tag Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
+
   {
-    "id": 30,
     "title": "<p>Tree Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 31,
     "title": "<p>Cartesian Tree Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 32,
     "title": "<p>Odd-Even Sort / Brick Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 33,
     "title": "<p>QuickSort on singly Linked List<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "id": 34,
     "title": "<p>QuickSort on doubly Linked List<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
+
   {
-    "id": 35,
     "title": "<p>3-Way QuickSort<p>",
     "content": "<p></p>",
     "image_url": "",

@@ -1,44 +1,51 @@
 [
   {
-    "name": "Android (15)",
+    "name": "Android",
     "source": "android_cards.json",
     "short": "A",
-    "priority": 2
+    "priority": 2,
+    "cards": 38
   },
   {
-    "name": "Kotlin (9)",
+    "name": "Kotlin",
     "source": "kotlin_cards.json",
     "short": "K",
-    "priority": 3
+    "priority": 3,
+    "cards": 9
   },
   {
-    "name": "Java (0)",
+    "name": "Java",
     "source": "java_cards.json",
     "short": "J",
-    "priority": 4
+    "priority": 4,
+    "cards": 0
   },
   {
     "name": "Data Structures (4)",
     "source": "data_structures_cards.json",
     "short": "Ds",
-    "priority": 5
+    "priority": 5,
+    "cards": 4
   },
   {
-    "name": "Algorithms (4/37)",
+    "name": "Algorithms",
     "source": "algorithms_cards.json",
     "short": "Al",
-    "priority": 6
+    "priority": 6,
+    "cards": 6
   },
   {
     "name": "Design Patterns",
-    "source": "patterns_cards.json",
+    "source": "design_patterns_cards.json",
     "short": "P",
-    "priority": 7
+    "priority": 7,
+    "cards": 58
   },
   {
     "name": "OO Programming",
     "source": "object_oriented_cards.json",
     "short": "Oo",
-    "priority": 1
+    "priority": 1,
+    "cards": 31
   }
 ]

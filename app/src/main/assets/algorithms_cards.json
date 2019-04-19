@@ -136,8 +136,8 @@
     "deck": "Algorithms"
   },
   {
-    "title": "<p>Pancake Sorting<p>",
-    "content": "<p></p>",
+    "title": "Pancake Sorting",
+    "content": "<p>Based on Selection Sort but with only one function available<br><font color=\"blue\">flip(array, i) //Reverse array from position 0 to i</font>In each iteration find the smallest number then use flip</p><p>Total O(n) flip operations are performed in above code. The overall time complexity is O(n^2).</p>",
     "image_url": "",
     "deck": "Algorithms"
   },
@@ -148,8 +148,8 @@
     "deck": "Algorithms"
   },
   {
-    "title": "<p>BogoSort or Permutation Sort<p>",
-    "content": "<p></p>",
+    "title": "BogoSort or Permutation Sort",
+    "content": "<p>BogoSort also known as permutation sort, stupid sort, slow sort, shotgun sort or monkey sort is a particularly ineffective algorithm based on generate and test paradigm.<br><font color=\"blue\">while not Sorted(list) do<br>&nbsp;&nbspshuffle (list)<br>done</font></p><p>>Worst Case : O(∞) (since this algorithm has no upper bound)<br>>Average Case: O(n*n!)<br>>Best Case : O(n) (when array given is already sorted)</p>",
     "image_url": "",
     "deck": "Algorithms"
   },
@@ -161,7 +161,7 @@
     "deck": "Algorithms"
   },
   {
-    "title": "Sleep Sort",
+    "title": "<p>Sleep Sort</p>",
     "content": "<p>AKA King of Laziness or Sorting While Sleeping</p>",
     "image_url": "",
     "deck": "Algorithms"

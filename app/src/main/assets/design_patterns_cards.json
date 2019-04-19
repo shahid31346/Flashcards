@@ -334,6 +334,7 @@
   "image_url": "",
   "deck": "Design Patterns"
 },
+
   {
   "title": "Read-write lock",
   "content": "<p>Concurrency pattern</p><p>Allows concurrent read access to an object, but requires exclusive access for write operations.</p>",

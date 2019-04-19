@@ -18,10 +18,10 @@
     "source": "java_cards.json",
     "short": "J",
     "priority": 4,
-    "cards": 0
+    "cards": 30
   },
   {
-    "name": "Data Structures (4)",
+    "name": "Data Structures",
     "source": "data_structures_cards.json",
     "short": "Ds",
     "priority": 5,

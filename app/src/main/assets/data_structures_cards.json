@@ -1,19 +1,56 @@
 [
   {
-    "title": "Primitive Types",
-    "content": "<p><ul><li><b>Boolean</b></li><li><b>Character</b></li><li><b>Floating-point numbers</b> limited precision approximations of real number values.</li><li><b>Fixed-point numbers</b></li><li><b>Integer</b>integral or fixed-precision values.</li><li><b>Reference</b>(also called a pointer or handle), a small value referring to another object's address in memory, possibly a much larger one.</li><li><b>Enumerated type</b> a small set of uniquely named values</li></ul></p>",
+    "title": "Data Structures",
+    "content": "<p><b>Data structure</b> is a container that stores data in a specific layout. This “layout” allows a data structure to be efficient in some operations and inefficient in others.</p>",
     "image_url": "",
     "deck": "Data Structure"
   },
   {
-    "title": "Composite types or non-primitive type",
-    "content": "<li><b>Array</b></li><li><b>Record</b> Also known as Tuple or structure</li><li><b>Union</b> Also called variant record, discrimate union or disjoint union.</li>",
+    "title": "Commonly used Data Structures",
+    "content": "<p>> Arrays, Stacks, Queues, Linked Lists, Trees, Graphs, Tries and Hash Tables</p>",
+    "image_url": "",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "Arrays",
+    "content": "<p>In computer science, an array data structure, or simply an array, is a data structure consisting of a collection of elements (values or variables), each identified by at least one array index or key. An array is stored such that the position of each element can be computed from its index tuple by a mathematical formula. The simplest type of data structure is a linear array, also called one-dimensional array.</p>",
+    "image_url": "images/arrays.png",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "Stack",
+    "content": "<p>In computer science, a <b>stack</b> is an abstract data type that serves as a collection of elements, with two principal operations:<br> ><i>push</i>, which adds an element to the collection, and<br>> <i>pop</i>, which removes the most recently added element that was not yet removed.</p><p>The order in which elements come off a stack gives rise to its alternative name, LIFO (last in, first out).</p>",
+    "image_url": "",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "Comparative with major data structures",
+    "content": "<br>",
+    "image_url": "images/data_structures_comp.png",
+    "deck": "Data Structure"
+  },
+
+  {
+    "title": "Queue",
+    "content": "<p>In computer science, a queue is a collection in which the entities in the collection are kept in order and the principal (or only) operations on the collection are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the queue a First-In-First-Out (FIFO) data structure</p>",
+    "image_url": "images/queue.png",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "Priority Queue",
+    "content": "<p>In computer science, a priority queue is an abstract data type which is like a regular queue or stack data structure, but where additionally each element has a \"priority\" associated with it. In a priority queue, an element with high priority is served before an element with low priority.</p>",
+    "image_url": "",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "Double-ended queue",
+    "content": "<p>In computer science, a double-ended queue (abbreviated to deque) is an abstract data type that generalizes a queue, for which elements can be added to or removed from either the front (head) or back (tail). It is also often called a head-tail linked list</p>",
     "image_url": "",
     "deck": "Data Structure"
   },
   {
     "title": "Container (Abstract Data types)",
-    "content": "<p>also known as Collections is a grouping of some variable number of data items (possibly zero) that have some shared significance to the problem being solved and need to be operated upon together in some controlled fashion. Generally, the data items will be of the same type. Examples of collections include lists, sets, multisets, trees and graphs</p>",
+    "content": "<p>also known as Collections is a grouping of some variable number of data items (possibly zero) that have some shared significance to the problem being solved and need to be operated upon together in some controlled fashion. Generally, the data items will be of the same type. Examples of collections include lists, sets, multi-sets, trees and graphs</p>",
     "image_url": "",
     "deck": "Data Structure"
   },
@@ -22,5 +59,42 @@
     "content": "<p>A list or sequence is an abstract data type that represents a countable number of ordered values, where the same value may occur more than once. Lists are a basic example of containers, as they contain other values. If the same value occurs multiple times, each occurrence is considered a distinct item.A singly linked list structure, implementing a list with 3 integer elements.</p>",
     "image_url": "images/ds_list.png",
     "deck": "Data Structure"
+  },
+
+  {
+    "title": "Tree",
+    "content": "<p>In computer science, a tree is a widely used abstract data type (ADT)—or data structure implementing this ADT—that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node, represented as a set of linked nodes.</p>",
+    "image_url": "images/tree.png",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "Graph",
+    "content": "<p>In computer science, a graph is an abstract data type that is meant to implement the undirected graph and directed graph concepts from mathematics; specifically, the field of graph theory. A graph data structure consists of a finite (and possibly mutable) set of vertices (also called nodes or points), together with a set of unordered pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph. These pairs are known as edges (also called links or lines), and for a directed graph are also known as arrows</p>",
+    "image_url": "images/graph.png",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "Trie",
+    "content": "<p>In computer science, a trie, also called digital tree, radix tree or prefix tree, is a kind of search tree—an ordered tree data structure used to store a dynamic set or associative array where the keys are usually strings</p>",
+    "image_url": "images/trie.png",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "Radix Tree",
+    "content": "<p>In computer science, a radix tree (also radix trie or compact prefix tree) is a data structure that represents a space-optimized trie (prefix tree) in which each node that is the only child is merged with its parent. The result is that the number of children of every internal node is at most the radix r of the radix tree, where r is a positive integer and a power x of 2, having x ≥ 1</p>",
+    "image_url": "images/radix_tree.png",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "Hash Table",
+    "content": "<p>In computing, a hash table (hash map) is a data structure that implements an associative array abstract data type, a structure that can map keys to values. A hash table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found</p>",
+    "image_url": "images/hash_table.png",
+    "deck": "Data Structure"
   }
+
+
+
+
+
+
 ]

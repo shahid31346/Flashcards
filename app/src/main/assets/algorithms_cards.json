@@ -13,13 +13,13 @@
   },
   {
     "title": "3-Way MergeSort",
-    "content": "<p>Merge sort involves recursively splitting the array into 2 parts, sorting and finally merging them. A variant of merge sort is called 3-way merge sort where instead of splitting the array into 2 parts we split it into 3 parts.Merge sort recursively breaks down the arrays to subarrays of size half. Similarly, 3-way Merge sort breaks down the arrays to subarrays of size one third.</p><li>Time complexity: O(n log3 n)</li> ",
+    "content": "<p>Merge sort involves recursively splitting the array into 2 parts, sorting and finally merging them. A variant of merge sort is called 3-way merge sort where instead of splitting the array into 2 parts we split it into 3 parts.Merge sort recursively breaks down the arrays to sub-arrays of size half. Similarly, 3-way Merge sort breaks down the arrays to subarrays of size one third.</p><li>Time complexity: O(n log3 n)</li> ",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
     "title": "Recursive Bubble Sort",
-    "content": "<p></p>",
+    "content": "<p>Same as bubble sort, it repeatedly swaps elements setting the biggest number at the right and calling recursively the rest of the array with the same function. The escape clause is an array of size 1. In each iteration it goes from size n, n-1, n-2, ... 1</p><p>Time Complexity at best case scenario: O(n)</p><p>Time Complexity at worst case scenario: O(n^2)</p>",
     "image_url": "",
     "deck": "Algorithms"
   },

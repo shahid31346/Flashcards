@@ -5,12 +5,16 @@
       <w>convolutional</w>
       <w>creational</w>
       <w>datatype</w>
+      <w>fanout</w>
       <w>façade</w>
+      <w>logb</w>
+      <w>merkle</w>
       <w>mixins</w>
       <w>multidex</w>
       <w>multilayered</w>
       <w>multitier</w>
       <w>multiton</w>
+      <w>queap</w>
       <w>raii</w>
       <w>vftable</w>
       <w>vtable</w>

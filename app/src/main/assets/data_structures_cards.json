@@ -1,4 +1,105 @@
 [
+
+  {
+    "title": "AVL Tree",
+    "content": "<p>In computer science, an <b>AVL tree</b> is a self-balancing binary search tree. It was the first such data structure to be invented. In an AVL tree, the heights of the two child subtrees of any node differ by at most one; if at any time they differ by more than one, rebalancing is done to restore this property. Lookup, insertion, and deletion all take O(log n) time in both the average and worst cases, where <i>n</i> is the number of nodes in the tree prior to the operation. Insertions and deletions may require the tree to be rebalanced by one or more tree rotations.</p>",
+    "image_url": "images/avl_tree.png",
+    "deck": "Data Structure"
+  },
+
+  {
+    "title": "Decision tree",
+    "content": "<p>A <b>decision tree</b> is a decision support tool that uses a tree-like model of decisions and their possible consequences, including chance event outcomes, resource costs, and utility. It is one way to display an algorithm that only contains conditional control statements. Decision trees are commonly used in operations research, specifically in decision analysis, to help identify a strategy most likely to reach a goal, but are also a popular tool in machine learning</p>",
+    "image_url": "images/decision_tree.png",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "Fibonacci heap",
+    "content": "<p>In computer science, a <b>Fibonacci heap</b> is a data structure for priority queue operations, consisting of a collection of heap-ordered trees. It has a better amortized running time than many other priority queue data structures including the binary heap and binomial heap</p><p>Insert Θ(1); Find-min Θ(1); Delete-min O(log n); Decrease-key Θ(1); Merge Θ(1)</p>",
+    "image_url": "images/fib_heap.png",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "Hash Tree",
+    "content": "<p>In cryptography and computer science, a <b>hash tree</b> or Merkle tree is a tree in which every leaf node is labelled with the hash of a data block, and every non-leaf node is labelled with the cryptographic hash of the labels of its child nodes. Hash trees allow efficient and secure verification of the contents of large data structures</p>",
+    "image_url": "images/hash_tree.png",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "Set",
+    "content": "<p>In computer science, a <b>set</b> is an abstract data type that can store unique values, without any particular order. It is a computer implementation of the mathematical concept of a finite set. Unlike most other collection types, rather than retrieving a specific element from a set, one typically tests a value for membership in a set</p><p>A <b>multiset</b> is a special kind of set in which an element can figure several times.</p>",
+    "image_url": "",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "Red Black Tree",
+    "content": "<p>A <b>red–black</b> tree is a kind of self-balancing binary search tree in computer science. Each node of the binary tree has an extra bit, and that bit is often interpreted as the color (red or black) of the node. These color bits are used to ensure the tree remains approximately balanced during insertions and deletions</p><p>> Each node is either red or black.<br>> The root can always be changed from red to black, but not necessarily vice versa<br>> All leaves (NIL) are black.<br>> If a node is red, then both its children are black.<br>> Every path from a given node to any of its descendant NIL nodes contains the same number of black nodes</p>",
+    "image_url": "images/red_black_tree.png",
+    "deck": "Data Structure"
+  },
+
+  {
+    "title": "B- Tree",
+    "content": "<p>In computer science, a <b>B-tree</b> is a self-balancing tree data structure that maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time. The B-tree is a generalization of a binary search tree in that a node can have more than two children. Unlike other self-balancing binary search trees, the B-tree is well suited for storage systems that read and write relatively large blocks of data, such as discs. It is commonly used in databases and file systems.</p><p>If <i>b</i> is the order, Space O(n); Search O(logb n); Insert O(logb n); Deleting O(logb n)</p>",
+    "image_url": "images/b_minus.png",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "B+ Tree",
+    "content": "<p>Is a balanced tree where each node contains a set of elements. The number of connections from any node to its children is called <i>order</i>. Only the leaves contain information and the last connection of each leaf, directs to the next leaf</p><p>If <i>b</i> is the order, Space O(n); Search O(logb n); Insert O(logb n); Deleting O(logb n)</p>",
+    "image_url": "images/b_plus.png",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "B*- Tree",
+    "content": "<p>Is a B+ Tree where a cache memory is implemented to insert new information in the tree. This way, the most expensive operation in a B+ tree is cut by half. Since the position of each element is in the cache memory most of the time, deleting information may require more strategies to clean up the information from the tree and the cache</p>",
+    "image_url": "",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "B&#35; Tree",
+    "content": "<p>A <b>B&#35;</b> tree is a data structure similar to a B+ tree with rotations allowed among brothers only (immediate siblings). This action allows to improve how fast a new element is added since brother contiguous siblings in the tree can add a new element of swap it place so the order may prevail</p>",
+    "image_url": "",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "Dancing Tree",
+    "content": "<p>In computer science, a <b>dancing tree</b> is a tree data structure similar to B+ trees. As opposed to self-balancing binary search trees that attempt to keep their nodes balanced at all times, dancing trees only balance their nodes when flushing data to a disk (either because of memory constraints or because a transaction has completed)</p>",
+    "image_url": "",
+    "deck": "Data Structure"
+  },
+
+  {
+    "title": "2-3 Tree",
+    "content": "<p>In computer science, a 2–3 tree is a tree data structure, where every node with children (internal node) has either two children (2-node) and one data element or three children (3-nodes) and two data elements</p><p>If <i>b</i> is the order (2 or 3), Space O(n); Search O(logb n); Insert O(logb n); Deleting O(logb n)</p>",
+    "image_url": "",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "2-3-4 Tree",
+    "content": "<p>In computer science, a 2–3–4 tree (also called a 2–4 tree) is a self-balancing data structure that is commonly used to implement dictionaries. The numbers mean a tree where every node with children (internal node) has either two, three, or four child nodes</p><p>If <i>b</i> is the order (2 or 3), Space O(n); Search O(logb n); Insert O(logb n); Deleting O(logb n)</p>",
+    "image_url": "",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "Queap",
+    "content": "<p>In computer science, a queap is a priority queue data structure. The data structure allows insertions and deletions of arbitrary elements, as well as retrieval of the highest-priority element</p><p>The data structure consists of a doubly linked list and a 2-4 tree data structure, each modified to keep track of its minimum-priority element. The basic operation of the structure is to keep newly inserted elements in the doubly linked list, until a deletion would remove one of the list items, at which point they are all moved into the 2-4 tree. The 2-4 tree stores its elements in insertion order, rather than the more conventional priority-sorted order</p>",
+    "image_url": "images/queap.png",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "Fusion Tree",
+    "content": "<p>In computer science, a fusion tree is a type of tree data structure that implements an associative array on w-bit integers. When operating on a collection of n key–value pairs, it uses O(n) space and performs searches in O(logw n) time, which is asymptotically faster than a traditional self-balancing binary search tree</p>",
+    "image_url": "images/fusion_tree.png",
+    "deck": "Data Structure"
+  },
+  {
+    "title": "Bx Tree",
+    "content": "<p>In computer science, the <b>Bx tree</b> is basically a query that is used to update efficient B+ tree-based index structures for moving objects.</p><p>The base structure of the Bx-tree is a B+ tree in which the internal nodes serve as a directory, each containing a pointer to its right sibling. In the earlier version of the Bx-tree, the leaf nodes contained the moving-object locations being indexed and corresponding index time. In the optimized version, each leaf node entry contains the id, velocity, single-dimensional mapping value and the latest update time of the object. The fanout is increased by not storing the locations of moving objects, as these can be derived from the mapping values</p>",
+    "image_url": "",
+    "deck": "Data Structure"
+  },
+
   {
     "title": "Data Structures",
     "content": "<p><b>Data structure</b> is a container that stores data in a specific layout. This “layout” allows a data structure to be efficient in some operations and inefficient in others.</p>",
@@ -20,7 +121,7 @@
   {
     "title": "Stack",
     "content": "<p>In computer science, a <b>stack</b> is an abstract data type that serves as a collection of elements, with two principal operations:<br> ><i>push</i>, which adds an element to the collection, and<br>> <i>pop</i>, which removes the most recently added element that was not yet removed.</p><p>The order in which elements come off a stack gives rise to its alternative name, LIFO (last in, first out).</p>",
-    "image_url": "",
+    "image_url": "images/stack.png",
     "deck": "Data Structure"
   },
   {
@@ -32,7 +133,7 @@
 
   {
     "title": "Queue",
-    "content": "<p>In computer science, a queue is a collection in which the entities in the collection are kept in order and the principal (or only) operations on the collection are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the queue a First-In-First-Out (FIFO) data structure</p>",
+    "content": "<p>In computer science, a <b>queue</b> is a collection in which the entities in the collection are kept in order and the principal (or only) operations on the collection are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the queue a First-In-First-Out (FIFO) data structure</p>",
     "image_url": "images/queue.png",
     "deck": "Data Structure"
   },
@@ -63,38 +164,33 @@
 
   {
     "title": "Tree",
-    "content": "<p>In computer science, a tree is a widely used abstract data type (ADT)—or data structure implementing this ADT—that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node, represented as a set of linked nodes.</p>",
+    "content": "<p>In computer science, a <b>tree</b> is a widely used abstract data type (ADT)—or data structure implementing this ADT—that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node, represented as a set of linked nodes.</p>",
     "image_url": "images/tree.png",
     "deck": "Data Structure"
   },
   {
     "title": "Graph",
-    "content": "<p>In computer science, a graph is an abstract data type that is meant to implement the undirected graph and directed graph concepts from mathematics; specifically, the field of graph theory. A graph data structure consists of a finite (and possibly mutable) set of vertices (also called nodes or points), together with a set of unordered pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph. These pairs are known as edges (also called links or lines), and for a directed graph are also known as arrows</p>",
+    "content": "<p>In computer science, a <b>graph</b> is an abstract data type that is meant to implement the undirected graph and directed graph concepts from mathematics; specifically, the field of graph theory. A graph data structure consists of a finite (and possibly mutable) set of vertices (also called nodes or points), together with a set of unordered pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph. These pairs are known as edges (also called links or lines), and for a directed graph are also known as arrows</p>",
     "image_url": "images/graph.png",
     "deck": "Data Structure"
   },
   {
     "title": "Trie",
-    "content": "<p>In computer science, a trie, also called digital tree, radix tree or prefix tree, is a kind of search tree—an ordered tree data structure used to store a dynamic set or associative array where the keys are usually strings</p>",
+    "content": "<p>In computer science, a <b>trie</b>, also called digital tree, radix tree or prefix tree, is a kind of search tree—an ordered tree data structure used to store a dynamic set or associative array where the keys are usually strings</p>",
     "image_url": "images/trie.png",
     "deck": "Data Structure"
   },
   {
     "title": "Radix Tree",
-    "content": "<p>In computer science, a radix tree (also radix trie or compact prefix tree) is a data structure that represents a space-optimized trie (prefix tree) in which each node that is the only child is merged with its parent. The result is that the number of children of every internal node is at most the radix r of the radix tree, where r is a positive integer and a power x of 2, having x ≥ 1</p>",
+    "content": "<p>In computer science, a <b>radix tree</b> (also radix trie or compact prefix tree) is a data structure that represents a space-optimized trie (prefix tree) in which each node that is the only child is merged with its parent. The result is that the number of children of every internal node is at most the radix r of the radix tree, where r is a positive integer and a power x of 2, having x ≥ 1</p>",
     "image_url": "images/radix_tree.png",
     "deck": "Data Structure"
   },
   {
     "title": "Hash Table",
-    "content": "<p>In computing, a hash table (hash map) is a data structure that implements an associative array abstract data type, a structure that can map keys to values. A hash table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found</p>",
+    "content": "<p>In computing, a <b>hash table</b> (hash map) is a data structure that implements an associative array abstract data type, a structure that can map keys to values. A hash table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found</p>",
     "image_url": "images/hash_table.png",
     "deck": "Data Structure"
   }
-
-
-
-
-
 
 ]

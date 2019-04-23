@@ -25,7 +25,7 @@
     "source": "data_structures_cards.json",
     "short": "Ds",
     "priority": 5,
-    "cards": 15
+    "cards": 30
   },
   {
     "name": "Algorithms",

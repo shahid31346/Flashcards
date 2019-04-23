@@ -1,84 +1,38 @@
 [
+
   {
-    "title": "Selection Sort",
-    "content": "<p>The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning.</p><p>Time Complexity: O(n^2) as there are two nested loops.</p>",
+    "title": "Quick Sort",
+    "content": "<p><b>Quicksort</b> (sometimes called partition-exchange sort) is an efficient sorting algorithm. When implemented well, it can be about two or three times faster than its main competitors, merge sort and heapsort. Worst critics to this algorithm is the selection of the pivot since it is not defined<br><br> >Pick an element, called a pivot, from the array.<br> >Partitioning: reorder the array so that all elements with values less than the pivot come before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way). After this partitioning, the pivot is in its final position. This is called the partition operation.<br> > Recursively apply the above steps to the sub-array of elements with smaller values and separately to the sub-array of elements with greater values.<br><br> Worst case scenario O(n * n)</p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "title": "Bubble Sort",
-    "content": "<p>It works by multiple iterations repeatedly swapping the adjacent elements if they are in wrong order. In each iteration, part of the array is sorted at the left. This algorithm also runs an extra time after the array is sorted to check if it is done</p><p>Time Complexity at best case scenario: O(n)</p><p>Time Complexity at worst case scenario: O(n^2)</p>",
+    "title": "Heap Sort",
+    "content": "<p><b>Heapsort</b> is a comparison-based sorting algorithm<br>> In the first step, a heap is built out of the data. The heap is often placed in an array with the layout of a complete binary tree. The complete binary tree maps the binary tree structure into the array indices; each array index represents a node; the index of the node's parent, left child branch, or right child branch are simple expressions<br>> In the second step, a sorted array is created by repeatedly removing the largest element from the heap (the root of the heap), and inserting it into the array. The heap is updated after each removal to maintain the heap property. Once all objects have been removed from the heap, the result is a sorted array.<br><br> Worst case scenario O(n log n)</p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "title": "3-Way MergeSort",
-    "content": "<p>Merge sort involves recursively splitting the array into 2 parts, sorting and finally merging them. A variant of merge sort is called 3-way merge sort where instead of splitting the array into 2 parts we split it into 3 parts.Merge sort recursively breaks down the arrays to sub-arrays of size half. Similarly, 3-way Merge sort breaks down the arrays to subarrays of size one third.</p><li>Time complexity: O(n log3 n)</li> ",
+    "title": "Introsort",
+    "content": "<p><b>Introsort</b> is a variant of quicksort that switches to heapsort when a bad case is detected to avoid quicksort's worst-case running time.</p><p><font color=\"blue\">let maxComplex = floor(log(size of array)))<br>if(maxComplex == 0)<br>&nbsp;&nbsp;heapsort(array)<br>else<br>&nbsp;&nbsp;quicksort(array)</font><br><br> Worst case scenario O(n log n)</p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "title": "Recursive Bubble Sort",
-    "content": "<p>Same as bubble sort, it repeatedly swaps elements setting the biggest number at the right and calling recursively the rest of the array with the same function. The escape clause is an array of size 1. In each iteration it goes from size n, n-1, n-2, ... 1</p><p>Time Complexity at best case scenario: O(n)</p><p>Time Complexity at worst case scenario: O(n^2)</p>",
+    "title": "Counting Sort",
+    "content": "<p><b>Counting sort</b> is a sorting technique based on keys between a specific range. It works by counting the number of objects having distinct key values (kind of hashing). Then doing some arithmetic to calculate the position of each object in the output sequence. <b>It is not a comparison-based sorting algorithm</b>. It requires to know previously the range of the unsorted numbers<br><br> Worst case scenario O(n + k ) where k is the range of input</p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "title": "<p>Insertion Sort<p>",
-    "content": "<p></p>",
+    "title": "Radix Sort",
+    "content": "<p>In computer science, <b>radix sort</b> is a non-comparative integer sorting algorithm that sorts data with integer keys by grouping keys by the individual digits which share the same significant position and value. A positional notation is required, but because integers can represent strings of characters (e.g., names or dates) and specially formatted floating point numbers, radix sort is not limited to integers. Least significant digit radix sorts typically use the following sorting order: short keys come before longer keys, and then keys of the same length are sorted lexicographically. This coincides with the normal order of integer representations, such as the sequence 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11.<br><br> Worst case scenario O(w * n) where w is the number of bits required to store each key.</p>",
     "image_url": "",
     "deck": "Algorithms"
   },
 
-  {
-    "title": "<p>Recursive Insertion Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-  {
-    "title": "<p>Merge Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-  {
-    "title": "<p>Iterative Merge Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-  {
-    "title": "<p>Quick Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-  {
-    "title": "<p>Iterative Quick sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
 
-  {
-    "title": "<p>Heap Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-  {
-    "title": "<p>Counting Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-  {
-    "title": "<p>Radix Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
+
   {
     "title": "<p>Bucket Sort<p>",
     "content": "<p></p>",
@@ -135,25 +89,13 @@
     "image_url": "",
     "deck": "Algorithms"
   },
-  {
-    "title": "Pancake Sorting",
-    "content": "<p>Based on Selection Sort but with only one function available<br><font color=\"blue\">flip(array, i) //Reverse array from position 0 to i</font>In each iteration find the smallest number then use flip</p><p>Total O(n) flip operations are performed in above code. The overall time complexity is O(n^2).</p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
+
   {
     "title": "<p>Binary Insertion Sort<p>",
     "content": "<p></p>",
     "image_url": "",
     "deck": "Algorithms"
   },
-  {
-    "title": "BogoSort or Permutation Sort",
-    "content": "<p>BogoSort also known as permutation sort, stupid sort, slow sort, shotgun sort or monkey sort is a particularly ineffective algorithm based on generate and test paradigm.<br><font color=\"blue\">while not Sorted(list) do<br>&nbsp;&nbspshuffle (list)<br>done</font></p><p>>Worst Case : O(∞) (since this algorithm has no upper bound)<br>>Average Case: O(n*n!)<br>>Best Case : O(n) (when array given is already sorted)</p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-
   {
     "title": "<p>Gnome Sort<p>",
     "content": "<p></p>",
@@ -225,6 +167,68 @@
   {
     "title": "<p>Merge Sort for Linked Lists<p>",
     "content": "<p></p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+
+  {
+    "title": "BogoSort or Permutation Sort",
+    "content": "<p>BogoSort also known as permutation sort, stupid sort, slow sort, shotgun sort or monkey sort is a particularly ineffective algorithm based on generate and test paradigm. The function successively generates permutations of its input until it finds one that is sorted.<br><font color=\"blue\">while not Sorted(list) do<br>&nbsp;&nbsp;shuffle (list)<br>done</font></p><p>>Worst Case : O(∞) (since this algorithm has no upper bound)<br>>Average Case: O(n*n!)<br>>Best Case : O(n) (when array given is already sorted)</p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "title": "Insertion Sort",
+    "content": "<p>At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain.<br>> Works case scenario (n^2) comparisons and swaps</p>",
+    "image_url": "images/insertion.png",
+    "deck": "Algorithms"
+  },
+  {
+    "title": "Recursive Insertion Sort",
+    "content": "<p>Following the same steps for insertion sort, it starts with the first element of the array and tries to insert it in the recursive call response of the rest of the array (with size n-1) until the last call which atomically checks and swaps between two elements.<br>> Works case scenario (n^2) comparisons and swaps</p>",
+    "image_url": "images/insertion_r.png",
+    "deck": "Algorithms"
+  },
+  {
+    "title": "Merge Sort",
+    "content": "<p>In computer science, <b>merge sort</b> (also commonly spelled mergesort) is an efficient, general-purpose, comparison-based sorting algorithm. Merge sort is a divide and conquer algorithm<br><br>> Divide the unsorted list into n sub-lists, each containing one element (a list of one element is considered sorted)<br>> Repeatedly merge sub-lists to produce new sorted sub-lists until there is only one sublist remaining. This will be the sorted list.</p><p>Worst-case performance O(n log n); Space O(n)</p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "title": "Iterative Merge Sort",
+    "content": "<p>As traditional Merge Sort recursive implementations, it divides the unsorted lists into two sub-lists until it is easier to sort and merges the sorted sub-lists. The iterative version does not require explicit auxiliary stack</p><p>Worst-case performance O(n log n); Space O(n)</p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+
+  {
+    "title": "Selection Sort",
+    "content": "<p>The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning.</p><p>Time Complexity: O(n^2) as there are two nested loops.</p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "title": "3-Way MergeSort",
+    "content": "<p>Merge sort involves recursively splitting the array into 2 parts, sorting and finally merging them. A variant of merge sort is called 3-way merge sort where instead of splitting the array into 2 parts we split it into 3 parts.Merge sort recursively breaks down the arrays to sub-arrays of size half. Similarly, 3-way Merge sort breaks down the arrays to subarrays of size one third.</p><li>Time complexity: O(n log3 n)</li> ",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "title": "Bubble Sort",
+    "content": "<p>It works by multiple iterations repeatedly swapping the adjacent elements if they are in wrong order. In each iteration, part of the array is sorted at the left. This algorithm also runs an extra time after the array is sorted to check if it is done</p><p>Time Complexity at best case scenario: O(n)</p><p>Time Complexity at worst case scenario: O(n^2)</p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "title": "Recursive Bubble Sort",
+    "content": "<p>Same as bubble sort, it repeatedly swaps elements setting the biggest number at the right and calling recursively the rest of the array with the same function. The escape clause is an array of size 1. In each iteration it goes from size n, n-1, n-2, ... 1</p><p>Time Complexity at best case scenario: O(n)</p><p>Time Complexity at worst case scenario: O(n^2)</p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "title": "Pancake Sorting",
+    "content": "<p>Based on Selection Sort but with only one function available<br><font color=\"blue\">flip(array, i) //Reverse array from position 0 to i</font></p><p>In each iteration find the smallest number then use flip</p><p>Total O(n) flip operations are performed in above code. The overall time complexity is O(n^2).</p>",
     "image_url": "",
     "deck": "Algorithms"
   }

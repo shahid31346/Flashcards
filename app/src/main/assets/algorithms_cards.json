@@ -1,6 +1,68 @@
 [
 
   {
+    "title": "Analysis of algorithms",
+    "content": "<p>Is the determination of the computational complexity of algorithms, that is the amount of time, storage and/or other resources necessary to execute them. Usually, this involves determining a function that relates the length of an algorithm's input to the number of steps it takes (its time complexity) or the number of storage locations it uses (its space complexity)</p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "title": "Big O notation",
+    "content": "<p><b>Big O notation</b> is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity in the worst-case scenario. The order of the function is usually the value of the Big O.</p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "title": "NP complexity",
+    "content": "<p><b>NP (nondeterministic polynomial time)</b> is a complexity class used to classify decision problems. NP is the set of decision problems for which the problem instances, where the answer is \"yes\", have proofs verifiable in polynomial time<br><br>NP is the set of decision problems solvable in polynomial time by a non-deterministic Turing machine. </p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "title": "Stooge Sort",
+    "content": "<p><b>Stooge sort</b> is a recursive sorting algorithm. It is notable for its exceptional bad time complexity of O(n log 3 / log 1.5 ) = O(n ^ 2.7095...). The algorithm is defined as follows</p>",
+    "image_url": "images/stooge.png",
+    "deck": "Algorithms"
+  },
+  {
+    "title": "Algorithms classifications",
+    "content": "<p>> Computational complexity (worst, average and best behavior)<br>> Computational complexity of swaps (for \"in-place\" algorithms)<br>>Memory usage<br>> Recursion<br>> Stability<br>> General method: insertion, exchange, selection, merging, etc.<br>> Whether the algorithm is serial or parallel.<br>> Adaptability: Whether or not the presortedness of the input affects the running time</p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+
+  {
+    "title": "Pigeonhole Sort",
+    "content": "<p><b>Pigeonhole Sort</b> is no based on comparing. It works as follows<br><br>> Given an array of values to be sorted, set up an auxiliary array of initially empty \"pigeonholes\", one pigeonhole for each key through the range of the original array.<br>> Going over the original array, put each value into the pigeonhole corresponding to its key, such that each pigeonhole eventually contains a list of all values with that key.<br>> Iterate over the pigeonhole array in order, and put elements from non-empty pigeonholes back into the original array.</p><p>Worst-case scenario O(n) (The range must be known)",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "title": "Cycle Sort",
+    "content": "<p><b>Cycle sort</b> is an in-place, unstable sorting algorithm, a comparison sort that is theoretically optimal in terms of the total number of writes to the original array, unlike any other in-place sorting algorithm.<br><br>> If the element is already at the correct position, do nothing.<br>> If it is not, we will write it to its intended position. That position is inhabited by a different element b, which we then have to move to its correct position. This process of displacing elements to their correct positions continues until an element is moved to the original position of a. This completes a cycle.</p><p>Worst-case scenario O(n * n)</p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "title": "Cocktail Sort",
+    "content": "<p><b>Cocktail shaker sort</b>, also known as bidirectional bubble sort, cocktail sort, shaker sort (which can also refer to a variant of selection sort), ripple sort, shuffle sort, or shuttle sort, is a variation of bubble sort. The algorithm differs from a bubble sort in that it sorts in both directions on each pass through the list.</p><p>Worst case scenario O(n * n)</p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "title": "Strand Sort",
+    "content": "<p><b>Strand Sort</b> is an algorithm that uses a new array to compare and merge values if needed.<br><br>>Create an empty sublist and move first item of input_array[] to it.<br>>Traverse remaining items of input_array. For every item x, check if x is bigger than last inserted item to sublist. If it is, remove x from input_array and add at the end of sublist. If not, keep it in input_array<br>> Merge sublist into output_list<br>> Recur for remaining items in input_array and current items in output_array.</p><p>Worst case scenario O(n * n)</p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+  {
+    "title": "Tree Sort",
+    "content": "<p>A <b>tree sort</b> is a sort algorithm that builds a binary search tree from the elements to be sorted, and then traverses the tree (in-order) so that the elements come out in sorted order. Its typical use is sorting elements online: after each insertion, the set of elements seen so far is available in sorted order.</p><p>Worst case scenario O(n * n) - if the tree is unbalanced; O(n log n) - if the tree is balanced</p>",
+    "image_url": "",
+    "deck": "Algorithms"
+  },
+
+  {
     "title": "Quick Sort",
     "content": "<p><b>Quicksort</b> (sometimes called partition-exchange sort) is an efficient sorting algorithm. When implemented well, it can be about two or three times faster than its main competitors, merge sort and heapsort. Worst critics to this algorithm is the selection of the pivot since it is not defined<br><br> >Pick an element, called a pivot, from the array.<br> >Partitioning: reorder the array so that all elements with values less than the pivot come before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way). After this partitioning, the pivot is in its final position. This is called the partition operation.<br> > Recursively apply the above steps to the sub-array of elements with smaller values and separately to the sub-array of elements with greater values.<br><br> Worst case scenario O(n * n)</p>",
     "image_url": "",
@@ -31,142 +93,33 @@
     "deck": "Algorithms"
   },
 
-
-
   {
-    "title": "<p>Bucket Sort<p>",
-    "content": "<p></p>",
+    "title": "Sleep Sort",
+    "content": "<p>AKA King of Laziness or Sorting While Sleeping. Sleep sort works by starting a separate task (thread) for each item to be sorted, where each task sleeps for an interval corresponding to the item's sort key, then emits the item. Items are then collected sequentially in time by an observer.<br><br>There is not worst case scenario since all scenarios takes at least as much time as the sum of the numbers to sort, although multiple threads running at the same time might reduce the time</p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "title": "<p>Shell Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-
-  {
-    "title": "<p>TimSort<p>",
-    "content": "<p></p>",
-    "image_url": "",
+    "title": "Bucket Sort",
+    "content": "<p>Bucket sort, or bin sort, is a sorting algorithm that works by distributing the elements of an array into a number of buckets. Each bucket is then sorted individually, either using a different sorting algorithm, or by recursively applying the bucket sorting algorithm.<br><br> Worst case scenario O(n * n)</p>",
+    "image_url": "images/bucket_sort.png",
     "deck": "Algorithms"
   },
   {
-    "title": "<p>Comb Sort<p>",
-    "content": "<p></p>",
+    "title": "Shell Sort",
+    "content": "<p>ShellSort is mainly a variation of Insertion Sort. In insertion sort, we move elements only one position ahead. When an element has to be moved far ahead, many movements are involved. The idea of shellSort is to allow exchange of far items. In shellSort, we make the array h-sorted for a large value of h. We keep reducing the value of h until it becomes 1. An array is said to be h-sorted if all sub-lists of every h’th element is sorted.</p><p>O(n2) (worst known worst case gap sequence); O(n log^2 n) (best known worst case gap sequence)</p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "title": "<p>Pigeonhole Sort<p>",
-    "content": "<p></p>",
+    "title": "TimSort",
+    "content": "<p>Timsort was designed to take advantage of runs of consecutive ordered elements that already exist in most real-world data, natural runs. It iterates over the data collecting elements into runs, and simultaneously merging those runs together. When there are runs, doing this decreases the total number of comparisons needed to fully sort the list.</p><p>Timsort iterates over the data looking for natural runs of at least two elements that are either non-descending (each element is greater than or equal to its predecessor) or strictly descending (each element is less than its predecessor). Since descending runs are later blindly reversed, excluding equal elements maintains the algorithm's stability; i.e., equal elements won't be reversed. Note that any two elements are guaranteed to be either descending or non-descending.</p><p>Worst-case performance O(n log n)</p>",
     "image_url": "",
     "deck": "Algorithms"
   },
   {
-    "title": "<p>Cycle Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-  {
-    "title": "<p>Cocktail Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-
-  {
-    "title": "<p>Strand Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-  {
-    "title": "<p>Bitonic Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-
-  {
-    "title": "<p>Binary Insertion Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-  {
-    "title": "<p>Gnome Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-  {
-    "title": "<p>Sleep Sort</p>",
-    "content": "<p>AKA King of Laziness or Sorting While Sleeping</p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-  {
-    "title": "<p>Structure Sorting (C++)<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-  {
-    "title": "<p>Stooge Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-  {
-    "title": "<p>Tag Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-
-  {
-    "title": "<p>Tree Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-  {
-    "title": "<p>Cartesian Tree Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-  {
-    "title": "<p>Odd-Even Sort / Brick Sort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-  {
-    "title": "<p>QuickSort on singly Linked List<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-  {
-    "title": "<p>QuickSort on doubly Linked List<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-
-  {
-    "title": "<p>3-Way QuickSort<p>",
-    "content": "<p></p>",
-    "image_url": "",
-    "deck": "Algorithms"
-  },
-  {
-    "title": "<p>Merge Sort for Linked Lists<p>",
-    "content": "<p></p>",
+    "title": "Comb Sort",
+    "content": "<p>Comb Sort is mainly an improvement over Bubble Sort. Bubble sort always compares adjacent values. So all inversions are removed one by one. Comb Sort improves on Bubble Sort by using gap of size more than 1. The gap starts with a large value and shrinks by a factor of 1.3 (chosen by statistics) in every iteration until it reaches the value 1. Thus Comb Sort removes more than one inversion counts with one swap and performs better than Bubble Sort</p><p>Worst-case performance O(n^2) but avg O(n^2 / 2^p) where p is the number of increments</p>",
     "image_url": "",
     "deck": "Algorithms"
   },
@@ -210,7 +163,7 @@
   },
   {
     "title": "3-Way MergeSort",
-    "content": "<p>Merge sort involves recursively splitting the array into 2 parts, sorting and finally merging them. A variant of merge sort is called 3-way merge sort where instead of splitting the array into 2 parts we split it into 3 parts.Merge sort recursively breaks down the arrays to sub-arrays of size half. Similarly, 3-way Merge sort breaks down the arrays to subarrays of size one third.</p><li>Time complexity: O(n log3 n)</li> ",
+    "content": "<p>Merge sort involves recursively splitting the array into 2 parts, sorting and finally merging them. A variant of merge sort is called 3-way merge sort where instead of splitting the array into 2 parts we split it into 3 parts.Merge sort recursively breaks down the arrays to sub-arrays of size half. Similarly, 3-way Merge sort breaks down the arrays to sub-arrays of size one third.</p><li>Time complexity: O(n log3 n)</li> ",
     "image_url": "",
     "deck": "Algorithms"
   },

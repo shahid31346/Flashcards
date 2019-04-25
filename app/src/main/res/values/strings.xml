@@ -18,20 +18,24 @@
     <string name="decks_java_image_text">J</string>
     <string name="decks_data_structure_image_text">Ds</string>
     <string name="decks_algorithms_image_text">Al</string>
-    <string name="decks_android_libraries_image_text">L</string>
+    <string name="decks_design_patterns_image_text">Ds</string>
+    <string name="decks_object_oriented_image_text">Oo</string>
     <string name="decks_android_content_desc">Android</string>
     <string name="decks_kotlin_content_desc">Kotlin</string>
     <string name="decks_java_content_desc">Java</string>
     <string name="decks_data_structures_content_desc">Data Structures</string>
     <string name="decks_algorithms_content_desc">Algorithms</string>
-    <string name="decks_android_libraries_content_desc">Android Libraries</string>
+    <string name="decks_design_patterns_content_desc">Design Patterns</string>
+    <string name="decks_object_oriented_content_desc">Object Oriented</string>
     <string name="decks_android_title">Android General</string>
     <string name="decks_kotlin_title">Kotlin Language</string>
     <string name="decks_java_title">Java Language</string>
     <string name="decks_data_structures_title">Data Structures</string>
     <string name="decks_algorithms_title">Algorithms</string>
-    <string name="decks_android_libraries_title">Android Libraries</string>
+    <string name="decks_design_patterns_title">Design Patterns</string>
+    <string name="decks_object_oriented_title">Object Oriented</string>
     <string name="warning_no_content">No Content to show for this deck</string>
+    <string name="main_screen_toolbar_title">Pick a deck</string>
 
     <string-array name="tutorial">
         <item>This is Flashcards</item>

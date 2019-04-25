@@ -5,13 +5,13 @@ import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
+//import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import com.google.gson.Gson
 import com.saishaddai.bwq.BuildConfig.*
 import com.saishaddai.bwq.commons.FileUtilities
-import com.saishaddai.bwq.model.Card
+//import com.saishaddai.bwq.model.Card
 import com.saishaddai.bwq.model.Deck
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_decks.*
@@ -24,20 +24,21 @@ import org.jetbrains.anko.uiThread
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
-    private val androidDecks = listOf("Android" to "android_cards.json",
-        "Kotlin" to "kotlin_cards.json", "Java" to "java_cards.json",
-        "Data Structures" to "data_structures_cards.json",
-        "Algorithms" to "algorithms_cards.json",
-        "Android Libraries" to "android_libraries_cards.json")
+//    private val androidDecks = listOf("Android" to "android_cards.json",
+//        "Kotlin" to "kotlin_cards.json", "Java" to "java_cards.json",
+//        "Data Structures" to "data_structures_cards.json",
+//        "Algorithms" to "algorithms_cards.json",
+//        "Android Libraries" to "android_libraries_cards.json")
 
     private var decksAvailable = mutableListOf("something" to "something")
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+//        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main_t)
         setSupportActionBar(main_toolbar)
-        navigationDrawerSetup()
+        //navigationDrawerSetup()
 
         doAsync {
 
@@ -45,23 +46,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             progress_bar.progress = 0
 
             val contents = FileUtilities.getFileContents(assets, DECKS_SOURCE)
-            val unsortedDecksArray = Gson().fromJson(contents, Array<Deck>::class.java)
-            val decksSorted = unsortedDecksArray.sortedBy { it.priority }
-
-
-
-
-
+            val decks = Gson().fromJson(contents, Array<Deck>::class.java).sortedBy { it.priority }
             val listOfAvailableDecks = assets.list("")
-            for(file in listOfAvailableDecks)
-                Log.d(TAG, file)
 
             progress_bar.progress = 20
-            for(deck in androidDecks) {
-                if(listOfAvailableDecks.contains(deck.second))
-                    decksAvailable.add(deck.first to "true")
+            for(deck in decks) {
+                if(listOfAvailableDecks.contains(deck.source))
+                    decksAvailable.add(deck.name to "true")
                 else
-                    decksAvailable.add(deck.first to "false")
+                    decksAvailable.add(deck.name to "false")
             }
 
             progress_bar.progress = 100
@@ -142,38 +135,51 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             else
                 snackbar(it, R.string.warning_no_content)
         }
-        kotlin_libraries_card.setOnClickListener {
+        design_patterns_deck.setOnClickListener {
             var showContent = false
             for(deck in decksAvailable) {
-                if(deck.first == "Android Libraries" && deck.second == "true")
+                if(deck.first == "Design Patterns" && deck.second == "true")
                     showContent = true
             }
 
             if (showContent)
-                startActivity<CardsActivity>("type" to "Android Libraries")
+                startActivity<CardsActivity>("type" to "Design Patterns")
+            else
+                snackbar(it, R.string.warning_no_content)
+        }
+
+        objectOrientedDeck.setOnClickListener {
+            var showContent = false
+            for(deck in decksAvailable) {
+                if(deck.first == "Design Patterns" && deck.second == "true")
+                    showContent = true
+            }
+
+            if (showContent)
+                startActivity<CardsActivity>("type" to "Object Oriented")
             else
                 snackbar(it, R.string.warning_no_content)
         }
     }
 
-    private fun navigationDrawerSetup() {
-        val toggle = ActionBarDrawerToggle(
-            this, drawer_layout, main_toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close
-        )
-        drawer_layout.addDrawerListener(toggle)
-        toggle.syncState()
+//    private fun navigationDrawerSetup() {
+//        val toggle = ActionBarDrawerToggle(
+//            this, drawer_layout, main_toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close
+//        )
+//        drawer_layout.addDrawerListener(toggle)
+//        toggle.syncState()
+//
+//        nav_view.setNavigationItemSelectedListener(this)
+//    }
 
-        nav_view.setNavigationItemSelectedListener(this)
-    }
 
-
-    override fun onBackPressed() {
-        if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
-            drawer_layout.closeDrawer(GravityCompat.START)
-        } else {
-            super.onBackPressed()
-        }
-    }
+//    override fun onBackPressed() {
+//        if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
+//            drawer_layout.closeDrawer(GravityCompat.START)
+//        } else {
+//            super.onBackPressed()
+//        }
+//    }
 
 //    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 //        super.onCreateOptionsMenu(menu)
@@ -204,7 +210,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
         }
 
-        drawer_layout.closeDrawer(GravityCompat.START)
+        //drawer_layout.closeDrawer(GravityCompat.START)
         return true
     }
 

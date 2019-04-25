@@ -49,13 +49,23 @@ class CardsActivity : AppCompatActivity() {
         for(cardItem in cardsArray)
             result.add(cardItem)
 
-        val cardsArrayReduced = reduceListSize(result)
+        val cardsArrayReduced = reduceListSize(result, result.size)
         Log.d(TAG, "original size: " + result.size + ", reduced: " +  cardsArrayReduced.size)
 
         val finalCard = Card("", "", "", "")
         cardsArrayReduced.add(finalCard)
 
         return cardsArrayReduced
+    }
+
+
+    private fun reduceListSize(arrayList: ArrayList<Card>, size: Int): ArrayList<Card> {
+        val result = ArrayList<Card>()
+        val indexArray : MutableSet<Int> = getIndexesForReducedArray(size)
+        for(i in indexArray)
+            result.add(arrayList[i])
+
+        return result
     }
 
     private fun reduceListSize(arrayList: ArrayList<Card>): ArrayList<Card> {
@@ -86,7 +96,8 @@ class CardsActivity : AppCompatActivity() {
             "Kotlin" -> return "kotlin_cards.json"
             "Data Structures" -> return "data_structures_cards.json"
             "Algorithms" -> return "algorithms_cards.json"
-            "Android Libraries" -> return "android_libraries_cards.json"
+            "Design Patterns" -> return "design_patterns_cards.json"
+            "Object Oriented" -> return "object_oriented_cards.json"
         }
         return ""
     }

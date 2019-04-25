@@ -32,7 +32,7 @@
     "source": "algorithms_cards.json",
     "short": "Al",
     "priority": 6,
-    "cards": 6
+    "cards": 30
   },
   {
     "name": "Design Patterns",

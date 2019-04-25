@@ -95,7 +95,7 @@
   },
   {
     "title": "Type Conversion / typecasting",
-    "content": "<p>In computer science, type conversion, type casting, type coercion, and type juggling are different ways of changing an expression from one data type to another. An example would be the conversion of an integer value into a floating point value or its textual representation as a string, and vice versa</p>",
+    "content": "<p>In computer science, <b>type conversion</b>, type casting, type coercion, and type juggling are different ways of changing an expression from one data type to another. An example would be the conversion of an integer value into a floating point value or its textual representation as a string, and vice versa</p>",
     "image_url": "",
     "deck": "Object Oriented"
   },
@@ -108,7 +108,7 @@
   },
   {
     "title": "Virtual Class",
-    "content": "<p>In object-oriented programming, a virtual class is a nested inner class whose functions and member variables can be overridden and redefined by subclasses of an outer class.[1] Virtual classes are analogous to virtual functions.</p>",
+    "content": "<p>In object-oriented programming, a <b>virtual class</b> is a nested inner class whose functions and member variables can be overridden and redefined by subclasses of an outer class.[1] Virtual classes are analogous to virtual functions.</p>",
     "image_url": "",
     "deck": "Object Oriented"
   },

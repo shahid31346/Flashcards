@@ -1,7 +1,7 @@
 package com.saishaddai.bwq.repository
 
-interface InfoStore<T, J> {
+interface InfoStore<C, D> {
 
-    fun saveListOfCards(cards: ArrayList<T>)
-    fun saveDecks(decks: ArrayList<J>)
+    fun saveDecks(decks: List<D>)
+    fun saveCards(cards: List<C>)
 }

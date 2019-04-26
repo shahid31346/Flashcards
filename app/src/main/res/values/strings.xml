@@ -37,6 +37,10 @@
     <string name="warning_no_content">No Content to show for this deck</string>
     <string name="main_screen_toolbar_title">Pick a deck</string>
 
+    <string name="loader_initial_information">Loading initial information…</string>
+    <string name="loader_setting_values">Setting values…</string>
+    <string name="loader_resuming">Resuming…</string>
+
     <string-array name="tutorial">
         <item>This is Flashcards</item>
         <item>Choose a deck from the screen and start studying</item>

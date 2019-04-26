@@ -2,18 +2,17 @@ package com.saishaddai.bwq
 
 import android.os.Bundle
 import android.support.design.widget.NavigationView
-import android.support.v4.view.GravityCompat
-import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
-//import android.util.Log
+import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import com.google.gson.Gson
-import com.saishaddai.bwq.BuildConfig.*
+import com.saishaddai.bwq.BuildConfig.DECKS_SOURCE
 import com.saishaddai.bwq.commons.FileUtilities
-//import com.saishaddai.bwq.model.Card
 import com.saishaddai.bwq.model.Deck
-import kotlinx.android.synthetic.main.activity_main.*
+import com.saishaddai.bwq.repository.InfoRetrieverFiles
+import com.saishaddai.bwq.repository.InfoStoreRoom
+import com.saishaddai.bwq.repository.InitialInfoRepository
 import kotlinx.android.synthetic.main.fragment_decks.*
 import kotlinx.android.synthetic.main.layout_loader.*
 import org.jetbrains.anko.design.snackbar
@@ -23,12 +22,6 @@ import org.jetbrains.anko.uiThread
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
-
-//    private val androidDecks = listOf("Android" to "android_cards.json",
-//        "Kotlin" to "kotlin_cards.json", "Java" to "java_cards.json",
-//        "Data Structures" to "data_structures_cards.json",
-//        "Algorithms" to "algorithms_cards.json",
-//        "Android Libraries" to "android_libraries_cards.json")
 
     private var decksAvailable = mutableListOf("something" to "something")
 
@@ -41,17 +34,34 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         //navigationDrawerSetup()
 
         doAsync {
-
             loader_container.visibility = View.VISIBLE
             progress_bar.progress = 0
+
+
+            val infoRetriever = InfoRetrieverFiles(assets)
+            val infoStore = InfoStoreRoom()
+            loader_message.text = getString(R.string.loader_initial_information)
+            val initialInfoRepository = InitialInfoRepository(infoRetriever, infoStore)
+            initialInfoRepository.initInfo()
+            Log.d(TAG, "initialInfoRepository done")
+
+            progress_bar.progress = 30
+
+
+            //given all the decks, paint all the cards available
+//            val decksAvailable = infoRetriever.getDecks()
+//            progress_bar.progress = 0
+
+
+
 
             val contents = FileUtilities.getFileContents(assets, DECKS_SOURCE)
             val decks = Gson().fromJson(contents, Array<Deck>::class.java).sortedBy { it.priority }
             val listOfAvailableDecks = assets.list("")
 
-            progress_bar.progress = 20
-            for(deck in decks) {
-                if(listOfAvailableDecks.contains(deck.source))
+            progress_bar.progress = 50
+            for (deck in decks) {
+                if (listOfAvailableDecks.contains(deck.source))
                     decksAvailable.add(deck.name to "true")
                 else
                     decksAvailable.add(deck.name to "false")
@@ -75,8 +85,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private fun decksSetup() {
         android_card.setOnClickListener {
             var showContent = false
-            for(deck in decksAvailable) {
-                if(deck.first == "Android" && deck.second == "true")
+            for (deck in decksAvailable) {
+                if (deck.first == "Android" && deck.second == "true")
                     showContent = true
             }
 
@@ -88,8 +98,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         //        android_card.setOnClickListener { startActivity<Main2Activity>("type" to "Android") }
         java_card.setOnClickListener {
             var showContent = false
-            for(deck in decksAvailable) {
-                if(deck.first == "Java" && deck.second == "true")
+            for (deck in decksAvailable) {
+                if (deck.first == "Java" && deck.second == "true")
                     showContent = true
             }
 
@@ -100,8 +110,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
         kotlin_card.setOnClickListener {
             var showContent = false
-            for(deck in decksAvailable) {
-                if(deck.first == "Kotlin" && deck.second == "true")
+            for (deck in decksAvailable) {
+                if (deck.first == "Kotlin" && deck.second == "true")
                     showContent = true
             }
 
@@ -113,8 +123,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         data_structures_card.setOnClickListener {
             var showContent = false
-            for(deck in decksAvailable) {
-                if(deck.first == "Data Structures" && deck.second == "true")
+            for (deck in decksAvailable) {
+                if (deck.first == "Data Structures" && deck.second == "true")
                     showContent = true
             }
 
@@ -125,8 +135,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
         algorithms_card.setOnClickListener {
             var showContent = false
-            for(deck in decksAvailable) {
-                if(deck.first == "Algorithms" && deck.second == "true")
+            for (deck in decksAvailable) {
+                if (deck.first == "Algorithms" && deck.second == "true")
                     showContent = true
             }
 
@@ -137,8 +147,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
         design_patterns_deck.setOnClickListener {
             var showContent = false
-            for(deck in decksAvailable) {
-                if(deck.first == "Design Patterns" && deck.second == "true")
+            for (deck in decksAvailable) {
+                if (deck.first == "Design Patterns" && deck.second == "true")
                     showContent = true
             }
 
@@ -150,8 +160,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         objectOrientedDeck.setOnClickListener {
             var showContent = false
-            for(deck in decksAvailable) {
-                if(deck.first == "Design Patterns" && deck.second == "true")
+            for (deck in decksAvailable) {
+                if (deck.first == "Design Patterns" && deck.second == "true")
                     showContent = true
             }
 

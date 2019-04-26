@@ -14,12 +14,12 @@ class FileUtilities {
 
         fun getFileContents(assets: AssetManager, fileName: String): String {
             val result = StringBuilder()
-            var reader: BufferedReader?  = null
+            var reader: BufferedReader? = null
             val possibleError = try {
                 reader = BufferedReader(java.io.InputStreamReader(assets.open(fileName)))
                 do {
                     val mLine = reader.readLine()
-                    if(mLine != null)
+                    if (mLine != null)
                         result.append(mLine)
                 } while (mLine != null)
             } catch (e: IOException) {
@@ -31,7 +31,7 @@ class FileUtilities {
             if (possibleError == ERROR_FOUND)
                 throw IOException()
 
-            Log.e(TAG, result.toString())
+            Log.d(TAG, result.toString())
             return result.toString()
         }
     }

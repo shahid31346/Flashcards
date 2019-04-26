@@ -1,7 +1,7 @@
 package com.saishaddai.bwq.repository
 
-interface InfoRetriever<T, J> {
+interface InfoRetriever<C, D> {
 
-    fun getListOfCards(deck: String) : ArrayList<T>
-    fun getDecks(type: String) : ArrayList<J>
+    fun getCards(decks: List<D>) : List<C>
+    fun getDecks() : List<D>
 }

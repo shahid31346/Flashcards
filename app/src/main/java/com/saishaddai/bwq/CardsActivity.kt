@@ -49,7 +49,7 @@ class CardsActivity : AppCompatActivity() {
         for(cardItem in cardsArray)
             result.add(cardItem)
 
-        val cardsArrayReduced = reduceListSize(result, result.size)
+        val cardsArrayReduced = reduceListSize(result)
         Log.d(TAG, "original size: " + result.size + ", reduced: " +  cardsArrayReduced.size)
 
         val finalCard = Card("", "", "", "")

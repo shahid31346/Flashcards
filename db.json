@@ -33,19 +33,5 @@
     "short": "Al",
     "priority": 6,
     "cards": 30
-  },
-  {
-    "name": "Design Patterns",
-    "source": "design_patterns_cards.json",
-    "short": "P",
-    "priority": 7,
-    "cards": 58
-  },
-  {
-    "name": "OO Programming",
-    "source": "object_oriented_cards.json",
-    "short": "Oo",
-    "priority": 1,
-    "cards": 31
   }
 ]

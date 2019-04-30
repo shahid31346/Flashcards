@@ -1,5 +1,11 @@
 [
   {
+    "title": "Constructors in Kotlin",
+    "content": "<p><b>Primary Constructors: Set at the class declaration. It can be only one:<br><font color=\"blue\">class User(username: String) {...}</p><p><b>Secondary Constructors: Set after the class declaration and can be more than one:<br><font color=\"blue\">class User {<br>&nbsp;&nbsp;constructor(username: String) {...}<br>}</p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
     "title": "Java to Kotlin",
     "content": "<p>IF, TRY and other statements in Java, in Kotlin are expressions</p><p><font color=\"blue\">val i = try {<br/>&nbsp;&nbsp;Integer.parseInt(someString)<br/>} catch(ex : Exception) {<br/>&nbsp;&nbsp;42<br/>}</font></p>",
     "image_url": "",

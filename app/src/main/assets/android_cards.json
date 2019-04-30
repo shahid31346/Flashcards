@@ -12,6 +12,18 @@
     "deck": "Android"
   },
   {
+    "title": "common keywords in Retrofit",
+    "content": "<p><i>@GET(\"url\")</i>: for GET queries<br><br><i>POST(\"url\") for</i> POST call. Should use @Body(Java class) to work<br><br><i>@FormUrlEncoded</i>: Used in a POST call to indicate the post should be constructed send as part of the URL using @Field for each input parameter<br><br>@Field(\"field_name\")</i>: To indicate the name of a part attribute to send<br><br><i>@url</i>: Used to overwrite the base URL for any call<br><br>@QueryMap/@FieldMap</i>: Used to send URL parameters as a map in a GET/POST respectively</p>",
+    "image_url": "",
+    "deck": "Kotlin"
+  },
+  {
+    "title": "How to use a RecyclerView.Adapter",
+    "content": "<p>1. Create your adapter class implementing RecyclerView.Adapter&lt;T></p><p>2. Create a ViewHolder class</p><p>Implement the method onCreateViewHolder(), getItemCount(), and onBindViewHolder()</p><p>3. Set this adapter in your recycler view",
+    "image_url": "",
+    "deck": "Android"
+  },
+  {
     "title": "Manifest.xml file",
     "content": "<p>The manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play. It should specify at least:<br/><br/>app package<br/>components (activities, services, etc)<br/>permissions<br/>hardware and software required</p>",
     "image_url": "",

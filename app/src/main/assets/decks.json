@@ -4,48 +4,55 @@
     "source": "android_cards.json",
     "short": "A",
     "priority": 2,
-    "cards": 38
+    "cards": 38,
+    "description": "Know more about Android such as concepts, architecture and basic libraries"
   },
   {
     "name": "Kotlin",
     "source": "kotlin_cards.json",
     "short": "K",
     "priority": 3,
-    "cards": 30
+    "cards": 30,
+    "description": "Know more about Kotlin Programming Language such as syntax, semantics, and tips of interoperability with Java"
   },
   {
     "name": "Java",
     "source": "java_cards.json",
     "short": "J",
     "priority": 4,
-    "cards": 30
+    "cards": 30,
+    "description": "Know more about Java Programming Language such as syntax, semantics, and best practices"
   },
   {
     "name": "Data Structures",
     "source": "data_structures_cards.json",
     "short": "Ds",
     "priority": 5,
-    "cards": 30
+    "cards": 30,
+    "description": "Know more about data structures and its most common usages"
   },
   {
     "name": "Algorithms",
     "source": "algorithms_cards.json",
     "short": "Al",
     "priority": 6,
-    "cards": 30
+    "cards": 30,
+    "description": "Learn about sorting algorithms and the basics of analysis of algorithms"
   },
   {
     "name": "Design Patterns",
     "source": "design_patterns_cards.json",
     "short": "P",
     "priority": 7,
-    "cards": 58
+    "cards": 58,
+    "description": "Learn about design patterns and the most used in mobile development"
   },
   {
-    "name": "OO Programming",
+    "name": "OO Concepts",
     "source": "object_oriented_cards.json",
     "short": "Oo",
     "priority": 1,
-    "cards": 31
+    "cards": 31,
+    "description": "Know about the real basis of Object Oriented Programming"
   }
 ]

@@ -3,17 +3,23 @@ package com.saishaddai.bwq
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.GridLayoutManager
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import com.google.gson.Gson
 import com.saishaddai.bwq.BuildConfig.DECKS_SOURCE
+import com.saishaddai.bwq.adapter.DecksAdapter
 import com.saishaddai.bwq.commons.FileUtilities
 import com.saishaddai.bwq.model.Deck
 import com.saishaddai.bwq.repository.InfoRetrieverFiles
 import com.saishaddai.bwq.repository.InfoStoreRoom
 import com.saishaddai.bwq.repository.InitialInfoRepository
+import kotlinx.android.synthetic.main.activity_main_rv.*
 import kotlinx.android.synthetic.main.fragment_decks.*
+import kotlinx.android.synthetic.main.fragment_decks.main_toolbar
 import kotlinx.android.synthetic.main.layout_loader.*
 import org.jetbrains.anko.design.snackbar
 import org.jetbrains.anko.doAsync
@@ -29,7 +35,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         super.onCreate(savedInstanceState)
 //        setContentView(R.layout.activity_main)
-        setContentView(R.layout.activity_main_t)
+        //setContentView(R.layout.activity_main_t)
+        setContentView(R.layout.activity_main_rv)
         setSupportActionBar(main_toolbar)
         //navigationDrawerSetup()
 
@@ -67,110 +74,27 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     decksAvailable.add(deck.name to "false")
             }
 
+
+
             progress_bar.progress = 100
 
             uiThread {
                 if (progress_bar.progress == 100) {
                     loader_container.visibility = View.GONE
+                    //decksRV.layoutManager  = GridLayoutManager(applicationContext, 2)
+                    decksRV.layoutManager  = LinearLayoutManager(applicationContext)
+                    decksRV.setHasFixedSize(true)
+                    decksRV.adapter = DecksAdapter(decks)
                     progress_bar.progress = 0
                 }
             }
         }
 
-        decksSetup()
+
+
 
     }
 
-
-    private fun decksSetup() {
-        android_card.setOnClickListener {
-            var showContent = false
-            for (deck in decksAvailable) {
-                if (deck.first == "Android" && deck.second == "true")
-                    showContent = true
-            }
-
-            if (showContent)
-                startActivity<CardsActivity>("type" to "Android")
-            else
-                snackbar(it, R.string.warning_no_content)
-        }
-        //        android_card.setOnClickListener { startActivity<Main2Activity>("type" to "Android") }
-        java_card.setOnClickListener {
-            var showContent = false
-            for (deck in decksAvailable) {
-                if (deck.first == "Java" && deck.second == "true")
-                    showContent = true
-            }
-
-            if (showContent)
-                startActivity<CardsActivity>("type" to "Java")
-            else
-                snackbar(it, R.string.warning_no_content)
-        }
-        kotlin_card.setOnClickListener {
-            var showContent = false
-            for (deck in decksAvailable) {
-                if (deck.first == "Kotlin" && deck.second == "true")
-                    showContent = true
-            }
-
-            if (showContent)
-                startActivity<CardsActivity>("type" to "Kotlin")
-            else
-                snackbar(it, R.string.warning_no_content)
-        }
-
-        data_structures_card.setOnClickListener {
-            var showContent = false
-            for (deck in decksAvailable) {
-                if (deck.first == "Data Structures" && deck.second == "true")
-                    showContent = true
-            }
-
-            if (showContent)
-                startActivity<CardsActivity>("type" to "Data Structures")
-            else
-                snackbar(it, R.string.warning_no_content)
-        }
-        algorithms_card.setOnClickListener {
-            var showContent = false
-            for (deck in decksAvailable) {
-                if (deck.first == "Algorithms" && deck.second == "true")
-                    showContent = true
-            }
-
-            if (showContent)
-                startActivity<CardsActivity>("type" to "Algorithms")
-            else
-                snackbar(it, R.string.warning_no_content)
-        }
-        design_patterns_deck.setOnClickListener {
-            var showContent = false
-            for (deck in decksAvailable) {
-                if (deck.first == "Design Patterns" && deck.second == "true")
-                    showContent = true
-            }
-
-            if (showContent)
-                startActivity<CardsActivity>("type" to "Design Patterns")
-            else
-                snackbar(it, R.string.warning_no_content)
-        }
-
-        objectOrientedDeck.setOnClickListener {
-            var showContent = false
-            for (deck in decksAvailable) {
-                if (deck.first == "Design Patterns" && deck.second == "true")
-                    showContent = true
-            }
-
-            if (showContent)
-                startActivity<CardsActivity>("type" to "Object Oriented")
-            else
-                snackbar(it, R.string.warning_no_content)
-        }
-    }
 
 //    private fun navigationDrawerSetup() {
 //        val toggle = ActionBarDrawerToggle(

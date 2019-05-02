@@ -8,18 +8,24 @@ data class Deck(
     @SerializedName("name") var name: String,
     @SerializedName("source") var source: String,
     @SerializedName("short") var short: String,
-    @SerializedName("priority") var priority: Int) : Parcelable {
+    @SerializedName("cards") var cards: Int,
+    @SerializedName("priority") var priority: Int,
+    @SerializedName("description") var description: String
+) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readString(),
         parcel.readString(),
-        parcel.readInt()
+        parcel.readInt(),
+        parcel.readInt(),
+        parcel.readString()
     )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(name)
         parcel.writeString(source)
         parcel.writeString(short)
+        parcel.writeInt(priority)
         parcel.writeInt(priority)
     }
 

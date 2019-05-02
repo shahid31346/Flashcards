@@ -1,36 +1,58 @@
 package com.saishaddai.bwq.adapter
 
+import android.app.AlertDialog
+import android.content.Context
 import android.support.v7.widget.RecyclerView
+import android.util.Log
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.BaseAdapter
 import android.widget.ImageView
+import android.widget.TextView
+import com.saishaddai.bwq.R
 import com.saishaddai.bwq.model.Deck
+import org.jetbrains.anko.find
 
 
-class DecksAdapter(private val decks: ArrayList<Deck>) : BaseAdapter() {
+class DecksAdapter(private val decks: List<Deck>) : RecyclerView.Adapter<DecksAdapter.ViewHolder>() {
 
-    override fun getItem(position: Int): Any {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    lateinit var context: Context
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        context = parent.context
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.deck_cell_layout, parent, false)
+        return ViewHolder(view)
     }
 
-
-    override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-        val holder : ViewHolder = convertView?.tag as ViewHolder
-
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun getItemId(position: Int): Long {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-
-    override fun getCount(): Int {
+    override fun getItemCount(): Int {
         return decks.size
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val deck = decks[position]
+        Log.d(TAG, "setting UI for: " + deck.name)
+        holder.shortTextView.text = deck.short
+        holder.nameTextView.text = deck.name
+        holder.cardsCountTextView.text = "Cards: " + deck.cards
+        holder.lastTimeTextView.text = "a few minutes ago"
+        holder.infoImageView.setOnClickListener {
+            Log.d(TAG, "" + deck.description)
+            AlertDialog.Builder(context).setTitle(deck.name).setMessage(deck.description).show()
+        }
+    }
+
+
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val shortTextView = itemView.find<TextView>(R.id.shortTextView)
+        val nameTextView = itemView.find<TextView>(R.id.nameTextView)
+        val cardsCountTextView = itemView.find<TextView>(R.id.cardsCountTextView)
+        val lastTimeTextView = itemView.find<TextView>(R.id.lastTimeTextView)
+        val infoImageView = itemView.find<ImageView>(R.id.infoImageView)
+    }
+
+    companion object {
+        private val TAG = DecksAdapter::class.java.simpleName
+    }
 
 }
 

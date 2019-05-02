@@ -8,8 +8,6 @@ class InitialInfoRepository (private val infoRetriever: InfoRetrieverFiles, priv
 
 
     fun initInfo() {
-//        val infoRetriever = InfoRetrieverFiles()
-//        val infoStore = InfoStoreRoom()
 
         val decks: List<Deck> = infoRetriever.getDecks()
         Log.d(TAG, "storing " + decks.size + " decks")

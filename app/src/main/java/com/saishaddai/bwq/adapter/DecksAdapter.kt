@@ -16,7 +16,6 @@ import org.jetbrains.anko.find
 
 class DecksAdapter(private val decks: List<Deck>) : RecyclerView.Adapter<DecksAdapter.ViewHolder>() {
 
-
     lateinit var context: Context
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         context = parent.context
@@ -33,8 +32,8 @@ class DecksAdapter(private val decks: List<Deck>) : RecyclerView.Adapter<DecksAd
         Log.d(TAG, "setting UI for: " + deck.name)
         holder.shortTextView.text = deck.short
         holder.nameTextView.text = deck.name
-        holder.cardsCountTextView.text = "Cards: " + deck.cards
-        holder.lastTimeTextView.text = "a few minutes ago"
+        holder.cardsCountTextView.text = context.getString(R.string.decks_number_of_cards, deck.cards.toString())
+        holder.lastTimeTextView.text = context.getString(R.string.decks_date_placeholder)
         holder.infoImageView.setOnClickListener {
             Log.d(TAG, "" + deck.description)
             AlertDialog.Builder(context).setTitle(deck.name).setMessage(deck.description).show()

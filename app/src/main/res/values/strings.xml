@@ -62,5 +62,7 @@
     <string name="loading_text">Loading…</string>
     <string name="card_finish_button">FINISH</string>
     <string name="no_cards_found_error">Nothing to show</string>
+    <string name="decks_number_of_cards">%1$s Cards Available</string>
+    <string name="decks_date_placeholder">Never tried before</string>
 
 </resources>

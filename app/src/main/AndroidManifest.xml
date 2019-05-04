@@ -7,6 +7,7 @@
 
     <application
             android:allowBackup="true"
+            android:name=".FlashcardsApplication"
             android:icon="${appIcon}"
             android:label="${appName}"
             android:roundIcon="${appIcon}"

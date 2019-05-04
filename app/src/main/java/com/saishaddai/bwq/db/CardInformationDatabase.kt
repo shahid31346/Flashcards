@@ -5,13 +5,15 @@ import android.arch.persistence.room.Database
 import android.arch.persistence.room.Room
 import android.arch.persistence.room.RoomDatabase
 import android.content.Context
+import com.saishaddai.bwq.model.Card
 import com.saishaddai.bwq.model.CardEntity
 import com.saishaddai.bwq.model.Constants.Companion.DATABASE_NAME
+import com.saishaddai.bwq.model.Deck
 import com.saishaddai.bwq.model.DeckEntity
 import org.jetbrains.anko.doAsync
 import org.jetbrains.annotations.NotNull
 
-@Database(entities = [CardEntity::class, DeckEntity::class], version = 1)
+@Database(entities = [Card::class, Deck::class], version = 1)
 abstract class CardInformationDatabase : RoomDatabase() {
 
     abstract fun cardDao(): CardDao

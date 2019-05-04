@@ -12,6 +12,8 @@ class CardActivityObserver : LifecycleObserver {
     @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
     fun storeDecksData() {
         Log.d(tag, "lifecycle aware to store values in database")
+
+        //update in database that the user used a deck and the last time he spent there
         return
     }
 }

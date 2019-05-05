@@ -95,7 +95,7 @@ class CardsActivity : AppCompatActivity() {
             "Android" -> return "android_cards.json"
             "Kotlin" -> return "kotlin_cards.json"
             "Data Structures" -> return "data_structures_cards.json"
-            "Algorithms" -> return "algorithms_cards.json"
+            "Algorithms" -> return "basic_concepts.json"
             "Design Patterns" -> return "design_patterns_cards.json"
             "Object Oriented" -> return "object_oriented_cards.json"
         }

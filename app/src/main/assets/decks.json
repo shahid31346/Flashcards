@@ -4,8 +4,8 @@
     "source": "android_cards.json",
     "short": "A",
     "priority": 2,
-    "cards": 38,
-    "description": "Know more about Android such as concepts, architecture and basic libraries"
+    "cards": 39,
+    "description": "Know more about Android such as:<br><br>> Basic concepts<br>> Architecture<br>> Activities<br>> Services<br>> Content Providers<br>> Best Practices<br>> Basic Libraries<br>"
   },
   {
     "name": "Kotlin",
@@ -13,7 +13,7 @@
     "short": "K",
     "priority": 3,
     "cards": 30,
-    "description": "Know more about Kotlin Programming Language such as syntax, semantics, and tips of interoperability with Java"
+    "description": "Know more about Kotlin Programming Language such as:<br><br>> Basic concepts<br>> Syntax<br>> Semantics<br>> Interoperability w/Java<br>> Best Practices<br>"
   },
   {
     "name": "Java",
@@ -21,7 +21,7 @@
     "short": "J",
     "priority": 4,
     "cards": 30,
-    "description": "Know more about Java Programming Language such as syntax, semantics, and best practices"
+    "description": "Know more about Java such as:<br><br>> Basic concepts<br>> Syntax<br>> Semantics<br>> Best Practices<br>"
   },
   {
     "name": "Data Structures",
@@ -29,7 +29,7 @@
     "short": "Ds",
     "priority": 5,
     "cards": 30,
-    "description": "Know more about data structures and its most common usages"
+    "description": "Learn more about data structures such as:<br><br>> Arrays<br>> Stacks<br>> Queues<br>> Linked Lists<br>> Trees<br>> Graphs<br>> Tries<br>> Hash Tables<br>"
   },
   {
     "name": "Algorithms",
@@ -37,7 +37,7 @@
     "short": "Al",
     "priority": 6,
     "cards": 30,
-    "description": "Learn about sorting algorithms and the basics of analysis of algorithms"
+    "description": "Learn more about Analysis of algorithms including:<br><br>> Basic concepts<br>> Description of most common sorting algorithms<br>"
   },
   {
     "name": "Design Patterns",
@@ -45,7 +45,7 @@
     "short": "P",
     "priority": 7,
     "cards": 58,
-    "description": "Learn about design patterns and the most used in mobile development"
+    "description": "Learn more about Design Patterns with topics:<br><br>> Basic concepts<br>> Description of most common design patterns<br>"
   },
   {
     "name": "OO Concepts",
@@ -53,6 +53,6 @@
     "short": "Oo",
     "priority": 1,
     "cards": 31,
-    "description": "Know about the real basis of Object Oriented Programming"
+    "description": "Learn more about Object Oriented Concepts with topics such as:<br><br>> Basic Concepts<br>> Structure<br>> OO Principles<br>> SOLID Principles<br>"
   }
 ]

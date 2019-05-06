@@ -6,6 +6,12 @@
     "deck": "Android"
   },
   {
+    "title": "ANR",
+    "content": "<p>When the UI thread of an Android app is blocked for too long, an \"Application Not Responding\" (ANR) error is triggered. If the app is in the foreground, the system displays a dialog to the user. May be triggered when:<br><br>>While your activity is in the foreground, your app has not responded to an input event or BroadcastReceiver (such as key press or screen touch events) within 5 seconds<br>>While you do not have an activity in the foreground, your BroadcastReceiver hasn't finished executing within a considerable amount of time.</p>",
+    "image_url": "",
+    "deck": "Android"
+  },
+  {
     "title": "Activity",
     "content": "<p>A single screen in an application, with supporting Java code, derived from the Activity class. Most commonly, an activity is visibly represented by a full screen window that can receive and handle UI events and perform complex tasks, because of the Window it uses to render its window. Though an Activity is typically full screen, it can also be floating or transparent.. Its life cycle is:<br/><br/><i>onCreate()<br/>onStart()<br/>onResume()<br/>onPause()<br/>onStop()<br/>onDestroy()<br/></p>",
     "image_url": "",

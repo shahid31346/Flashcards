@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
+import android.util.Log
 import com.saishaddai.bwq.fragment.CardFragment
 import com.saishaddai.bwq.model.Card
 
@@ -19,16 +20,15 @@ class CardsAdapter(fragmentManager: FragmentManager, private val cards: ArrayLis
     override fun getItem(position: Int): Fragment {
         val cardFragment = CardFragment()
         val bundle = Bundle()
-//            bundle.putString("key", "" + position)
         val cardItem = cards[position]
         bundle.putParcelable("card", cardItem)
-//        if(cardItem.type == "A") {
-//            cardFragment
-//        }
-//        cardFragment.title = ""
-//        cardFragment.text = ""
+        Log.d(TAG, "getting card for " + cardItem.title)
         cardFragment.arguments = bundle
         return cardFragment
+    }
+
+    companion object {
+        private val TAG = CardsAdapter::class.java.simpleName
     }
 
 }

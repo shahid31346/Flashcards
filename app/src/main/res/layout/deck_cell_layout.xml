@@ -2,10 +2,10 @@
 <android.support.v7.widget.CardView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/android_card"
+        android:id="@+id/deckContainer"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
         android:tag="@string/decks_android_title"
         app:cardElevation="8dp"
         app:cardCornerRadius="18dp">
@@ -31,46 +31,36 @@
 
         <TextView android:id="@+id/nameTextView"
                   android:layout_width="0dp"
-                  android:layout_weight="2"
+                  android:layout_weight="5"
                   android:maxLines="3"
                   android:layout_height="match_parent"
                   android:layout_marginStart="10dp"
                   android:gravity="center_vertical"
                   android:textSize="14sp"
                   android:paddingStart="5dp"
+                  android:paddingEnd="5dp"
                   android:ellipsize="end"
                   android:textStyle="bold"
                   android:text="Android Cards"
                   android:layout_gravity="center_horizontal"
                   android:contentDescription="@string/decks_android_content_desc"/>
 
-        <LinearLayout android:layout_width="0dp"
-                      android:layout_height="match_parent"
-                      android:layout_weight="4"
-                      android:layout_marginEnd="15dp"
-                      android:orientation="vertical">
+        <TextView android:id="@+id/cardsCountTextView"
+                  android:layout_width="0dp"
+                  android:layout_weight="4"
+                  android:maxLines="3"
+                  android:layout_height="match_parent"
+                  android:layout_marginStart="10dp"
+                  android:gravity="center_vertical"
+                  android:textSize="14sp"
+                  android:paddingStart="5dp"
+                  android:paddingEnd="0dp"
+                  android:ellipsize="end"
+                  android:textStyle="italic"
+                  android:text="9999 cards available"
+                  android:layout_gravity="center_horizontal"
+                  android:contentDescription="@string/decks_android_content_desc"/>
 
-            <TextView android:id="@+id/cardsCountTextView"
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:layout_marginStart="10dp"
-                      android:gravity="center_vertical"
-                      android:textSize="14sp"
-                      android:text="9999 cards"
-                      android:layout_gravity="center_horizontal"
-                      android:contentDescription="@string/decks_android_content_desc"/>
-
-            <TextView android:id="@+id/lastTimeTextView"
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:layout_marginStart="10dp"
-                      android:gravity="start"
-                      android:textSize="14sp"
-                      android:maxLines="2"
-                      android:text="Last attempt: Apr 16, 2019 22:52"
-                      android:layout_gravity="center_horizontal"
-                      android:contentDescription="@string/decks_android_content_desc"/>
-        </LinearLayout>
 
         <LinearLayout android:layout_width="50dp"
                       android:layout_height="50dp"

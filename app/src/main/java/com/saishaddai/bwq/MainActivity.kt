@@ -3,9 +3,7 @@ package com.saishaddai.bwq
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.MenuItem
 import android.view.View
@@ -18,12 +16,9 @@ import com.saishaddai.bwq.repository.InfoRetrieverFiles
 import com.saishaddai.bwq.repository.InfoStoreRoom
 import com.saishaddai.bwq.repository.InitialInfoRepository
 import kotlinx.android.synthetic.main.activity_main_rv.*
-import kotlinx.android.synthetic.main.fragment_decks.*
 import kotlinx.android.synthetic.main.fragment_decks.main_toolbar
 import kotlinx.android.synthetic.main.layout_loader.*
-import org.jetbrains.anko.design.snackbar
 import org.jetbrains.anko.doAsync
-import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.uiThread
 
 
